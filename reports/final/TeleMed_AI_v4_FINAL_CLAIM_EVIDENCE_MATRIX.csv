@@ -1,0 +1,15 @@
+Claim Category,Specific Claim,Source of Truth File / Code,Verified Status,Verification Notes & Evidence
+Feature Counts,Clinical = 18 predictive features,ai/models/clinical/clinical_v4_expert_payload.joblib,VERIFIED,Inspected features key: 18 laboratory markers (Patient_ID excluded)
+Feature Counts,Wearable = 15 predictive features,ai/models/wearable_cgm/wearable_v4_expert_payload.joblib,VERIFIED,Inspected features key: 10 standard + 5 CGM features (Patient_ID excluded)
+Feature Counts,Gut Microbiome = 49 predictive features,ai/models/gut_microbiome/gut_v4_expert_payload.joblib,VERIFIED,Inspected features key: 40 taxa + 4 diversity + 4 functional + 1 ratio
+Feature Counts,Total Upstream Trimodal = 82 features,Sum of 18 + 15 + 49 = 82,VERIFIED,Modality-level biological input feature pool
+Meta-Learner,Meta-Learner Input Dimension = 3 per disease target,ai/models/fusion/v4_multimodal_fusion_payload.joblib,VERIFIED,"n_features_in_ = 3 for all 5 disease meta-models ([P_C, P_W, P_G])"
+Meta-Learner,Total Out-of-Fold Probabilities = 15 outputs,3 modalities × 5 disease targets = 15,VERIFIED,15 total probability features generated upstream across 5 diseases
+Bimodal Stacker,W+G Stacker Input Dimension = 2 per target,ai/models/fusion/wg_logistic_regression_stacker.joblib,VERIFIED,"5 LogisticRegression models each with n_features_in_ = 2 ([P_W, P_G])"
+Classification,Multi-Label Binary Relevance across 5 targets,services/multimodal_intake/v3_schema_validator.py,VERIFIED,5 independent calibrated binary estimators allowing co-occurrence
+Disease Targets,"5 Exact Targets (T2D, Prediabetes, High Adiposity, MetSyn, NAFLD)",ai/models/fusion/v4_multimodal_fusion_payload.joblib,VERIFIED,All 5 targets verified with calibrated thresholds
+Thresholds,"Optimal Thresholds: T2D=0.33, Prediabetes=0.33, Obesity=0.39, MetSyn=0.31, NAFLD=0.29",ai/models/fusion/v4_multimodal_fusion_payload.joblib,VERIFIED,Inspected from thresholds dictionary in fusion payload
+Guidelines,"5 Official Guidelines, 20 Chunks",services/medical_rag/data/source_manifest.json & vector_db/,VERIFIED,"ADA 2024, WHO 2023, AASLD 2023, AHA 2022, ISAPP 2023 (20 chunks)"
+Test Suite,172 / 172 Tests Passed (100% OK),unittest discovery execution,VERIFIED,Ran 172 tests in 101.311s with 0 failures and 0 errors
+Deployment,Zero-Cost Multi-Cloud: Vercel + Render + Neon,"render.yaml, vercel.json, live URLs",VERIFIED,Live deployed at $0.00/month operating cost
+Security,Role-Based Access Control + IDOR Defense,app/backend/api/ & auth.py,VERIFIED,Server-side JWT ownership verification returning HTTP 403 on cross-tenant access

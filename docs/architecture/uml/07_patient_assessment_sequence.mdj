@@ -1,0 +1,257 @@
+{
+  "_type": "Project",
+  "_id": "AAAACF40DDD558954C178E57",
+  "name": "TeleMed AI Platform \u2014 Complete Patient Assessment Sequence Diagram",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAA07C250236637417A9B7E",
+      "_parent": {
+        "$ref": "AAAACF40DDD558954C178E57"
+      },
+      "name": "Complete Patient Assessment Sequence Diagram Model",
+      "ownedElements": [
+        {
+          "_type": "UMLSequenceDiagram",
+          "_id": "AAAADC373A03A6154ED6B10E",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "Complete Patient Assessment Sequence Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAA963B02D110C423EA521",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAA00E625A3A43C44B3802E"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA1F8D1CE40E65479488CE",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAA45A83C0D9AFE45BCAF35"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAE012D72753C44A3D9A7D",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAAE5A6975914674D6BA13A"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAFA2C105F60A84B86B4AE",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAA032A93CD64874110AF70"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA2994C155325B44E8BF8A",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAA0B8DC1A2EB83452B805A"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA418388F95D7A4CA8B381",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAACB78D9D7DC53478DB80E"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA32E0AA39293C4FEC94EA",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAAC865C3AE462D4F9D9B05"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA56FE21D92764438C9FCA",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAA18D6A2196A484A07BD3C"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA38094ACC9D8641D89AA2",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAA9ED9E2DA66A247A68A81"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA12A5E2284DDB4D85BCA7",
+              "_parent": {
+                "$ref": "AAAADC373A03A6154ED6B10E"
+              },
+              "model": {
+                "$ref": "AAAADE717D48F1F742628200"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA00E625A3A43C44B3802E",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "1. Patient Interface (IntakePage.jsx)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA45A83C0D9AFE45BCAF35",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "2. FastAPI Intake Router (intake_routes.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAE5A6975914674D6BA13A",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "3. Security & Auth Middleware (security.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA032A93CD64874110AF70",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "4. Multimodal Intake Engine (intake_service.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA0B8DC1A2EB83452B805A",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "5. Feature Normalizer & Preprocessing"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAACB78D9D7DC53478DB80E",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "6. V4 Multi-Expert Models (v3_inference_engine.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAC865C3AE462D4F9D9B05",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "7. Stacking Fusion Router (v3_scientific_router.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA18D6A2196A484A07BD3C",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "8. TreeSHAP XAI Engine (xai_service.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA9ED9E2DA66A247A68A81",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "9. Medical RAG Engine (rag_service_wrapper.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAADE717D48F1F742628200",
+          "_parent": {
+            "$ref": "AAAA07C250236637417A9B7E"
+          },
+          "name": "10. PostgreSQL Persistence Store (health_records)"
+        }
+      ]
+    }
+  ]
+}

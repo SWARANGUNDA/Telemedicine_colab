@@ -1,0 +1,110 @@
+{
+  "macro_f1": 0.7758,
+  "micro_f1": 0.8667,
+  "hamming_loss": 0.0667,
+  "mean_brier": 0.0426,
+  "per_disease": {
+    "Type2_Diabetes": {
+      "f1": 0.9945,
+      "precision": 0.9973,
+      "recall": 0.9918,
+      "roc_auc": 0.9991,
+      "pr_auc": 0.9991,
+      "brier_score": 0.0036,
+      "confusion_matrix": [
+        [
+          1895,
+          3
+        ],
+        [
+          9,
+          1093
+        ]
+      ]
+    },
+    "Prediabetes": {
+      "f1": 0.9878,
+      "precision": 0.9883,
+      "recall": 0.9872,
+      "roc_auc": 0.9974,
+      "pr_auc": 0.9968,
+      "brier_score": 0.0074,
+      "confusion_matrix": [
+        [
+          2049,
+          11
+        ],
+        [
+          12,
+          928
+        ]
+      ]
+    },
+    "High_Adiposity_Risk": {
+      "f1": 0.8488,
+      "precision": 0.8244,
+      "recall": 0.8747,
+      "roc_auc": 0.9666,
+      "pr_auc": 0.933,
+      "brier_score": 0.0683,
+      "confusion_matrix": [
+        [
+          1854,
+          180
+        ],
+        [
+          121,
+          845
+        ]
+      ]
+    },
+    "Metabolic_Syndrome": {
+      "f1": 0.4604,
+      "precision": 0.3951,
+      "recall": 0.5517,
+      "roc_auc": 0.8775,
+      "pr_auc": 0.4396,
+      "brier_score": 0.0551,
+      "confusion_matrix": [
+        [
+          2572,
+          196
+        ],
+        [
+          104,
+          128
+        ]
+      ]
+    },
+    "NAFLD": {
+      "f1": 0.5876,
+      "precision": 0.5544,
+      "recall": 0.625,
+      "roc_auc": 0.9005,
+      "pr_auc": 0.6047,
+      "brier_score": 0.0787,
+      "confusion_matrix": [
+        [
+          2375,
+          209
+        ],
+        [
+          156,
+          260
+        ]
+      ]
+    }
+  },
+  "bootstrap_95_ci_macro_f1": [
+    0.763,
+    0.7897
+  ],
+  "selected_architecture": "CatBoost",
+  "tuned_thresholds": {
+    "Type2_Diabetes": 0.22,
+    "Prediabetes": 0.1,
+    "High_Adiposity_Risk": 0.34,
+    "Metabolic_Syndrome": 0.23,
+    "NAFLD": 0.31
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "per_disease": {
+    "Type2_Diabetes": {
+      "roc_auc": 0.9974,
+      "pr_auc": 0.9915,
+      "precision": 0.975,
+      "recall_sensitivity": 0.9341,
+      "specificity": 0.9952,
+      "f1_score": 0.9541,
+      "brier_score": 0.0121,
+      "threshold": 0.52,
+      "confusion_matrix": {
+        "TN": 2487,
+        "FP": 12,
+        "FN": 33,
+        "TP": 468
+      }
+    },
+    "Prediabetes": {
+      "roc_auc": 0.9788,
+      "pr_auc": 0.927,
+      "precision": 0.888,
+      "recall_sensitivity": 0.8182,
+      "specificity": 0.9757,
+      "f1_score": 0.8517,
+      "brier_score": 0.0443,
+      "threshold": 0.46,
+      "confusion_matrix": {
+        "TN": 2369,
+        "FP": 59,
+        "FN": 104,
+        "TP": 468
+      }
+    },
+    "Obesity": {
+      "roc_auc": 0.9605,
+      "pr_auc": 0.9193,
+      "precision": 0.8619,
+      "recall_sensitivity": 0.8104,
+      "specificity": 0.9552,
+      "f1_score": 0.8353,
+      "brier_score": 0.0617,
+      "threshold": 0.45,
+      "confusion_matrix": {
+        "TN": 2130,
+        "FP": 100,
+        "FN": 146,
+        "TP": 624
+      }
+    },
+    "Metabolic_Syndrome": {
+      "roc_auc": 0.9455,
+      "pr_auc": 0.834,
+      "precision": 0.764,
+      "recall_sensitivity": 0.745,
+      "specificity": 0.942,
+      "f1_score": 0.7544,
+      "brier_score": 0.0733,
+      "threshold": 0.37,
+      "confusion_matrix": {
+        "TN": 2257,
+        "FP": 139,
+        "FN": 154,
+        "TP": 450
+      }
+    },
+    "NAFLD": {
+      "roc_auc": 0.9316,
+      "pr_auc": 0.7678,
+      "precision": 0.7742,
+      "recall_sensitivity": 0.699,
+      "specificity": 0.9675,
+      "f1_score": 0.7347,
+      "brier_score": 0.0562,
+      "threshold": 0.37,
+      "confusion_matrix": {
+        "TN": 2504,
+        "FP": 84,
+        "FN": 124,
+        "TP": 288
+      }
+    }
+  },
+  "summary": {
+    "macro_f1": 0.826,
+    "micro_f1": 0.828,
+    "hamming_loss": 0.0637,
+    "mean_brier_score": 0.0495
+  }
+}

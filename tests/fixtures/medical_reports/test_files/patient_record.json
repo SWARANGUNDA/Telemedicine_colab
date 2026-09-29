@@ -1,0 +1,19 @@
+{
+  "Patient_ID": "P_REAL_001",
+  "Age": 52,
+  "Gender": "Male",
+  "Height": 172,
+  "Weight": 84,
+  "BMI": 28.4,
+  "Fasting_Blood_Glucose": 128,
+  "HbA1c": 6.6,
+  "Systolic_BP": 138,
+  "Diastolic_BP": 88,
+  "Triglycerides": 195,
+  "HDL": 42,
+  "LDL": 135,
+  "Average_Daily_Steps": 7200,
+  "Active_Minutes": 25,
+  "CGM_Average_Glucose": 132,
+  "CGM_Time_In_Range": 75.5
+}

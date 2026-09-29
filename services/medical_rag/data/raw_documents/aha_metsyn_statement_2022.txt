@@ -1,0 +1,16 @@
+# AHA/NHLBI Diagnosis and Management of Metabolic Syndrome
+Organization: American Heart Association / NHLBI
+Publication Date: 2022-09-10
+Document Version: 2022.1
+Evidence Type: CLINICAL_GUIDELINE
+
+## Section 1: ATP III Harmonized Diagnostic Criteria
+Metabolic Syndrome is diagnosed when 3 or more of the following 5 criteria are present:
+1. Elevated waist circumference (>= 102 cm men, >= 88 cm women)
+2. Elevated triglycerides (>= 150 mg/dL)
+3. Reduced HDL cholesterol (< 40 mg/dL men, < 50 mg/dL women)
+4. Elevated blood pressure (Systolic >= 130 mmHg or Diastolic >= 85 mmHg)
+5. Elevated fasting glucose (>= 100 mg/dL)
+
+## Section 2: Clinical Management Strategy
+First-line therapy focuses on lifestyle changes targeting atherogenic dyslipidemia, hypertension, and insulin resistance. Reducing saturated fats (< 7% of daily calories) and increasing physical activity reduces inflammatory markers (CRP, ALT).

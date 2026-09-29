@@ -1,0 +1,28 @@
+{
+  "phase": "Phase 4 - Multimodal Fusion Engine",
+  "version": "v1",
+  "saved_timestamp": "2026-07-26T19:58:59.045226",
+  "target_diseases": [
+    "Type2_Diabetes",
+    "Prediabetes",
+    "Obesity",
+    "Metabolic_Syndrome",
+    "NAFLD"
+  ],
+  "pathways": [
+    "C",
+    "W",
+    "G",
+    "C+W",
+    "C+G",
+    "W+G",
+    "C+W+G"
+  ],
+  "expert_versions": {
+    "clinical": "v1",
+    "wearable": "v1",
+    "gut": "v1"
+  },
+  "status": "FROZEN",
+  "disclaimer": "Research prototype trained on synthetic data. Not for clinical use."
+}

@@ -1,0 +1,234 @@
+{
+  "_type": "Project",
+  "_id": "AAAA2BCBA18F1DFE48F7B469",
+  "name": "TeleMed AI Platform \u2014 React Frontend Component & Routing Architecture",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAA5FDDFEEC370F4FEEA743",
+      "_parent": {
+        "$ref": "AAAA2BCBA18F1DFE48F7B469"
+      },
+      "name": "React Frontend Component & Routing Architecture Model",
+      "ownedElements": [
+        {
+          "_type": "UMLComponentDiagram",
+          "_id": "AAAACA83743722EC4642B8FC",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "React Frontend Component & Routing Architecture",
+          "ownedViews": [
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA6751E54274F64115871C",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAA34A48183E64E45709EDB"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAF38B989C745F477AAB72",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAA4584F759F81B4E3FBAF0"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA6BBD41F2CDE242C3B116",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAA2ADD4D285EE048BFA4AF"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAEAC4647CF2554CE6A921",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAAA2CE99529CA94D31BF27"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA57BA36F725D948E8BF53",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAAA1E23C9F6D4F4FF89790"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAF0D9FDBAC22E432BADA2",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAA7305B5DE53794BA3B039"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAFA5404CC36DD4E0580C5",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAA1C66B34B77C5410189DF"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA794FCC91CCE343D7B89C",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAA6794260989BB4B0AAB07"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA8B997FB9E768422E9528",
+              "_parent": {
+                "$ref": "AAAACA83743722EC4642B8FC"
+              },
+              "model": {
+                "$ref": "AAAA9CB168D83E204D5D8037"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA34A48183E64E45709EDB",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "App.jsx (Router & Provider Container)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA4584F759F81B4E3FBAF0",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "AuthContext (JWT & User State)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA2ADD4D285EE048BFA4AF",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "IntakePage.jsx (Multimodal Entry)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAA2CE99529CA94D31BF27",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "DashboardPage.jsx (Risk Gauge & Summary)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAA1E23C9F6D4F4FF89790",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "ReportPage.jsx (RAG Report & PDF View)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA7305B5DE53794BA3B039",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "XAIPage.jsx (TreeSHAP Bar & Beeswarm Plots)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA1C66B34B77C5410189DF",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "ConsultationWorkspacePage.jsx (Doctor Workspace)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA6794260989BB4B0AAB07",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "AdminDashboardPage.jsx (Audit & System Health)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA9CB168D83E204D5D8037",
+          "_parent": {
+            "$ref": "AAAA5FDDFEEC370F4FEEA743"
+          },
+          "name": "apiClient.js (Axios Auth Interceptor Client)"
+        }
+      ]
+    }
+  ]
+}

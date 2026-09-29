@@ -1,0 +1,63 @@
+modality,feature,disease_count,diseases_list,avg_shap_rank,avg_mean_abs_shap
+Wearable,Exercise_Frequency_Days,5,"High_Adiposity_Risk, Metabolic_Syndrome, NAFLD, Prediabetes, Type2_Diabetes",5.4,0.009295
+Clinical,LDL,4,"Metabolic_Syndrome, NAFLD, Prediabetes, Type2_Diabetes",2.75,0.059298
+Clinical,Waist_Circumference,4,"High_Adiposity_Risk, Metabolic_Syndrome, NAFLD, Type2_Diabetes",3.5,0.343744
+Clinical,ALT,4,"High_Adiposity_Risk, Metabolic_Syndrome, NAFLD, Prediabetes",4.75,0.215959
+Clinical,HbA1c,4,"High_Adiposity_Risk, Metabolic_Syndrome, NAFLD, Type2_Diabetes",5.25,0.201999
+Wearable,Resting_Heart_Rate,4,"High_Adiposity_Risk, Metabolic_Syndrome, Prediabetes, Type2_Diabetes",6.0,0.126079
+Wearable,Sleep_Duration_Hours,4,"High_Adiposity_Risk, Metabolic_Syndrome, Prediabetes, Type2_Diabetes",6.0,0.071922
+Clinical,AST,4,"High_Adiposity_Risk, Metabolic_Syndrome, Prediabetes, Type2_Diabetes",6.25,0.050592
+Clinical,Triglycerides,4,"High_Adiposity_Risk, NAFLD, Prediabetes, Type2_Diabetes",6.25,0.111995
+Wearable,Sedentary_Time_Minutes,4,"High_Adiposity_Risk, Metabolic_Syndrome, NAFLD, Type2_Diabetes",6.25,0.15647
+Wearable,Active_Minutes,4,"High_Adiposity_Risk, NAFLD, Prediabetes, Type2_Diabetes",6.75,0.038357
+Wearable,CGM_Time_Below_Range,4,"Metabolic_Syndrome, NAFLD, Prediabetes, Type2_Diabetes",7.0,0.007374
+Gut,Alistipes_finegoldii,4,"High_Adiposity_Risk, Metabolic_Syndrome, NAFLD, Type2_Diabetes",7.5,0.003754
+Clinical,Age,4,"High_Adiposity_Risk, Metabolic_Syndrome, Prediabetes, Type2_Diabetes",7.75,0.065393
+Wearable,Activity_Energy_Expenditure,3,"High_Adiposity_Risk, Metabolic_Syndrome, Type2_Diabetes",1.67,0.088809
+Gut,Ruminococcus_bromii,3,"High_Adiposity_Risk, Prediabetes, Type2_Diabetes",3.0,0.016195
+Gut,Eubacterium_hallii,3,"High_Adiposity_Risk, NAFLD, Prediabetes",3.33,0.007791
+Clinical,Fasting_Blood_Glucose,3,"Metabolic_Syndrome, NAFLD, Type2_Diabetes",4.0,0.05217
+Wearable,Sleep_Efficiency_Score,3,"NAFLD, Prediabetes, Type2_Diabetes",4.0,0.083027
+Wearable,Average_Daily_Steps,3,"High_Adiposity_Risk, Metabolic_Syndrome, Type2_Diabetes",4.67,0.016419
+Wearable,Autonomic_Stress_Score,3,"High_Adiposity_Risk, Metabolic_Syndrome, NAFLD",5.0,0.049805
+Wearable,Heart_Rate_Variability_RMSSD,3,"High_Adiposity_Risk, NAFLD, Prediabetes",5.33,0.170144
+Wearable,CGM_Average_Glucose,3,"High_Adiposity_Risk, NAFLD, Prediabetes",5.67,0.144219
+Clinical,Gender,3,"High_Adiposity_Risk, Prediabetes, Type2_Diabetes",6.0,0.008747
+Wearable,CGM_Glucose_CV,3,"Metabolic_Syndrome, Prediabetes, Type2_Diabetes",6.0,0.246868
+Clinical,Height,3,"Metabolic_Syndrome, NAFLD, Prediabetes",6.33,0.023646
+Wearable,CGM_Time_In_Range,3,"Metabolic_Syndrome, NAFLD, Prediabetes",7.0,0.069023
+Clinical,Diastolic_BP,3,"High_Adiposity_Risk, NAFLD, Prediabetes",7.33,0.017219
+Gut,Phascolarctobacterium_faecium,2,"High_Adiposity_Risk, Metabolic_Syndrome",3.0,0.002028
+Gut,Faecalibacterium_prausnitzii,2,"High_Adiposity_Risk, Prediabetes",4.5,0.056747
+Gut,Klebsiella_pneumoniae,2,"High_Adiposity_Risk, Type2_Diabetes",4.5,0.01438
+Gut,Anaerostipes_caccae,2,"Metabolic_Syndrome, NAFLD",5.0,0.001608
+Gut,Escherichia_coli,2,"NAFLD, Prediabetes",5.0,0.034148
+Gut,Veillonella_parvula,2,"Metabolic_Syndrome, NAFLD",5.0,0.012662
+Clinical,Systolic_BP,2,"Metabolic_Syndrome, Prediabetes",5.5,0.072836
+Gut,Lactobacillus_rhamnosus,2,"NAFLD, Prediabetes",5.5,0.001588
+Gut,Parabacteroides_distasonis,2,"NAFLD, Type2_Diabetes",5.5,0.00243
+Gut,SCFA_Producer_Index,2,"Metabolic_Syndrome, Prediabetes",5.5,0.02493
+Clinical,BMI,2,"High_Adiposity_Risk, Type2_Diabetes",6.0,0.620456
+Clinical,Family_History_Hypertension,2,"High_Adiposity_Risk, Prediabetes",6.0,0.009086
+Clinical,HDL,2,"NAFLD, Type2_Diabetes",6.5,0.199533
+Gut,Coprococcus_eutactus,2,"High_Adiposity_Risk, NAFLD",6.5,0.006664
+Gut,Shannon_Diversity,2,"High_Adiposity_Risk, Type2_Diabetes",7.0,0.023728
+Gut,Bacteroides_uniformis,2,"Prediabetes, Type2_Diabetes",8.0,0.017507
+Gut,Bifidobacterium_adolescentis,2,"Prediabetes, Type2_Diabetes",8.0,0.006571
+Gut,Fusobacterium_nucleatum,1,Metabolic_Syndrome,1.0,0.01903
+Clinical,Family_History_CVD,1,NAFLD,2.0,0.003352
+Gut,Blautia_wexlerae,1,NAFLD,2.0,0.003941
+Wearable,CGM_Time_Above_Range,1,NAFLD,2.0,0.118723
+Gut,Pielou_Evenness,1,Type2_Diabetes,3.0,0.002095
+Gut,Prevotella_copri,1,High_Adiposity_Risk,3.0,0.034718
+Gut,Methanobrevibacter_smithii,1,Type2_Diabetes,4.0,0.001207
+Gut,Streptococcus_thermophilus,1,Metabolic_Syndrome,4.0,0.010334
+Gut,Barnesiella_intestinihominis,1,NAFLD,5.0,0.00027
+Gut,Bilophila_wadsworthia,1,Prediabetes,5.0,0.011081
+Gut,Enterococcus_faecalis,1,Type2_Diabetes,6.0,0.005351
+Clinical,Weight,1,Metabolic_Syndrome,8.0,0.163568
+Gut,Alistipes_putredinis,1,Metabolic_Syndrome,8.0,0.009888
+Gut,Holdemanella_biformis,1,Metabolic_Syndrome,9.0,0.013087
+Gut,Bacteroides_fragilis,1,High_Adiposity_Risk,10.0,0.019702
+Gut,Bacteroides_vulgatus,1,Prediabetes,10.0,0.076835
+Gut,Dialister_invisus,1,Metabolic_Syndrome,10.0,0.008762

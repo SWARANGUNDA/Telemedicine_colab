@@ -1,0 +1,18 @@
+PATIENT CLINICAL LAB REPORT
+Age: 55 years
+Gender: Male
+Height: 175 cm
+Weight: 95 kg
+BMI: 31.0
+Waist Circumference: 102 cm
+Systolic BP: 145 mmHg
+Diastolic BP: 92 mmHg
+Fasting Blood Glucose: 130 mg/dL
+HbA1c: 7.2 %
+Triglycerides: 220 mg/dL
+ALT: 55 U/L
+AST: 42 U/L
+Family History Diabetes: 1
+Family History Obesity: 1
+Family History Hypertension: 1
+Family History NAFLD: 0

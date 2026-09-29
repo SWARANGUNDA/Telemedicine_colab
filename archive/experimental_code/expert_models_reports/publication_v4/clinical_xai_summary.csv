@@ -1,0 +1,91 @@
+modality,disease,feature,feature_rank,mean_abs_shap,median_abs_shap,pct_contribution,directional_association
+Clinical,High_Adiposity_Risk,Waist_Circumference,1,0.309089,0.310063,12.62,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,ALT,2,0.072606,0.072563,2.96,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,BMI,3,1.220588,1.224106,49.83,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Diastolic_BP,4,0.001849,0.002045,0.08,Higher value associated with higher model-predicted risk
+Clinical,High_Adiposity_Risk,Age,5,0.08057,0.080691,3.29,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Gender,6,0.004829,0.00521,0.2,Higher value associated with higher model-predicted risk
+Clinical,High_Adiposity_Risk,Triglycerides,7,0.023143,0.023627,0.94,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Family_History_Hypertension,8,0.005069,0.003463,0.21,Higher value associated with lower model-predicted risk
+Clinical,High_Adiposity_Risk,AST,9,0.070955,0.073486,2.9,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,HbA1c,10,0.068323,0.067823,2.79,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,HDL,11,0.184767,0.184328,7.54,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Height,12,0.102317,0.104247,4.18,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Weight,13,0.071478,0.078302,2.92,Higher value associated with higher model-predicted risk
+Clinical,High_Adiposity_Risk,Systolic_BP,14,0.045573,0.045495,1.86,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Fasting_Blood_Glucose,15,0.0033,0.003204,0.13,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Family_History_Diabetes,16,0.001865,0.001325,0.08,Higher value associated with lower model-predicted risk
+Clinical,High_Adiposity_Risk,LDL,17,0.18215,0.182167,7.44,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Family_History_CVD,18,0.001147,0.000836,0.05,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,HbA1c,1,0.110503,0.098115,6.7,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,ALT,2,0.052897,0.044243,3.21,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,LDL,3,0.087131,0.076662,5.28,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Height,4,0.029211,0.028116,1.77,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Fasting_Blood_Glucose,5,0.016666,0.014336,1.01,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Age,6,0.056673,0.057826,3.44,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Waist_Circumference,7,0.301655,0.287433,18.29,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Weight,8,0.163568,0.154714,9.92,Higher value associated with lower model-predicted risk
+Clinical,Metabolic_Syndrome,AST,9,0.051689,0.045604,3.13,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Systolic_BP,10,0.133825,0.120262,8.11,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Gender,11,0.017278,0.017006,1.05,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,BMI,12,0.057285,0.057429,3.47,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Diastolic_BP,13,0.154631,0.140743,9.37,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Triglycerides,14,0.238699,0.217961,14.47,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,HDL,15,0.143761,0.127365,8.72,Higher value associated with lower model-predicted risk
+Clinical,Metabolic_Syndrome,Family_History_Diabetes,16,0.01569,0.010776,0.95,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Family_History_Hypertension,17,0.01559,0.011635,0.95,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Family_History_CVD,18,0.002705,0.001743,0.16,Higher value associated with higher model-predicted risk
+Clinical,NAFLD,LDL,1,0.068139,0.066562,2.5,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Family_History_CVD,2,0.003352,0.002792,0.12,Higher value associated with lower model-predicted risk
+Clinical,NAFLD,HbA1c,3,0.062996,0.061032,2.31,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Fasting_Blood_Glucose,4,0.010628,0.010586,0.39,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Waist_Circumference,5,0.439113,0.438983,16.13,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Height,6,0.019892,0.019854,0.73,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Triglycerides,7,0.413125,0.40955,15.18,Non-linear / context-dependent model risk association
+Clinical,NAFLD,ALT,8,0.671986,0.672712,24.69,Non-linear / context-dependent model risk association
+Clinical,NAFLD,HDL,9,0.260599,0.260497,9.57,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Diastolic_BP,10,0.005208,0.004918,0.19,Higher value associated with lower model-predicted risk
+Clinical,NAFLD,Weight,11,0.028054,0.028184,1.03,Non-linear / context-dependent model risk association
+Clinical,NAFLD,BMI,12,0.099486,0.099285,3.66,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Systolic_BP,13,0.011734,0.014026,0.43,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Age,14,0.006174,0.005361,0.23,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Gender,15,0.0,0.0,0.0,Non-linear / context-dependent model risk association
+Clinical,NAFLD,AST,16,0.616661,0.617666,22.66,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Family_History_Hypertension,17,0.000654,0.000417,0.02,Higher value associated with higher model-predicted risk
+Clinical,NAFLD,Family_History_Diabetes,18,0.004097,0.002492,0.15,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Systolic_BP,1,0.011847,0.010646,0.85,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,LDL,2,0.033229,0.029236,2.37,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Triglycerides,3,0.007298,0.006664,0.52,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Family_History_Hypertension,4,0.013104,0.009779,0.93,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,AST,5,0.063204,0.055764,4.51,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,Gender,6,0.013053,0.012847,0.93,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,ALT,7,0.066349,0.055494,4.73,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,Diastolic_BP,8,0.044599,0.040593,3.18,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Height,9,0.021835,0.021016,1.56,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Age,10,0.058089,0.059271,4.14,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,Family_History_Diabetes,11,0.041957,0.028817,2.99,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,Weight,12,0.004564,0.004317,0.33,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,HbA1c,13,0.479296,0.425564,34.2,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,BMI,14,0.010486,0.010512,0.75,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,Waist_Circumference,15,0.260367,0.248091,18.58,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,Fasting_Blood_Glucose,16,0.141048,0.121325,10.06,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,HDL,17,0.129197,0.114462,9.22,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Family_History_CVD,18,0.002134,0.001375,0.15,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,Waist_Circumference,1,0.32512,0.309791,19.56,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,AST,2,0.016518,0.014574,0.99,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,Fasting_Blood_Glucose,3,0.129215,0.111147,7.77,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,HDL,4,0.138467,0.122675,8.33,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,LDL,5,0.048693,0.042842,2.93,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,Gender,6,0.00836,0.008228,0.5,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,HbA1c,7,0.566173,0.502701,34.06,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Triglycerides,8,0.004415,0.004031,0.27,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,BMI,9,0.020325,0.020376,1.22,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Age,10,0.066241,0.067589,3.99,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Family_History_Diabetes,11,0.041637,0.028597,2.51,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Weight,12,0.021989,0.020799,1.32,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Systolic_BP,13,0.039567,0.035557,2.38,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,Height,14,0.041122,0.03958,2.47,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,ALT,15,0.151754,0.126927,9.13,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Diastolic_BP,16,0.036445,0.033172,2.19,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,Family_History_CVD,17,0.003082,0.001986,0.19,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Family_History_Hypertension,18,0.002997,0.002237,0.18,Higher value associated with higher model-predicted risk

@@ -1,0 +1,49 @@
+{
+  "nafld_breakdown": {
+    "prevalence": {
+      "overall": 0.52765,
+      "train": 0.525,
+      "val": 0.5336666666666666,
+      "test": 0.534
+    },
+    "by_age": {
+      "18-30": 0.3980049875311721,
+      "31-45": 0.47351551956815113,
+      "46-60": 0.57,
+      "61-85": 0.6746592629984857
+    },
+    "by_bmi": {
+      "Underweight": 0.272196261682243,
+      "Normal": 0.40475020475020473,
+      "Overweight": 0.5407794294897549,
+      "Obese": 0.6839554917444365
+    },
+    "by_sex": {
+      "Female": 0.49411299099633915,
+      "Male": 0.5619124633579299
+    },
+    "otherwise_healthy_count": 6887,
+    "nafld_prev_in_otherwise_healthy": 0.4085959053288805
+  },
+  "controlled_t2d_audit": {
+    "full_cohort_t2d_count": 6506,
+    "full_cohort_controlled_t2d_count": 336,
+    "controlled_t2d_pct_of_t2d_full_cohort": 5.16,
+    "controlled_t2d_pct_of_total_20k_population": 1.68,
+    "test_cohort_t2d_count": 1005,
+    "test_cohort_controlled_t2d_count": 60,
+    "controlled_t2d_pct_of_t2d_test_cohort": 5.97,
+    "controlled_t2d_pct_of_total_3k_test_population": 2.0
+  },
+  "prediabetes_subgroups_test": {
+    "predia_test_total": 733,
+    "concordant_count": 507,
+    "concordant_pct": 69.17,
+    "fpg_discordant_count": 54,
+    "fpg_discordant_pct": 7.37,
+    "hba1c_discordant_count": 67,
+    "hba1c_discordant_pct": 9.14,
+    "neither_in_range_count": 25,
+    "neither_in_range_pct": 3.41
+  }
+}

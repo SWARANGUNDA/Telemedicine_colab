@@ -1,0 +1,188 @@
+{
+  "_type": "Project",
+  "_id": "AAAAA533304FB15B4A6D8A99",
+  "name": "TeleMed AI Platform \u2014 Explainable AI (TreeSHAP) Sequence Diagram",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAC9A65935B1A64F4191A5",
+      "_parent": {
+        "$ref": "AAAAA533304FB15B4A6D8A99"
+      },
+      "name": "Explainable AI (TreeSHAP) Sequence Diagram Model",
+      "ownedElements": [
+        {
+          "_type": "UMLSequenceDiagram",
+          "_id": "AAAACDA61D2C46774A26BB2F",
+          "_parent": {
+            "$ref": "AAAAC9A65935B1A64F4191A5"
+          },
+          "name": "Explainable AI (TreeSHAP) Sequence Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA1CF55CEC05E644EDA7F3",
+              "_parent": {
+                "$ref": "AAAACDA61D2C46774A26BB2F"
+              },
+              "model": {
+                "$ref": "AAAABB2F0D644F9046E5AE73"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA4FF63CF7060B4D83B82F",
+              "_parent": {
+                "$ref": "AAAACDA61D2C46774A26BB2F"
+              },
+              "model": {
+                "$ref": "AAAAA9E9361657704372B48E"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAEF7C93AB30974CFE8CCE",
+              "_parent": {
+                "$ref": "AAAACDA61D2C46774A26BB2F"
+              },
+              "model": {
+                "$ref": "AAAA10B79557439F42A99D1B"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA5D84CAD75BA14D2895F5",
+              "_parent": {
+                "$ref": "AAAACDA61D2C46774A26BB2F"
+              },
+              "model": {
+                "$ref": "AAAA2355B8CC602B4F55BC16"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAB9B02389065142B68BC5",
+              "_parent": {
+                "$ref": "AAAACDA61D2C46774A26BB2F"
+              },
+              "model": {
+                "$ref": "AAAAAEF591BA79ED4319B331"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA7E46605A4A67433B86C2",
+              "_parent": {
+                "$ref": "AAAACDA61D2C46774A26BB2F"
+              },
+              "model": {
+                "$ref": "AAAAC2DC194624EC44319F21"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAD7DA647748284F31AB1E",
+              "_parent": {
+                "$ref": "AAAACDA61D2C46774A26BB2F"
+              },
+              "model": {
+                "$ref": "AAAA8E6D2AFE707C4703A1A9"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAABB2F0D644F9046E5AE73",
+          "_parent": {
+            "$ref": "AAAAC9A65935B1A64F4191A5"
+          },
+          "name": "User XAI View (XAIPage.jsx)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAA9E9361657704372B48E",
+          "_parent": {
+            "$ref": "AAAAC9A65935B1A64F4191A5"
+          },
+          "name": "XAI Router (xai_routes.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA10B79557439F42A99D1B",
+          "_parent": {
+            "$ref": "AAAAC9A65935B1A64F4191A5"
+          },
+          "name": "PostgreSQL Health Record Store"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA2355B8CC602B4F55BC16",
+          "_parent": {
+            "$ref": "AAAAC9A65935B1A64F4191A5"
+          },
+          "name": "XAI Service (xai_service.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAEF591BA79ED4319B331",
+          "_parent": {
+            "$ref": "AAAAC9A65935B1A64F4191A5"
+          },
+          "name": "TreeSHAP Explainer Engine"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAC2DC194624EC44319F21",
+          "_parent": {
+            "$ref": "AAAAC9A65935B1A64F4191A5"
+          },
+          "name": "Global & Directional Importance Calculator"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA8E6D2AFE707C4703A1A9",
+          "_parent": {
+            "$ref": "AAAAC9A65935B1A64F4191A5"
+          },
+          "name": "XAI Snapshot Cache Writer"
+        }
+      ]
+    }
+  ]
+}

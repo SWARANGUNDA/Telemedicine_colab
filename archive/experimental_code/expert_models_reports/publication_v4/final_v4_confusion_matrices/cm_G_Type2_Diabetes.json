@@ -1,0 +1,8 @@
+{
+  "disease": "Type2_Diabetes",
+  "pathway": "G",
+  "tn": 4839,
+  "fp": 2289,
+  "fn": 4814,
+  "tp": 3058
+}

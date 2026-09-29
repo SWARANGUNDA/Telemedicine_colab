@@ -1,0 +1,319 @@
+{
+  "Section_A_Integrity": {
+    "verdict": "PASS",
+    "file_dimensions": {
+      "clinical_v3": [
+        20000,
+        19
+      ],
+      "wearable_standard_v3": [
+        20000,
+        11
+      ],
+      "wearable_cgm_v3": [
+        20000,
+        6
+      ],
+      "gut_v3": [
+        20000,
+        31
+      ],
+      "labels_v3": [
+        20000,
+        6
+      ],
+      "split_manifest_v3": [
+        20000,
+        2
+      ]
+    },
+    "duplicate_patient_ids": 0,
+    "cross_file_id_alignment": true,
+    "split_counts": {
+      "Train": 14000,
+      "Val": 3000,
+      "Test": 3000
+    },
+    "impossible_values_count": 0,
+    "nan_percentages": {
+      "clinical": {
+        "Patient_ID": 0.0,
+        "Age": 0.0,
+        "Gender": 0.0,
+        "Height": 0.0,
+        "Weight": 0.0,
+        "BMI": 0.0,
+        "Waist_Circumference": 0.0,
+        "Systolic_BP": 0.0,
+        "Diastolic_BP": 0.0,
+        "Fasting_Blood_Glucose": 0.0,
+        "HbA1c": 0.0,
+        "Triglycerides": 0.0,
+        "HDL": 0.0,
+        "LDL": 0.0,
+        "ALT": 0.1711,
+        "AST": 0.1711,
+        "Family_History_Diabetes": 0.0,
+        "Family_History_Hypertension": 0.0,
+        "Family_History_CVD": 0.0
+      },
+      "wear_std": {
+        "Patient_ID": 0.0,
+        "Average_Daily_Steps": 0.0468,
+        "Active_Minutes": 0.0468,
+        "Sedentary_Time_Minutes": 0.0468,
+        "Resting_Heart_Rate": 0.0468,
+        "Heart_Rate_Variability_RMSSD": 0.2275,
+        "Sleep_Duration_Hours": 0.0468,
+        "Sleep_Efficiency_Score": 0.2275,
+        "Autonomic_Stress_Score": 0.0468,
+        "Activity_Energy_Expenditure": 0.0468,
+        "Exercise_Frequency_Days": 0.0468
+      },
+      "wear_cgm": {
+        "Patient_ID": 0.0,
+        "CGM_Average_Glucose": 0.7907,
+        "CGM_Glucose_CV": 0.7907,
+        "CGM_Time_In_Range": 0.7907,
+        "CGM_Time_Above_Range": 0.7907,
+        "CGM_Time_Below_Range": 0.7907
+      },
+      "gut": {
+        "Patient_ID": 0.0,
+        "Akkermansia": 0.0982,
+        "Faecalibacterium": 0.0982,
+        "Roseburia": 0.0982,
+        "Bifidobacterium": 0.0982,
+        "Bacteroides": 0.0982,
+        "Prevotella": 0.0982,
+        "Ruminococcus": 0.0982,
+        "Blautia": 0.0982,
+        "Collinsella": 0.0982,
+        "Escherichia_Shigella": 0.0982,
+        "Coprococcus": 0.0982,
+        "Alistipes": 0.0982,
+        "Subdoligranulum": 0.0982,
+        "Enterococcus": 0.0982,
+        "Eubacterium": 0.0982,
+        "Parabacteroides": 0.0982,
+        "Lactobacillus": 0.0982,
+        "Klebsiella": 0.0982,
+        "Streptococcus": 0.0982,
+        "Eggerthella": 0.0982,
+        "Other_Taxa": 0.0982,
+        "Shannon_Diversity": 0.0982,
+        "Simpson_Diversity": 0.0982,
+        "Observed_Richness": 0.0982,
+        "Pielou_Evenness": 0.0982,
+        "SCFA_Producer_Index": 0.0982,
+        "Butyrate_Producer_Index": 0.0982,
+        "Barrier_Associated_Index": 0.0982,
+        "Inflammation_Associated_Index": 0.0982,
+        "Log_Firmicutes_Bacteroidetes_Ratio": 0.0982
+      }
+    }
+  },
+  "Section_B_Targets": {
+    "verdict": "PASS",
+    "prevalence": {
+      "Type2_Diabetes": 0.2808,
+      "Prediabetes": 0.2879,
+      "Obesity": 0.3053,
+      "Metabolic_Syndrome": 0.2888,
+      "NAFLD": 0.3695
+    },
+    "co_occurrence_matrix": {
+      "Type2_Diabetes": {
+        "Type2_Diabetes": 5616,
+        "Prediabetes": 0,
+        "Obesity": 2263,
+        "Metabolic_Syndrome": 2253,
+        "NAFLD": 2680
+      },
+      "Prediabetes": {
+        "Type2_Diabetes": 0,
+        "Prediabetes": 5758,
+        "Obesity": 1899,
+        "Metabolic_Syndrome": 1754,
+        "NAFLD": 2252
+      },
+      "Obesity": {
+        "Type2_Diabetes": 2263,
+        "Prediabetes": 1899,
+        "Obesity": 6106,
+        "Metabolic_Syndrome": 2428,
+        "NAFLD": 2732
+      },
+      "Metabolic_Syndrome": {
+        "Type2_Diabetes": 2253,
+        "Prediabetes": 1754,
+        "Obesity": 2428,
+        "Metabolic_Syndrome": 5776,
+        "NAFLD": 2859
+      },
+      "NAFLD": {
+        "Type2_Diabetes": 2680,
+        "Prediabetes": 2252,
+        "Obesity": 2732,
+        "Metabolic_Syndrome": 2859,
+        "NAFLD": 7391
+      }
+    },
+    "labels_per_patient_distribution": {
+      "1": 6074,
+      "2": 5517,
+      "0": 4240,
+      "3": 3137,
+      "4": 1032
+    },
+    "t2d_prediabetes_overlap_count": 0
+  },
+  "Section_C_Clinical": {
+    "verdict": "PASS",
+    "rule_disagreement_rates": {
+      "T2D_rule_disagreement": 0.3623,
+      "Obesity_rule_disagreement": 0.3597,
+      "MetS_rule_disagreement": 0.3593
+    }
+  },
+  "Section_D_Wearable": {
+    "verdict": "PASS",
+    "cgm_availability_rate": 0.2092,
+    "cgm_simplex_normalization_pass": true
+  },
+  "Section_E_Gut": {
+    "verdict": "PASS",
+    "microbiome_composition_sum_pass": true,
+    "sequencing_failure_rate": 0.0983,
+    "taxon_zero_prevalences": {
+      "Akkermansia": 0.036,
+      "Faecalibacterium": 0.0021,
+      "Roseburia": 0.0061,
+      "Bifidobacterium": 0.0013,
+      "Bacteroides": 0.0,
+      "Prevotella": 0.0,
+      "Ruminococcus": 0.0009,
+      "Blautia": 0.0,
+      "Collinsella": 0.0,
+      "Escherichia_Shigella": 0.0,
+      "Coprococcus": 0.0086,
+      "Alistipes": 0.001,
+      "Subdoligranulum": 0.0047,
+      "Enterococcus": 0.0003,
+      "Eubacterium": 0.0099,
+      "Parabacteroides": 0.0003,
+      "Lactobacillus": 0.0042,
+      "Klebsiella": 0.0016,
+      "Streptococcus": 0.0001,
+      "Eggerthella": 0.0018
+    }
+  },
+  "Section_F_CrossModal": {
+    "verdict": "PASS",
+    "high_cross_modal_correlations_gt_0.75": [],
+    "key_v3_2_3_couplings": {
+      "BMI_vs_Steps": -0.4846,
+      "Waist_vs_Steps": -0.4244,
+      "BMI_vs_Active_Minutes": -0.4814,
+      "FPG_vs_Steps": -0.217,
+      "HbA1c_vs_Steps": -0.2277,
+      "Steps_vs_HRV": 0.3551,
+      "Steps_vs_Resting_HR": -0.3316,
+      "Steps_vs_Sleep": 0.1733,
+      "FPG_vs_Akkermansia": -0.0995,
+      "Steps_vs_Akkermansia": -0.0058
+    },
+    "clinical_wearable_correlation_matrix": {
+      "BMI": {
+        "Average_Daily_Steps": -0.4846,
+        "Active_Minutes": -0.4814,
+        "Sedentary_Time_Minutes": 0.6586,
+        "Resting_Heart_Rate": 0.1862,
+        "Heart_Rate_Variability_RMSSD": -0.2093
+      },
+      "Waist_Circumference": {
+        "Average_Daily_Steps": -0.4244,
+        "Active_Minutes": -0.425,
+        "Sedentary_Time_Minutes": 0.5728,
+        "Resting_Heart_Rate": 0.2098,
+        "Heart_Rate_Variability_RMSSD": -0.2461
+      },
+      "Fasting_Blood_Glucose": {
+        "Average_Daily_Steps": -0.217,
+        "Active_Minutes": -0.2184,
+        "Sedentary_Time_Minutes": 0.2792,
+        "Resting_Heart_Rate": 0.1423,
+        "Heart_Rate_Variability_RMSSD": -0.1684
+      },
+      "HbA1c": {
+        "Average_Daily_Steps": -0.2277,
+        "Active_Minutes": -0.2323,
+        "Sedentary_Time_Minutes": 0.2965,
+        "Resting_Heart_Rate": 0.1487,
+        "Heart_Rate_Variability_RMSSD": -0.1779
+      },
+      "Systolic_BP": {
+        "Average_Daily_Steps": -0.1407,
+        "Active_Minutes": -0.1284,
+        "Sedentary_Time_Minutes": 0.1856,
+        "Resting_Heart_Rate": 0.1907,
+        "Heart_Rate_Variability_RMSSD": -0.1913
+      },
+      "Triglycerides": {
+        "Average_Daily_Steps": -0.1631,
+        "Active_Minutes": -0.1588,
+        "Sedentary_Time_Minutes": 0.2285,
+        "Resting_Heart_Rate": 0.0947,
+        "Heart_Rate_Variability_RMSSD": -0.1215
+      }
+    }
+  },
+  "Section_G_Leakage": {
+    "verdict": "PASS",
+    "suspicious_auc_count": 0,
+    "suspicious_aucs": [],
+    "single_feature_aucs": {
+      "Fasting_Blood_Glucose_vs_Type2_Diabetes": 0.8248,
+      "HbA1c_vs_Type2_Diabetes": 0.8368,
+      "BMI_vs_Type2_Diabetes": 0.674,
+      "Systolic_BP_vs_Type2_Diabetes": 0.5557,
+      "Triglycerides_vs_Type2_Diabetes": 0.6454,
+      "ALT_vs_Type2_Diabetes": 0.6305,
+      "Fasting_Blood_Glucose_vs_Prediabetes": 0.5688,
+      "HbA1c_vs_Prediabetes": 0.5736,
+      "BMI_vs_Prediabetes": 0.5388,
+      "Systolic_BP_vs_Prediabetes": 0.5228,
+      "Triglycerides_vs_Prediabetes": 0.536,
+      "ALT_vs_Prediabetes": 0.517,
+      "Fasting_Blood_Glucose_vs_Obesity": 0.6077,
+      "HbA1c_vs_Obesity": 0.6138,
+      "BMI_vs_Obesity": 0.7932,
+      "Systolic_BP_vs_Obesity": 0.6244,
+      "Triglycerides_vs_Obesity": 0.6466,
+      "ALT_vs_Obesity": 0.5455,
+      "Fasting_Blood_Glucose_vs_Metabolic_Syndrome": 0.6149,
+      "HbA1c_vs_Metabolic_Syndrome": 0.6233,
+      "BMI_vs_Metabolic_Syndrome": 0.6912,
+      "Systolic_BP_vs_Metabolic_Syndrome": 0.6786,
+      "Triglycerides_vs_Metabolic_Syndrome": 0.7009,
+      "ALT_vs_Metabolic_Syndrome": 0.6151,
+      "Fasting_Blood_Glucose_vs_NAFLD": 0.6006,
+      "HbA1c_vs_NAFLD": 0.6061,
+      "BMI_vs_NAFLD": 0.6166,
+      "Systolic_BP_vs_NAFLD": 0.5843,
+      "Triglycerides_vs_NAFLD": 0.702,
+      "ALT_vs_NAFLD": 0.7383
+    }
+  },
+  "Section_H_MissingnessLeakage": {
+    "verdict": "PASS",
+    "cgm_missingness_indicator_aucs": {
+      "Type2_Diabetes": 0.5358,
+      "Prediabetes": 0.5106,
+      "Obesity": 0.515,
+      "Metabolic_Syndrome": 0.5109,
+      "NAFLD": 0.5086
+    }
+  },
+  "Final_Verdict": "APPROVE FOR MODEL TRAINING"
+}

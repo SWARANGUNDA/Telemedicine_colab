@@ -1,0 +1,12 @@
+[
+  "Average_Daily_Steps",
+  "Active_Minutes",
+  "Sedentary_Time_Minutes",
+  "Resting_Heart_Rate",
+  "Sleep_Duration",
+  "Calories_Burned",
+  "Average_Glucose",
+  "Glucose_Variability",
+  "Time_In_Range",
+  "Time_Above_Range"
+]

@@ -1,0 +1,101 @@
+{
+  "experiment_name": "TeleMed_V4_Publication_Benchmark",
+  "dataset_version": "V4.0",
+  "model_version": "V4.0",
+  "random_seed": 42,
+  "cohort_size": 100000,
+  "split_definition": {
+    "train": 70000,
+    "validation": 15000,
+    "test": 15000
+  },
+  "target_diseases": [
+    "Type2_Diabetes",
+    "Prediabetes",
+    "High_Adiposity_Risk",
+    "Metabolic_Syndrome",
+    "NAFLD"
+  ],
+  "individual_experts": [
+    "Clinical",
+    "Wearable",
+    "Gut"
+  ],
+  "multimodal_pathways": [
+    "C",
+    "W",
+    "G",
+    "C+W",
+    "C+G",
+    "W+G",
+    "C+W+G"
+  ],
+  "configured_metrics": [
+    "ROC-AUC",
+    "PR-AUC",
+    "Accuracy",
+    "Precision",
+    "Recall",
+    "F1-Score",
+    "Sensitivity",
+    "Specificity",
+    "Confusion_Matrix",
+    "Brier_Score",
+    "Calibration_Error"
+  ],
+  "confidence_interval_method": "Stratified Bootstrap (N=1000, 95% CI)",
+  "statistical_testing_method": "Wilcoxon Signed-Rank Test & McNemar Test (alpha=0.05)",
+  "test_set_status": "UNTOUCHED_UNBLINDED_ONLY_FOR_FINAL_BENCHMARK",
+  "dataset_hashes": {
+    "clinical_v4.csv": {
+      "sha256": "c322473ece815d2f7d6fc3e0d735c52e710b9f5385f3ab439635f744d718df43",
+      "size_mb": 8.46
+    },
+    "wearable_v4.csv": {
+      "sha256": "9eaf7fecef0f2cb5fec3cc69f1c49f5fabe6da47048b60f03b0480f256c9bd98",
+      "size_mb": 6.72
+    },
+    "gut_v4.csv": {
+      "sha256": "8b7ae70ee8e9890f7dd75b06ee32b0ce5289f04959d2ddc054a38c891f76ea56",
+      "size_mb": 31.4
+    },
+    "labels_v4.csv": {
+      "sha256": "55702d46c33c63157dc1e940103361ec3e6f4bd2e383d85e1d8db5a2ab5e8096",
+      "size_mb": 1.81
+    },
+    "patient_metadata_v4.csv": {
+      "sha256": "59a19018bd869b9cb8a13813ab028a87a3f330e604b591b1ef53e39f95b8a707",
+      "size_mb": 3.16
+    },
+    "train_ids_v4.csv": {
+      "sha256": "b323daea17b8d9e5da1bd95474d48a91a95121756436954e5c30f869f3d2a4b8",
+      "size_mb": 0.6
+    },
+    "val_ids_v4.csv": {
+      "sha256": "278ce13219d3a14e6e4790111e1242110eb244653659a56f84d548a5068c3bc0",
+      "size_mb": 0.13
+    },
+    "test_ids_v4.csv": {
+      "sha256": "1dfde420c63026e595a671f6c583c405e55d66dfbdd2d724092064fbb90d1f07",
+      "size_mb": 0.13
+    }
+  },
+  "model_hashes": {
+    "clinical_v4_expert_payload.joblib": {
+      "sha256": "16dbc550b4a7129cb29078493ded87fea6bdf156c2bac97ed0f3dacd7c4ff9bf",
+      "size_mb": 0.65
+    },
+    "wearable_v4_expert_payload.joblib": {
+      "sha256": "6468ce8d9bb8cbdbcb4f303503dd5205d5f24b564374b5fa4b42fdb698d801ce",
+      "size_mb": 0.42
+    },
+    "gut_v4_expert_payload.joblib": {
+      "sha256": "39a470e0c279a06e5007fc445575712270968dbbae2d63a990ecb15dfe485712",
+      "size_mb": 21.74
+    },
+    "v4_multimodal_fusion_payload.joblib": {
+      "sha256": "addd8976e79347f434a273da03d0d8cb731c80ee21179cc3bec635259cfd7792",
+      "size_mb": 0.05
+    }
+  }
+}

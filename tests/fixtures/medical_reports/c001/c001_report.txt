@@ -1,0 +1,19 @@
+Patient_ID: TEST_C001
+Age: 48
+Gender: Male
+Height: 170
+Weight: 87
+BMI: 30.1
+Waist: 102
+SBP: 142
+DBP: 91
+FBG: 132
+HbA1c: 6.8
+LDL: 145
+HDL: 38
+TG: 210
+ALT: 58
+AST: 41
+Family History of Diabetes: Yes
+Family History of Hypertension: Yes
+Family History of CVD: No

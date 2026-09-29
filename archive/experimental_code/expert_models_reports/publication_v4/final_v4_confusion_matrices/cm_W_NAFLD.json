@@ -1,0 +1,8 @@
+{
+  "disease": "NAFLD",
+  "pathway": "W",
+  "tn": 5604,
+  "fp": 426,
+  "fn": 8383,
+  "tp": 587
+}

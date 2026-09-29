@@ -1,0 +1,14 @@
+# ISAPP Consensus Statement on Prebiotics, Dietary Fiber, and Short-Chain Fatty Acids
+Organization: International Scientific Association for Probiotics and Prebiotics (ISAPP)
+Publication Date: 2023-04-20
+Document Version: 2023.1
+Evidence Type: EMERGING_RESEARCH
+
+## Section 1: Prebiotic Definition and Dietary Fiber
+A prebiotic is defined as a substrate that is selectively utilized by host microorganisms conferring a health benefit. Prebiotic dietary fibers include galacto-oligosaccharides (GOS), fructo-oligosaccharides (FOS), inulin, and resistant starch found in legumes, oats, onions, garlic, and green bananas.
+
+## Section 2: Microbial SCFA Production and Metabolic Health
+Fermentation of dietary fibers by commensal taxa (such as Faecalibacterium prausnitzii, Roseburia, and Akkermansia muciniphila) produces short-chain fatty acids (acetate, propionate, butyrate). SCFA signaling via G-protein coupled receptors (GPR41/GPR43) stimulates GLP-1 and PYY secretion, enhancing satiety, insulin sensitivity, and liver fat regulation.
+
+## Section 3: Observational Microbiome Association Safety Disclaimer
+Note: While observational studies link reduced levels of Akkermansia or Faecalibacterium with obesity, T2D, and NAFLD, current clinical evidence does not support targeted bacterial eradication or strain-specific medical prescription. General dietary fiber diversification (25–35 g/day) remains the evidence-grounded nutritional recommendation.

@@ -1,0 +1,222 @@
+{
+  "experiment_a_standard": {
+    "macro_f1": 0.417,
+    "micro_f1": 0.4714,
+    "hamming_loss": 0.4385,
+    "mean_brier": 0.1609,
+    "per_disease": {
+      "Type2_Diabetes": {
+        "f1": 0.5439,
+        "precision": 0.3965,
+        "recall": 0.8657,
+        "roc_auc": 0.5983,
+        "pr_auc": 0.4217,
+        "brier_score": 0.2282,
+        "confusion_matrix": [
+          [
+            446,
+            1452
+          ],
+          [
+            148,
+            954
+          ]
+        ]
+      },
+      "Prediabetes": {
+        "f1": 0.4772,
+        "precision": 0.3136,
+        "recall": 0.9979,
+        "roc_auc": 0.4998,
+        "pr_auc": 0.4677,
+        "brier_score": 0.2155,
+        "confusion_matrix": [
+          [
+            7,
+            2053
+          ],
+          [
+            2,
+            938
+          ]
+        ]
+      },
+      "High_Adiposity_Risk": {
+        "f1": 0.6279,
+        "precision": 0.5376,
+        "recall": 0.7547,
+        "roc_auc": 0.7872,
+        "pr_auc": 0.5877,
+        "brier_score": 0.1717,
+        "confusion_matrix": [
+          [
+            1407,
+            627
+          ],
+          [
+            237,
+            729
+          ]
+        ]
+      },
+      "Metabolic_Syndrome": {
+        "f1": 0.1809,
+        "precision": 0.127,
+        "recall": 0.3147,
+        "roc_auc": 0.6439,
+        "pr_auc": 0.1495,
+        "brier_score": 0.07,
+        "confusion_matrix": [
+          [
+            2266,
+            502
+          ],
+          [
+            159,
+            73
+          ]
+        ]
+      },
+      "NAFLD": {
+        "f1": 0.2548,
+        "precision": 0.1637,
+        "recall": 0.5745,
+        "roc_auc": 0.5555,
+        "pr_auc": 0.1549,
+        "brier_score": 0.1191,
+        "confusion_matrix": [
+          [
+            1363,
+            1221
+          ],
+          [
+            177,
+            239
+          ]
+        ]
+      }
+    },
+    "bootstrap_95_ci_macro_f1": [
+      0.4049,
+      0.4293
+    ],
+    "selected_architecture": "XGBoost",
+    "thresholds": {
+      "Type2_Diabetes": 0.28,
+      "Prediabetes": 0.23,
+      "High_Adiposity_Risk": 0.3,
+      "Metabolic_Syndrome": 0.1,
+      "NAFLD": 0.14
+    }
+  },
+  "experiment_b_with_cgm": {
+    "macro_f1": 0.5834,
+    "micro_f1": 0.6017,
+    "hamming_loss": 0.2714,
+    "mean_brier": 0.092,
+    "per_disease": {
+      "Type2_Diabetes": {
+        "f1": 0.9251,
+        "precision": 0.9148,
+        "recall": 0.9356,
+        "roc_auc": 0.9913,
+        "pr_auc": 0.9855,
+        "brier_score": 0.0365,
+        "confusion_matrix": [
+          [
+            1802,
+            96
+          ],
+          [
+            71,
+            1031
+          ]
+        ]
+      },
+      "Prediabetes": {
+        "f1": 0.8301,
+        "precision": 0.8091,
+        "recall": 0.8521,
+        "roc_auc": 0.9626,
+        "pr_auc": 0.9224,
+        "brier_score": 0.0719,
+        "confusion_matrix": [
+          [
+            1871,
+            189
+          ],
+          [
+            139,
+            801
+          ]
+        ]
+      },
+      "High_Adiposity_Risk": {
+        "f1": 0.6424,
+        "precision": 0.5433,
+        "recall": 0.7857,
+        "roc_auc": 0.8033,
+        "pr_auc": 0.6445,
+        "brier_score": 0.1653,
+        "confusion_matrix": [
+          [
+            1396,
+            638
+          ],
+          [
+            207,
+            759
+          ]
+        ]
+      },
+      "Metabolic_Syndrome": {
+        "f1": 0.2553,
+        "precision": 0.1625,
+        "recall": 0.5948,
+        "roc_auc": 0.7236,
+        "pr_auc": 0.1833,
+        "brier_score": 0.068,
+        "confusion_matrix": [
+          [
+            2057,
+            711
+          ],
+          [
+            94,
+            138
+          ]
+        ]
+      },
+      "NAFLD": {
+        "f1": 0.2643,
+        "precision": 0.1571,
+        "recall": 0.8317,
+        "roc_auc": 0.5737,
+        "pr_auc": 0.1583,
+        "brier_score": 0.1185,
+        "confusion_matrix": [
+          [
+            728,
+            1856
+          ],
+          [
+            70,
+            346
+          ]
+        ]
+      }
+    },
+    "bootstrap_95_ci_macro_f1": [
+      0.5723,
+      0.5947
+    ],
+    "selected_architecture": "LightGBM",
+    "thresholds": {
+      "Type2_Diabetes": 0.45,
+      "Prediabetes": 0.42,
+      "High_Adiposity_Risk": 0.3,
+      "Metabolic_Syndrome": 0.1,
+      "NAFLD": 0.12
+    }
+  }
+}

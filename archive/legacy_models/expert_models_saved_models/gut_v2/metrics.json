@@ -1,0 +1,90 @@
+{
+  "per_disease": {
+    "Type2_Diabetes": {
+      "roc_auc": 0.8395,
+      "pr_auc": 0.606,
+      "precision": 0.6046,
+      "recall_sensitivity": 0.4731,
+      "specificity": 0.938,
+      "f1_score": 0.5308,
+      "brier_score": 0.0995,
+      "threshold": 0.3,
+      "confusion_matrix": {
+        "TN": 2344,
+        "FP": 155,
+        "FN": 264,
+        "TP": 237
+      }
+    },
+    "Prediabetes": {
+      "roc_auc": 0.5453,
+      "pr_auc": 0.212,
+      "precision": 0.1927,
+      "recall_sensitivity": 0.9983,
+      "specificity": 0.0148,
+      "f1_score": 0.3231,
+      "brier_score": 0.1536,
+      "threshold": 0.14,
+      "confusion_matrix": {
+        "TN": 36,
+        "FP": 2392,
+        "FN": 1,
+        "TP": 571
+      }
+    },
+    "Obesity": {
+      "roc_auc": 0.7988,
+      "pr_auc": 0.6572,
+      "precision": 0.6217,
+      "recall_sensitivity": 0.5273,
+      "specificity": 0.8892,
+      "f1_score": 0.5706,
+      "brier_score": 0.1396,
+      "threshold": 0.36,
+      "confusion_matrix": {
+        "TN": 1983,
+        "FP": 247,
+        "FN": 364,
+        "TP": 406
+      }
+    },
+    "Metabolic_Syndrome": {
+      "roc_auc": 0.8026,
+      "pr_auc": 0.6029,
+      "precision": 0.5315,
+      "recall_sensitivity": 0.5579,
+      "specificity": 0.876,
+      "f1_score": 0.5444,
+      "brier_score": 0.1195,
+      "threshold": 0.25,
+      "confusion_matrix": {
+        "TN": 2099,
+        "FP": 297,
+        "FN": 267,
+        "TP": 337
+      }
+    },
+    "NAFLD": {
+      "roc_auc": 0.8359,
+      "pr_auc": 0.5403,
+      "precision": 0.567,
+      "recall_sensitivity": 0.4417,
+      "specificity": 0.9463,
+      "f1_score": 0.4966,
+      "brier_score": 0.0886,
+      "threshold": 0.27,
+      "confusion_matrix": {
+        "TN": 2449,
+        "FP": 139,
+        "FN": 230,
+        "TP": 182
+      }
+    }
+  },
+  "summary": {
+    "macro_f1": 0.4931,
+    "micro_f1": 0.4431,
+    "hamming_loss": 0.2904,
+    "mean_brier_score": 0.1202
+  }
+}

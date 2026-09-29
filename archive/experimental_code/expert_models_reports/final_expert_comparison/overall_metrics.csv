@@ -1,0 +1,4 @@
+Expert,Macro_F1,Micro_F1,Hamming_Loss,Overall_Brier_Score
+Clinical,0.9595,0.9714,0.0108,0.0094
+Wearable,0.826,0.828,0.0637,0.0495
+Gut,0.6489,0.6562,0.1415,0.0918

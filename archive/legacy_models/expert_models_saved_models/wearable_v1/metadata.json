@@ -1,0 +1,14 @@
+{
+  "expert_name": "wearable",
+  "version": "v1",
+  "saved_timestamp": "2026-07-26T15:19:11.046475",
+  "n_predictors": 10,
+  "target_diseases": [
+    "Type2_Diabetes",
+    "Prediabetes",
+    "Obesity",
+    "Metabolic_Syndrome",
+    "NAFLD"
+  ],
+  "status": "FROZEN"
+}

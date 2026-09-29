@@ -1,0 +1,117 @@
+{
+  "modality": "Wearable",
+  "version": "1.0",
+  "description": "Approved predictor features for the Wearable Expert Model",
+  "predictors": [
+    {
+      "name": "Average_Daily_Steps",
+      "dtype": "int64",
+      "unit": "steps/day",
+      "range": [
+        500,
+        40000
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Active_Minutes",
+      "dtype": "float64",
+      "unit": "min/day",
+      "range": [
+        0.0,
+        360.0
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Sedentary_Time_Minutes",
+      "dtype": "float64",
+      "unit": "min/day",
+      "range": [
+        60.0,
+        1200.0
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Resting_Heart_Rate",
+      "dtype": "float64",
+      "unit": "bpm",
+      "range": [
+        35.0,
+        140.0
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Sleep_Duration",
+      "dtype": "float64",
+      "unit": "hours",
+      "range": [
+        2.0,
+        16.0
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Calories_Burned",
+      "dtype": "float64",
+      "unit": "kcal/day",
+      "range": [
+        500.0,
+        8000.0
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Average_Glucose",
+      "dtype": "float64",
+      "unit": "mg/dL",
+      "range": [
+        50.0,
+        400.0
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Glucose_Variability",
+      "dtype": "float64",
+      "unit": "mg/dL",
+      "range": [
+        2.0,
+        80.0
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Time_In_Range",
+      "dtype": "float64",
+      "unit": "%",
+      "range": [
+        0.0,
+        100.0
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Time_Above_Range",
+      "dtype": "float64",
+      "unit": "%",
+      "range": [
+        0.0,
+        100.0
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    }
+  ]
+}

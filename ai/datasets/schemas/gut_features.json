@@ -1,0 +1,87 @@
+{
+  "modality": "Gut Microbiome",
+  "version": "1.0",
+  "description": "Approved predictor features for the Gut Microbiome Expert Model",
+  "predictors": [
+    {
+      "name": "Akkermansia",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 30.0],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Faecalibacterium",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 40.0],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Bifidobacterium",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 30.0],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Roseburia",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 25.0],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Alistipes",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 20.0],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Escherichia_Shigella",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 25.0],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Collinsella",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 20.0],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Prevotella",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 40.0],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Blautia",
+      "dtype": "float64",
+      "unit": "% relative abundance",
+      "range": [0.0, 30.0],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Shannon_Diversity_Index",
+      "dtype": "float64",
+      "unit": "alpha-diversity score",
+      "range": [0.5, 6.0],
+      "required": true,
+      "missing_policy": "impute_median"
+    }
+  ]
+}

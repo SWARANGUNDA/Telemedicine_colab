@@ -1,0 +1,327 @@
+{
+  "_type": "Project",
+  "_id": "AAAA575F5E8E08E649599DCA",
+  "name": "TeleMed AI Platform \u2014 Frozen V4 Multi-Expert Model Ecosystem Architecture",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAA5CF4DCDB88342DFA2D3",
+      "_parent": {
+        "$ref": "AAAA575F5E8E08E649599DCA"
+      },
+      "name": "Frozen V4 Multi-Expert Model Ecosystem Architecture Model",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "AAAACD134412CEC34E9ABF87",
+          "_parent": {
+            "$ref": "AAAAA5CF4DCDB88342DFA2D3"
+          },
+          "name": "Frozen V4 Multi-Expert Model Ecosystem Architecture",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA23B797A6497F46C9A4F9",
+              "_parent": {
+                "$ref": "AAAACD134412CEC34E9ABF87"
+              },
+              "model": {
+                "$ref": "AAAAA22F8DC5A60845059979"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAC665EEE6DD1143439A9C",
+              "_parent": {
+                "$ref": "AAAACD134412CEC34E9ABF87"
+              },
+              "model": {
+                "$ref": "AAAAD2A36A0025C74CEC86FB"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA2EEF8F87D2DB44C4B88D",
+              "_parent": {
+                "$ref": "AAAACD134412CEC34E9ABF87"
+              },
+              "model": {
+                "$ref": "AAAAFAC83F1B327044158D42"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA68627CA7ECC74A64BD1A",
+              "_parent": {
+                "$ref": "AAAACD134412CEC34E9ABF87"
+              },
+              "model": {
+                "$ref": "AAAA2CAA13EA045643C28AF5"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAD24CF95DBE394A86889C",
+              "_parent": {
+                "$ref": "AAAACD134412CEC34E9ABF87"
+              },
+              "model": {
+                "$ref": "AAAA8710AE94B42348958024"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAA22F8DC5A60845059979",
+          "_parent": {
+            "$ref": "AAAAA5CF4DCDB88342DFA2D3"
+          },
+          "name": "ClinicalExpertVector",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA5A51375F2DBD4CB9B548",
+              "_parent": {
+                "$ref": "AAAAA22F8DC5A60845059979"
+              },
+              "name": "18 Numerical Biomarker Features",
+              "type": "Included"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAAAE34EB9C99E450ABE26",
+              "_parent": {
+                "$ref": "AAAAA22F8DC5A60845059979"
+              },
+              "name": "Age & Gender",
+              "type": "Included"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA8DC7144C5EDC4876BF29",
+              "_parent": {
+                "$ref": "AAAAA22F8DC5A60845059979"
+              },
+              "name": "Patient_ID",
+              "type": "Excluded (Metadata Only)"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAD2A36A0025C74CEC86FB",
+          "_parent": {
+            "$ref": "AAAAA5CF4DCDB88342DFA2D3"
+          },
+          "name": "WearableExpertVector",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA35DB9EC982834FFD9E57",
+              "_parent": {
+                "$ref": "AAAAD2A36A0025C74CEC86FB"
+              },
+              "name": "15 CGM & Wearable Features",
+              "type": "Included"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA76A57F59444A41F3B7EE",
+              "_parent": {
+                "$ref": "AAAAD2A36A0025C74CEC86FB"
+              },
+              "name": "Age & Gender",
+              "type": "Excluded"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAB2CBBF530DF649B7A621",
+              "_parent": {
+                "$ref": "AAAAD2A36A0025C74CEC86FB"
+              },
+              "name": "Patient_ID",
+              "type": "Excluded (Metadata Only)"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAFAC83F1B327044158D42",
+          "_parent": {
+            "$ref": "AAAAA5CF4DCDB88342DFA2D3"
+          },
+          "name": "GutExpertVector",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA9D83A13721974225973E",
+              "_parent": {
+                "$ref": "AAAAFAC83F1B327044158D42"
+              },
+              "name": "40 Canonical Species Taxa",
+              "type": "Included"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA97ADA984A4A241C68C9A",
+              "_parent": {
+                "$ref": "AAAAFAC83F1B327044158D42"
+              },
+              "name": "1 Other_Taxa",
+              "type": "Included"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA27687B1322D040A5ACCF",
+              "_parent": {
+                "$ref": "AAAAFAC83F1B327044158D42"
+              },
+              "name": "9 Derived Ecological Indices",
+              "type": "Included"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA3C64D111B008408B80E5",
+              "_parent": {
+                "$ref": "AAAAFAC83F1B327044158D42"
+              },
+              "name": "Patient_ID",
+              "type": "Excluded (Metadata Only)"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA2CAA13EA045643C28AF5",
+          "_parent": {
+            "$ref": "AAAAA5CF4DCDB88342DFA2D3"
+          },
+          "name": "V4StackingMetaLearner",
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA62C8C9E9C4B345D3893A",
+              "_parent": {
+                "$ref": "AAAA2CAA13EA045643C28AF5"
+              },
+              "name": "predict_type2_diabetes()"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA85A13F545B974294A142",
+              "_parent": {
+                "$ref": "AAAA2CAA13EA045643C28AF5"
+              },
+              "name": "predict_prediabetes()"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA03277525AB2F4A5F8E46",
+              "_parent": {
+                "$ref": "AAAA2CAA13EA045643C28AF5"
+              },
+              "name": "predict_high_adiposity_risk()"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAAC468F35CCD954D6D9C34",
+              "_parent": {
+                "$ref": "AAAA2CAA13EA045643C28AF5"
+              },
+              "name": "predict_metabolic_syndrome()"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAAC66701CDB36B4C7CA5EC",
+              "_parent": {
+                "$ref": "AAAA2CAA13EA045643C28AF5"
+              },
+              "name": "predict_nafld()"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA8710AE94B42348958024",
+          "_parent": {
+            "$ref": "AAAAA5CF4DCDB88342DFA2D3"
+          },
+          "name": "DiseaseTargetOutputs",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA09FDFB018BAF41298A41",
+              "_parent": {
+                "$ref": "AAAA8710AE94B42348958024"
+              },
+              "name": "Type2_Diabetes",
+              "type": "Risk Probability"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAE4249A2BF9494F0CA2D0",
+              "_parent": {
+                "$ref": "AAAA8710AE94B42348958024"
+              },
+              "name": "Prediabetes",
+              "type": "Risk Probability"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAB605B572B18B481FA59F",
+              "_parent": {
+                "$ref": "AAAA8710AE94B42348958024"
+              },
+              "name": "High_Adiposity_Risk",
+              "type": "Risk Probability"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA17B318F0DFE841C49DDE",
+              "_parent": {
+                "$ref": "AAAA8710AE94B42348958024"
+              },
+              "name": "Metabolic_Syndrome",
+              "type": "Risk Probability"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAF54E4D5889F647EC9D50",
+              "_parent": {
+                "$ref": "AAAA8710AE94B42348958024"
+              },
+              "name": "NAFLD",
+              "type": "Risk Probability"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

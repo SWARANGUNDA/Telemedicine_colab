@@ -1,0 +1,303 @@
+{
+  "_type": "Project",
+  "_id": "AAAA44F3C91D284644A38078",
+  "name": "TeleMed AI Platform \u2014 ML Pipeline & Multi-Expert Inference Engine Diagram",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAA398C350AD54F43BCA1DF",
+      "_parent": {
+        "$ref": "AAAA44F3C91D284644A38078"
+      },
+      "name": "ML Pipeline & Multi-Expert Inference Engine Diagram Model",
+      "ownedElements": [
+        {
+          "_type": "UMLComponentDiagram",
+          "_id": "AAAA100EC98AB43C48AA9854",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "ML Pipeline & Multi-Expert Inference Engine Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAD64BFBF2D6C9474A80CC",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAAD6E6BB41C98F46C295C4"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAACBBB2A9C5E5147A3B41E",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAA27B305D5D9C440D6A6F4"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAE6743A8E1FE542308023",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAACF2BBBE783774BE0B8EE"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAACFA1E2AF73D7476EB249",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAAB69690076E27424C81ED"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAA040DB5A9AF54EA086E6",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAAB0E3217C3E0D41BBB8AF"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAABFFAC06D65794D4CA2D4",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAA52822146AE814E8FA50B"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA8FFA54BCC6144DB2B17F",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAA77B7029E32554A6CBDB9"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA766357D5963042BE9C6D",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAAA27AFE3FF2D24AE8B028"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA16C3D6C989BD4ACC8FEA",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAA87F71EBC25EB4C429C5A"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAABE21B510BEE04336B851",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAA074497F87BD841469DD8"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA29B96703A9FE4A6FA9AD",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAA759B594013F740939C16"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAB1CB70D6DB014753A04C",
+              "_parent": {
+                "$ref": "AAAA100EC98AB43C48AA9854"
+              },
+              "model": {
+                "$ref": "AAAA57A5CFEB742F491CB85D"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAD6E6BB41C98F46C295C4",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "Clinical Preprocessing & Scaler"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA27B305D5D9C440D6A6F4",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "Wearable Preprocessing & Scaler"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAACF2BBBE783774BE0B8EE",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "Gut Normalizer & Ecological Index Engine"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAB69690076E27424C81ED",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "Clinical Expert Engine (18 Features)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAB0E3217C3E0D41BBB8AF",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "Wearable Expert Engine (15 Features)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA52822146AE814E8FA50B",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "Gut Microbiome Expert Engine (49 Features)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA77B7029E32554A6CBDB9",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "7 Modality Pathways (C, W, G, C+W, C+G, W+G, C+W+G)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAA27AFE3FF2D24AE8B028",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "V4 Stacking Fusion Meta-Learner"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA87F71EBC25EB4C429C5A",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "Isotonic/Sigmoid Dynamic Calibrator"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA074497F87BD841469DD8",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "5 Multi-Organ Target Predictions"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA759B594013F740939C16",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "TreeSHAP Explainable AI Module"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA57A5CFEB742F491CB85D",
+          "_parent": {
+            "$ref": "AAAA398C350AD54F43BCA1DF"
+          },
+          "name": "Medical RAG Report Generator"
+        }
+      ]
+    }
+  ]
+}

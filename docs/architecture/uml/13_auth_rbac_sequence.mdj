@@ -1,0 +1,165 @@
+{
+  "_type": "Project",
+  "_id": "AAAA72213DCFADB24FA39CB8",
+  "name": "TeleMed AI Platform \u2014 JWT Authentication & Role-Based Access Control (RBAC)",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAA1D5A3D1612004F26AF6D",
+      "_parent": {
+        "$ref": "AAAA72213DCFADB24FA39CB8"
+      },
+      "name": "JWT Authentication & Role-Based Access Control (RBAC) Model",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "AAAACDDB4E66B85640D4B93C",
+          "_parent": {
+            "$ref": "AAAA1D5A3D1612004F26AF6D"
+          },
+          "name": "JWT Authentication & Role-Based Access Control (RBAC)",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAB1E43DA757A446F8B7C3",
+              "_parent": {
+                "$ref": "AAAACDDB4E66B85640D4B93C"
+              },
+              "model": {
+                "$ref": "AAAAF6979F6278E14E64B4AA"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAE4085E39655341F4823F",
+              "_parent": {
+                "$ref": "AAAACDDB4E66B85640D4B93C"
+              },
+              "model": {
+                "$ref": "AAAA663DC0DB4B8647F1B88D"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA9F3A07D5E6824EB2A806",
+              "_parent": {
+                "$ref": "AAAACDDB4E66B85640D4B93C"
+              },
+              "model": {
+                "$ref": "AAAAB993B07C23604FCC9F0E"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAA6A1E61459444A9CA834",
+              "_parent": {
+                "$ref": "AAAACDDB4E66B85640D4B93C"
+              },
+              "model": {
+                "$ref": "AAAAC3D1EDDFCD71408BBE87"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA4D4B800865134EA09436",
+              "_parent": {
+                "$ref": "AAAACDDB4E66B85640D4B93C"
+              },
+              "model": {
+                "$ref": "AAAA69E28DC525F94ACB8DED"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAEC554505C6D44C248DBC",
+              "_parent": {
+                "$ref": "AAAACDDB4E66B85640D4B93C"
+              },
+              "model": {
+                "$ref": "AAAA926D1DD98E2A4BAC915B"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAF6979F6278E14E64B4AA",
+          "_parent": {
+            "$ref": "AAAA1D5A3D1612004F26AF6D"
+          },
+          "name": "User Client (LoginPage.jsx)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA663DC0DB4B8647F1B88D",
+          "_parent": {
+            "$ref": "AAAA1D5A3D1612004F26AF6D"
+          },
+          "name": "Auth Router (auth_routes.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAB993B07C23604FCC9F0E",
+          "_parent": {
+            "$ref": "AAAA1D5A3D1612004F26AF6D"
+          },
+          "name": "Security Engine (security.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAC3D1EDDFCD71408BBE87",
+          "_parent": {
+            "$ref": "AAAA1D5A3D1612004F26AF6D"
+          },
+          "name": "PostgreSQL User & Session Store"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA69E28DC525F94ACB8DED",
+          "_parent": {
+            "$ref": "AAAA1D5A3D1612004F26AF6D"
+          },
+          "name": "JWT Token Generator & Decoder"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA926D1DD98E2A4BAC915B",
+          "_parent": {
+            "$ref": "AAAA1D5A3D1612004F26AF6D"
+          },
+          "name": "Protected Route RBAC Middleware"
+        }
+      ]
+    }
+  ]
+}

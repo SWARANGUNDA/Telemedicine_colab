@@ -1,0 +1,21 @@
+============================================================
+          DISEASE PREVALENCE & OVERLAP REPORT          
+============================================================
+Total Population: 20,000
+------------------------------------------------------------
+INDIVIDUAL DISEASE PREVALENCE:
+  - Type2_Diabetes           :   3338 ( 16.69%)
+  - Prediabetes              :   3811 ( 19.05%)
+  - Obesity                  :   5132 ( 25.66%)
+  - Metabolic_Syndrome       :   4030 ( 20.15%)
+  - NAFLD                    :   2748 ( 13.74%)
+  - Healthy                  :  11353 ( 56.77%)
+------------------------------------------------------------
+MULTI-LABEL DISEASE CO-OCCURRENCE FREQUENCY:
+  - Patients with 0 conditions :  11353 ( 56.77%)
+  - Patients with 1 conditions :   3736 ( 18.68%)
+  - Patients with 2 conditions :   1453 (  7.27%)
+  - Patients with 3 conditions :   1415 (  7.07%)
+  - Patients with 4 conditions :   2043 ( 10.21%)
+  - Patients with 5 conditions :      0 (  0.00%)
+============================================================

@@ -1,0 +1,9 @@
+Cohort_Partition,Patient_Count,Percentage,Purpose
+Train Set,70000,70.0%,Model Training & Feature Selection
+Validation Set,15000,15.0%,Hyperparameter Tuning & Calibration Fitting
+Test Set,15000,15.0%,Untouched Out-of-Sample Scientific Evaluation
+Total Synchronized Cohort,100000,100.0%,Synchronized Multi-Omic & Wearable Population
+Clinical Feature Space,18,-,"Demographics (Age, Gender) & Laboratory Biomarkers"
+Wearable Feature Space,15,-,Continuous Glucose Monitoring (CGM) & Activity Metrics
+Gut Microbiome Feature Space,49,-,40 Species Taxa + Other_Taxa + 9 Derived Ecological Indices
+Total Multimodal Feature Space,82,-,Combined Multimodal Input Features (Patient_ID is metadata only)

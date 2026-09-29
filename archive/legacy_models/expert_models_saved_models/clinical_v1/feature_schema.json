@@ -1,0 +1,216 @@
+{
+  "modality": "Clinical",
+  "version": "1.0",
+  "description": "Approved predictor features for the Clinical Expert Model",
+  "predictors": [
+    {
+      "name": "Age",
+      "dtype": "int64",
+      "unit": "years",
+      "range": [
+        18,
+        85
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Gender",
+      "dtype": "string",
+      "unit": "categorical",
+      "categories": [
+        "Male",
+        "Female"
+      ],
+      "required": true,
+      "missing_policy": "mode"
+    },
+    {
+      "name": "Height_cm",
+      "dtype": "float64",
+      "unit": "cm",
+      "range": [
+        120.0,
+        230.0
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Weight_kg",
+      "dtype": "float64",
+      "unit": "kg",
+      "range": [
+        30.0,
+        250.0
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "BMI",
+      "dtype": "float64",
+      "unit": "kg/m2",
+      "range": [
+        12.0,
+        65.0
+      ],
+      "required": true,
+      "missing_policy": "derive_or_impute"
+    },
+    {
+      "name": "Waist_Circumference_cm",
+      "dtype": "float64",
+      "unit": "cm",
+      "range": [
+        50.0,
+        180.0
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Systolic_BP",
+      "dtype": "int64",
+      "unit": "mmHg",
+      "range": [
+        70,
+        240
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Diastolic_BP",
+      "dtype": "int64",
+      "unit": "mmHg",
+      "range": [
+        40,
+        140
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "Fasting_Blood_Glucose",
+      "dtype": "int64",
+      "unit": "mg/dL",
+      "range": [
+        50,
+        400
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "HbA1c",
+      "dtype": "float64",
+      "unit": "%",
+      "range": [
+        3.5,
+        16.0
+      ],
+      "required": true,
+      "missing_policy": "impute_median"
+    },
+    {
+      "name": "LDL_Cholesterol",
+      "dtype": "int64",
+      "unit": "mg/dL",
+      "range": [
+        20,
+        400
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "HDL_Cholesterol",
+      "dtype": "int64",
+      "unit": "mg/dL",
+      "range": [
+        10,
+        120
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Triglycerides",
+      "dtype": "int64",
+      "unit": "mg/dL",
+      "range": [
+        20,
+        1000
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "ALT",
+      "dtype": "int64",
+      "unit": "U/L",
+      "range": [
+        2,
+        500
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "AST",
+      "dtype": "int64",
+      "unit": "U/L",
+      "range": [
+        2,
+        500
+      ],
+      "required": false,
+      "missing_policy": "preserve_nan_or_impute"
+    },
+    {
+      "name": "Family_History_Diabetes",
+      "dtype": "int64",
+      "unit": "binary",
+      "range": [
+        0,
+        1
+      ],
+      "required": false,
+      "missing_policy": "fill_zero"
+    },
+    {
+      "name": "Family_History_Obesity",
+      "dtype": "int64",
+      "unit": "binary",
+      "range": [
+        0,
+        1
+      ],
+      "required": false,
+      "missing_policy": "fill_zero"
+    },
+    {
+      "name": "Family_History_Hypertension",
+      "dtype": "int64",
+      "unit": "binary",
+      "range": [
+        0,
+        1
+      ],
+      "required": false,
+      "missing_policy": "fill_zero"
+    },
+    {
+      "name": "Family_History_NAFLD",
+      "dtype": "int64",
+      "unit": "binary",
+      "range": [
+        0,
+        1
+      ],
+      "required": false,
+      "missing_policy": "fill_zero"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+PATIENT HEALTH REPORT
+Age: 55
+BMI: 31.5
+Fasting Blood Glucose: 135 mg/dL
+HbA1c: 7.4%
+Systolic BP: 142 mmHg
+Diastolic BP: 88 mmHg
+Average Daily Steps: 3500
+Sedentary Time: 600 mins

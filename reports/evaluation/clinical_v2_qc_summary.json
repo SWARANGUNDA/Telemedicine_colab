@@ -1,0 +1,393 @@
+{
+  "prevalence_v2": {
+    "Type2_Diabetes": 0.3253,
+    "Prediabetes": 0.24625,
+    "Obesity": 0.27925,
+    "Metabolic_Syndrome": 0.2194,
+    "NAFLD": 0.52765
+  },
+  "disease_count_distribution": {
+    "0": 0.20365,
+    "1": 0.3144,
+    "2": 0.24185,
+    "3": 0.16065,
+    "4": 0.07945
+  },
+  "pairwise_cooccurrence": {
+    "Type2_Diabetes": {
+      "Type2_Diabetes": 0.3253,
+      "Prediabetes": 0.0,
+      "Obesity": 0.1418,
+      "Metabolic_Syndrome": 0.12435,
+      "NAFLD": 0.20025
+    },
+    "Prediabetes": {
+      "Type2_Diabetes": 0.0,
+      "Prediabetes": 0.24625,
+      "Obesity": 0.0691,
+      "Metabolic_Syndrome": 0.06775,
+      "NAFLD": 0.1328
+    },
+    "Obesity": {
+      "Type2_Diabetes": 0.1418,
+      "Prediabetes": 0.0691,
+      "Obesity": 0.27925,
+      "Metabolic_Syndrome": 0.1153,
+      "NAFLD": 0.1911
+    },
+    "Metabolic_Syndrome": {
+      "Type2_Diabetes": 0.12435,
+      "Prediabetes": 0.06775,
+      "Obesity": 0.1153,
+      "Metabolic_Syndrome": 0.2194,
+      "NAFLD": 0.15805
+    },
+    "NAFLD": {
+      "Type2_Diabetes": 0.20025,
+      "Prediabetes": 0.1328,
+      "Obesity": 0.1911,
+      "Metabolic_Syndrome": 0.15805,
+      "NAFLD": 0.52765
+    }
+  },
+  "predia_and_t2d_overlap": 0,
+  "fpg_stats_by_state": {
+    "Healthy": {
+      "mean": 87.3063251254522,
+      "std": 7.241763385085174
+    },
+    "Prediabetes": {
+      "mean": 111.34314720812182,
+      "std": 8.618004895037622
+    },
+    "T2D": {
+      "mean": 143.05799262219492,
+      "std": 19.151769703204668
+    }
+  },
+  "hba1c_stats_by_state": {
+    "Healthy": {
+      "mean": 5.068240168047613,
+      "std": 0.21357858083867476
+    },
+    "Prediabetes": {
+      "mean": 5.997041624365482,
+      "std": 0.2624507212524035
+    },
+    "T2D": {
+      "mean": 7.316452505379649,
+      "std": 0.6946390879731897
+    }
+  },
+  "glycemic_discordance": {
+    "t2d_fpg_under_126_pct": 19.81,
+    "t2d_hba1c_under_65_pct": 12.25,
+    "t2d_both_under_thresholds_pct": 5.16,
+    "predia_in_conventional_range_pct": 96.45,
+    "predia_outside_range_pct": 3.55,
+    "fpg_hba1c_category_disagreement_pct": 14.81
+  },
+  "obesity_reconstruction_check": {
+    "disagreement_rate_pct": 2.58,
+    "false_positives_obs_bmi_ge_30_not_obese": 259,
+    "false_negatives_obs_bmi_lt_30_is_obese": 258
+  },
+  "mets_reconstruction_check": {
+    "observed_rule_disagreement_pct": 7.69,
+    "observed_rule_accuracy": 92.31
+  },
+  "nafld_realism": {
+    "nafld_pos_normal_alt_ast_pct": 31.17,
+    "non_nafld_elevated_alt_ast_pct": 37.84,
+    "alt_mean_nafld_pos": 42.2,
+    "alt_mean_nafld_neg": 31.9,
+    "tg_mean_nafld_pos": 153.0,
+    "tg_mean_nafld_neg": 125.9
+  },
+  "treatment_control_audit": {
+    "controlled_t2d_count": 336,
+    "controlled_t2d_pct_of_t2d": 5.16,
+    "controlled_htn_mets_count": 1180,
+    "controlled_dyslipidemia_mets_count": 506
+  },
+  "single_feature_roc_auc": {
+    "Age": {
+      "Type2_Diabetes": 0.6537,
+      "Prediabetes": 0.5142,
+      "Obesity": 0.6732,
+      "Metabolic_Syndrome": 0.756,
+      "NAFLD": 0.6135
+    },
+    "Gender": {
+      "Type2_Diabetes": 0.5095,
+      "Prediabetes": 0.5027,
+      "Obesity": 0.5261,
+      "Metabolic_Syndrome": 0.5173,
+      "NAFLD": 0.534
+    },
+    "Height": {
+      "Type2_Diabetes": 0.5046,
+      "Prediabetes": 0.5032,
+      "Obesity": 0.5159,
+      "Metabolic_Syndrome": 0.5161,
+      "NAFLD": 0.5256
+    },
+    "Weight": {
+      "Type2_Diabetes": 0.6524,
+      "Prediabetes": 0.5214,
+      "Obesity": 0.9125,
+      "Metabolic_Syndrome": 0.6832,
+      "NAFLD": 0.6343
+    },
+    "BMI": {
+      "Type2_Diabetes": 0.6789,
+      "Prediabetes": 0.5235,
+      "Obesity": 0.9973,
+      "Metabolic_Syndrome": 0.731,
+      "NAFLD": 0.6455
+    },
+    "Waist_Circumference": {
+      "Type2_Diabetes": 0.6152,
+      "Prediabetes": 0.5165,
+      "Obesity": 0.7253,
+      "Metabolic_Syndrome": 0.748,
+      "NAFLD": 0.6737
+    },
+    "Systolic_BP": {
+      "Type2_Diabetes": 0.5791,
+      "Prediabetes": 0.5083,
+      "Obesity": 0.633,
+      "Metabolic_Syndrome": 0.7281,
+      "NAFLD": 0.5848
+    },
+    "Diastolic_BP": {
+      "Type2_Diabetes": 0.5741,
+      "Prediabetes": 0.5156,
+      "Obesity": 0.6118,
+      "Metabolic_Syndrome": 0.7118,
+      "NAFLD": 0.5754
+    },
+    "Fasting_Blood_Glucose": {
+      "Type2_Diabetes": 0.9763,
+      "Prediabetes": 0.5869,
+      "Obesity": 0.7048,
+      "Metabolic_Syndrome": 0.7477,
+      "NAFLD": 0.5977
+    },
+    "HbA1c": {
+      "Type2_Diabetes": 0.9851,
+      "Prediabetes": 0.5839,
+      "Obesity": 0.7147,
+      "Metabolic_Syndrome": 0.7494,
+      "NAFLD": 0.6033
+    },
+    "Triglycerides": {
+      "Type2_Diabetes": 0.5872,
+      "Prediabetes": 0.5131,
+      "Obesity": 0.6432,
+      "Metabolic_Syndrome": 0.8706,
+      "NAFLD": 0.6435
+    },
+    "HDL": {
+      "Type2_Diabetes": 0.5753,
+      "Prediabetes": 0.5057,
+      "Obesity": 0.6357,
+      "Metabolic_Syndrome": 0.7916,
+      "NAFLD": 0.6334
+    },
+    "LDL": {
+      "Type2_Diabetes": 0.553,
+      "Prediabetes": 0.511,
+      "Obesity": 0.6005,
+      "Metabolic_Syndrome": 0.7035,
+      "NAFLD": 0.6109
+    },
+    "ALT": {
+      "Type2_Diabetes": 0.6147,
+      "Prediabetes": 0.515,
+      "Obesity": 0.6924,
+      "Metabolic_Syndrome": 0.7305,
+      "NAFLD": 0.694
+    },
+    "AST": {
+      "Type2_Diabetes": 0.6192,
+      "Prediabetes": 0.5147,
+      "Obesity": 0.6928,
+      "Metabolic_Syndrome": 0.729,
+      "NAFLD": 0.6916
+    },
+    "Family_History_Diabetes": {
+      "Type2_Diabetes": 0.5178,
+      "Prediabetes": 0.5028,
+      "Obesity": 0.5036,
+      "Metabolic_Syndrome": 0.508,
+      "NAFLD": 0.5065
+    },
+    "Family_History_Hypertension": {
+      "Type2_Diabetes": 0.5022,
+      "Prediabetes": 0.5014,
+      "Obesity": 0.5048,
+      "Metabolic_Syndrome": 0.5207,
+      "NAFLD": 0.5023
+    },
+    "Family_History_CVD": {
+      "Type2_Diabetes": 0.5022,
+      "Prediabetes": 0.5008,
+      "Obesity": 0.5051,
+      "Metabolic_Syndrome": 0.5355,
+      "NAFLD": 0.5049
+    }
+  },
+  "single_feature_pr_auc": {
+    "Age": {
+      "Type2_Diabetes": 0.4685,
+      "Prediabetes": 0.2494,
+      "Obesity": 0.4416,
+      "Metabolic_Syndrome": 0.4689,
+      "NAFLD": 0.6301
+    },
+    "Gender": {
+      "Type2_Diabetes": 0.5008,
+      "Prediabetes": 0.4392,
+      "Obesity": 0.4817,
+      "Metabolic_Syndrome": 0.433,
+      "NAFLD": 0.6692
+    },
+    "Height": {
+      "Type2_Diabetes": 0.3305,
+      "Prediabetes": 0.2453,
+      "Obesity": 0.2915,
+      "Metabolic_Syndrome": 0.2292,
+      "NAFLD": 0.5459
+    },
+    "Weight": {
+      "Type2_Diabetes": 0.472,
+      "Prediabetes": 0.2475,
+      "Obesity": 0.8147,
+      "Metabolic_Syndrome": 0.3749,
+      "NAFLD": 0.6488
+    },
+    "BMI": {
+      "Type2_Diabetes": 0.5051,
+      "Prediabetes": 0.2468,
+      "Obesity": 0.9932,
+      "Metabolic_Syndrome": 0.4361,
+      "NAFLD": 0.6586
+    },
+    "Waist_Circumference": {
+      "Type2_Diabetes": 0.431,
+      "Prediabetes": 0.2489,
+      "Obesity": 0.5135,
+      "Metabolic_Syndrome": 0.4898,
+      "NAFLD": 0.6811
+    },
+    "Systolic_BP": {
+      "Type2_Diabetes": 0.3863,
+      "Prediabetes": 0.2504,
+      "Obesity": 0.3837,
+      "Metabolic_Syndrome": 0.4132,
+      "NAFLD": 0.5972
+    },
+    "Diastolic_BP": {
+      "Type2_Diabetes": 0.3855,
+      "Prediabetes": 0.2534,
+      "Obesity": 0.373,
+      "Metabolic_Syndrome": 0.4085,
+      "NAFLD": 0.594
+    },
+    "Fasting_Blood_Glucose": {
+      "Type2_Diabetes": 0.9611,
+      "Prediabetes": 0.2586,
+      "Obesity": 0.4774,
+      "Metabolic_Syndrome": 0.4026,
+      "NAFLD": 0.6117
+    },
+    "HbA1c": {
+      "Type2_Diabetes": 0.9774,
+      "Prediabetes": 0.2596,
+      "Obesity": 0.4926,
+      "Metabolic_Syndrome": 0.407,
+      "NAFLD": 0.6147
+    },
+    "Triglycerides": {
+      "Type2_Diabetes": 0.4004,
+      "Prediabetes": 0.25,
+      "Obesity": 0.3954,
+      "Metabolic_Syndrome": 0.6202,
+      "NAFLD": 0.651
+    },
+    "HDL": {
+      "Type2_Diabetes": 0.392,
+      "Prediabetes": 0.2453,
+      "Obesity": 0.3986,
+      "Metabolic_Syndrome": 0.5463,
+      "NAFLD": 0.6432
+    },
+    "LDL": {
+      "Type2_Diabetes": 0.3689,
+      "Prediabetes": 0.2503,
+      "Obesity": 0.3641,
+      "Metabolic_Syndrome": 0.4406,
+      "NAFLD": 0.6271
+    },
+    "ALT": {
+      "Type2_Diabetes": 0.425,
+      "Prediabetes": 0.2519,
+      "Obesity": 0.4488,
+      "Metabolic_Syndrome": 0.4204,
+      "NAFLD": 0.6952
+    },
+    "AST": {
+      "Type2_Diabetes": 0.4308,
+      "Prediabetes": 0.252,
+      "Obesity": 0.4608,
+      "Metabolic_Syndrome": 0.4216,
+      "NAFLD": 0.6963
+    },
+    "Family_History_Diabetes": {
+      "Type2_Diabetes": 0.4417,
+      "Prediabetes": 0.52,
+      "Obesity": 0.3845,
+      "Metabolic_Syndrome": 0.3383,
+      "NAFLD": 0.6009
+    },
+    "Family_History_Hypertension": {
+      "Type2_Diabetes": 0.4444,
+      "Prediabetes": 0.4939,
+      "Obesity": 0.4092,
+      "Metabolic_Syndrome": 0.3773,
+      "NAFLD": 0.6115
+    },
+    "Family_History_CVD": {
+      "Type2_Diabetes": 0.404,
+      "Prediabetes": 0.5394,
+      "Obesity": 0.3672,
+      "Metabolic_Syndrome": 0.3556,
+      "NAFLD": 0.5871
+    }
+  },
+  "data_integrity": {
+    "total_patients": 20000,
+    "nan_inf_count": 0,
+    "duplicate_feature_rows": 0,
+    "train_patients": 14000,
+    "val_patients": 3000,
+    "test_patients": 3000,
+    "disjoint_split_verified": true
+  },
+  "correlations": {
+    "FPG_vs_HbA1c": 0.8821413789847375,
+    "BMI_vs_Waist": 0.4760108399432647,
+    "Weight_vs_BMI": 0.8570516195902911,
+    "TG_vs_HDL": -0.5880232482834177,
+    "SBP_vs_DBP": 0.5860377893356475,
+    "ALT_vs_AST": 0.6403462574587572
+  },
+  "prevalence_v1": {
+    "Type2_Diabetes": 0.1669,
+    "Prediabetes": 0.19055,
+    "Obesity": 0.2566,
+    "Metabolic_Syndrome": 0.2015,
+    "NAFLD": 0.1374
+  }
+}

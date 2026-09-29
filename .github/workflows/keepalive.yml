@@ -1,0 +1,24 @@
+name: Render Backend 24/7 Warmup & Keep-Alive
+
+on:
+  schedule:
+    # Runs every 10 minutes to prevent Render free-tier spin down (15-minute inactivity limit)
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  keep-alive:
+    name: Ping Render Production Backend
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping Live API Health Endpoint
+        run: |
+          echo "Pinging Render Production Health Endpoint..."
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 45 https://telemed-3koh.onrender.com/api/health)
+          echo "Response HTTP Status: $STATUS"
+          if [ "$STATUS" -ge 200 ] && [ "$STATUS" -lt 400 ]; then
+            echo "Render Backend is warm and healthy!"
+          else
+            echo "Warning: Response status $STATUS received"
+          fi

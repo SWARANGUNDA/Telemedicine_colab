@@ -1,0 +1,92 @@
+{
+  "Trivial_Baseline": {
+    "prevalences": {
+      "Type2_Diabetes": 0.36733333333333335,
+      "Prediabetes": 0.31333333333333335,
+      "Obesity": 0.322,
+      "Metabolic_Syndrome": 0.07733333333333334,
+      "NAFLD": 0.13866666666666666
+    },
+    "trivial_positive_f1s": {
+      "Type2_Diabetes": 0.5373,
+      "Prediabetes": 0.4772,
+      "Obesity": 0.4871,
+      "Metabolic_Syndrome": 0.1436,
+      "NAFLD": 0.2436
+    },
+    "trivial_macro_f1": 0.3778
+  },
+  "Pipeline_Consistency_Clinical": {
+    "validation_stages_A_B_C": [
+      0.7351,
+      0.744,
+      0.7902
+    ],
+    "test_stages_A_B_C": [
+      0.7283,
+      0.7251,
+      0.7758
+    ]
+  },
+  "Pipeline_Consistency_Wearable_CGM": {
+    "validation_stages_A_B_C": [
+      0.465,
+      0.4715,
+      0.5829
+    ],
+    "test_stages_A_B_C": [
+      0.4701,
+      0.4715,
+      0.5834
+    ]
+  },
+  "Pipeline_Consistency_Gut": {
+    "validation_stages_A_B_C": [
+      0.0092,
+      0.005,
+      0.3515
+    ],
+    "test_stages_A_B_C": [
+      0.0112,
+      0.0048,
+      0.3473
+    ]
+  },
+  "CGM_Bootstrap_Test": {
+    "delta_macro_f1_mean": 0.2154,
+    "delta_macro_f1_95_ci": [
+      0.2008,
+      0.2307
+    ],
+    "t2d_auc_exp_a_std": 0.6007,
+    "t2d_auc_exp_b_cgm": 0.9913,
+    "delta_t2d_auc_mean": 0.39,
+    "delta_t2d_auc_95_ci": [
+      0.3693,
+      0.41
+    ]
+  },
+  "Gut_Permutation_Test": {
+    "actual_test_aucs": {
+      "Type2_Diabetes": 0.5052,
+      "Prediabetes": 0.4982,
+      "Obesity": 0.4982,
+      "Metabolic_Syndrome": 0.5032,
+      "NAFLD": 0.4999
+    },
+    "null_permutation_auc_means": {
+      "Type2_Diabetes": 0.5012,
+      "Prediabetes": 0.4991,
+      "Obesity": 0.4992,
+      "Metabolic_Syndrome": 0.499,
+      "NAFLD": 0.5026
+    },
+    "empirical_p_values": {
+      "Type2_Diabetes": 0.36,
+      "Prediabetes": 0.53,
+      "Obesity": 0.52,
+      "Metabolic_Syndrome": 0.41,
+      "NAFLD": 0.58
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "manifest_version": "1.0",
+  "sources": {
+    "ADA_DIABETES_CARE_2024": {
+      "doc_id": "ADA_DIABETES_CARE_2024",
+      "organization": "American Diabetes Association (ADA)",
+      "document_title": "Standards of Care in Diabetes \u2014 2024",
+      "publication_date": "2024-01-01",
+      "version": "2024.1",
+      "current_status": "CURRENT",
+      "disease_domains": [
+        "Type2_Diabetes",
+        "Prediabetes"
+      ],
+      "evidence_type": "CLINICAL_GUIDELINE",
+      "filename": "ada_standards_of_care_2024.txt"
+    },
+    "WHO_OBESITY_GUIDANCE_2023": {
+      "doc_id": "WHO_OBESITY_GUIDANCE_2023",
+      "organization": "World Health Organization (WHO)",
+      "document_title": "Clinical Guidelines for Obesity Prevention and Management",
+      "publication_date": "2023-06-15",
+      "version": "2023.2",
+      "current_status": "CURRENT",
+      "disease_domains": [
+        "Obesity",
+        "Metabolic_Syndrome"
+      ],
+      "evidence_type": "CLINICAL_GUIDELINE",
+      "filename": "who_obesity_guidelines_2023.txt"
+    },
+    "AASLD_MASLD_PRACTICE_2023": {
+      "doc_id": "AASLD_MASLD_PRACTICE_2023",
+      "organization": "American Association for the Study of Liver Diseases (AASLD)",
+      "document_title": "Practice Guidance on Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD/NAFLD)",
+      "publication_date": "2023-12-01",
+      "version": "2023.1",
+      "current_status": "CURRENT",
+      "disease_domains": [
+        "NAFLD",
+        "Metabolic_Syndrome"
+      ],
+      "evidence_type": "CLINICAL_GUIDELINE",
+      "filename": "aasld_masld_guidance_2023.txt"
+    },
+    "AHA_NHLBI_METSYN_CRITERIA_2022": {
+      "doc_id": "AHA_NHLBI_METSYN_CRITERIA_2022",
+      "organization": "American Heart Association / NHLBI",
+      "document_title": "Diagnosis and Management of the Metabolic Syndrome: An American Heart Association/National Heart, Lung, and Blood Institute Scientific Statement",
+      "publication_date": "2022-09-10",
+      "version": "2022.1",
+      "current_status": "CURRENT",
+      "disease_domains": [
+        "Metabolic_Syndrome"
+      ],
+      "evidence_type": "CLINICAL_GUIDELINE",
+      "filename": "aha_metsyn_statement_2022.txt"
+    },
+    "ISAPP_PREBIOTICS_FIBER_2023": {
+      "doc_id": "ISAPP_PREBIOTICS_FIBER_2023",
+      "organization": "International Scientific Association for Probiotics and Prebiotics (ISAPP)",
+      "document_title": "Consensus Statement on Prebiotics, Dietary Fiber, and Short-Chain Fatty Acids in Metabolic Health",
+      "publication_date": "2023-04-20",
+      "version": "2023.1",
+      "current_status": "CURRENT",
+      "disease_domains": [
+        "Type2_Diabetes",
+        "Obesity",
+        "NAFLD",
+        "Metabolic_Syndrome"
+      ],
+      "evidence_type": "EMERGING_RESEARCH",
+      "filename": "isapp_prebiotics_fiber_2023.txt"
+    }
+  }
+}

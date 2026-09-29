@@ -1,0 +1,208 @@
+========================================================================
+GUT MICROBIOME DATASET - FEATURE DISTRIBUTION REPORT
+========================================================================
+Total Patients: 20000
+
+--------------------------------------------------
+Feature: Akkermansia
+--------------------------------------------------
+  Mean:     4.1857
+  Std:      2.5061
+  Min:      0.0000
+  Max:      13.3100
+  Median:   3.9700
+  Skewness: 0.4916
+  Kurtosis: -0.2087
+  Normality: Non-Normal (p=3.2742e-30)
+
+  Disease Group Means:
+    Healthy:  4.6807 (n=11353)
+    Diseased: 3.5357 (n=8647)
+    Type2_Diabetes: 3.3744 (n=3338)
+    Obesity: 3.4425 (n=5132)
+    NAFLD: 3.3244 (n=2748)
+
+--------------------------------------------------
+Feature: Faecalibacterium
+--------------------------------------------------
+  Mean:     8.5880
+  Std:      4.4949
+  Min:      0.0000
+  Max:      23.8200
+  Median:   8.4000
+  Skewness: 0.2826
+  Kurtosis: -0.3973
+  Normality: Non-Normal (p=1.3692e-19)
+
+  Disease Group Means:
+    Healthy:  9.9255 (n=11353)
+    Diseased: 6.8320 (n=8647)
+    Type2_Diabetes: 6.0255 (n=3338)
+    Obesity: 6.5298 (n=5132)
+    NAFLD: 6.1054 (n=2748)
+
+--------------------------------------------------
+Feature: Bifidobacterium
+--------------------------------------------------
+  Mean:     4.9469
+  Std:      2.7932
+  Min:      0.0000
+  Max:      14.5800
+  Median:   4.7300
+  Skewness: 0.4076
+  Kurtosis: -0.3013
+  Normality: Non-Normal (p=2.0568e-25)
+
+  Disease Group Means:
+    Healthy:  5.7023 (n=11353)
+    Diseased: 3.9551 (n=8647)
+    Type2_Diabetes: 3.5731 (n=3338)
+    Obesity: 3.7485 (n=5132)
+    NAFLD: 3.6048 (n=2748)
+
+--------------------------------------------------
+Feature: Roseburia
+--------------------------------------------------
+  Mean:     4.3202
+  Std:      2.4169
+  Min:      0.0000
+  Max:      13.0900
+  Median:   4.1800
+  Skewness: 0.3798
+  Kurtosis: -0.3180
+  Normality: Non-Normal (p=3.2253e-24)
+
+  Disease Group Means:
+    Healthy:  5.0888 (n=11353)
+    Diseased: 3.3112 (n=8647)
+    Type2_Diabetes: 2.8719 (n=3338)
+    Obesity: 3.1097 (n=5132)
+    NAFLD: 2.8587 (n=2748)
+
+--------------------------------------------------
+Feature: Alistipes
+--------------------------------------------------
+  Mean:     3.4784
+  Std:      1.9306
+  Min:      0.0000
+  Max:      10.1200
+  Median:   3.3500
+  Skewness: 0.3826
+  Kurtosis: -0.3023
+  Normality: Non-Normal (p=1.2980e-23)
+
+  Disease Group Means:
+    Healthy:  3.9654 (n=11353)
+    Diseased: 2.8390 (n=8647)
+    Type2_Diabetes: 2.6065 (n=3338)
+    Obesity: 2.7287 (n=5132)
+    NAFLD: 2.6000 (n=2748)
+
+--------------------------------------------------
+Feature: Escherichia_Shigella
+--------------------------------------------------
+  Mean:     2.9158
+  Std:      1.9815
+  Min:      0.0000
+  Max:      11.1500
+  Median:   2.6100
+  Skewness: 0.7644
+  Kurtosis: 0.2695
+  Normality: Non-Normal (p=4.4883e-38)
+
+  Disease Group Means:
+    Healthy:  1.8367 (n=11353)
+    Diseased: 4.3326 (n=8647)
+    Type2_Diabetes: 5.0486 (n=3338)
+    Obesity: 4.7150 (n=5132)
+    NAFLD: 5.1215 (n=2748)
+
+--------------------------------------------------
+Feature: Collinsella
+--------------------------------------------------
+  Mean:     2.0966
+  Std:      1.4134
+  Min:      0.0000
+  Max:      7.7800
+  Median:   1.9100
+  Skewness: 0.7071
+  Kurtosis: 0.2040
+  Normality: Non-Normal (p=3.3543e-37)
+
+  Disease Group Means:
+    Healthy:  1.4145 (n=11353)
+    Diseased: 2.9922 (n=8647)
+    Type2_Diabetes: 3.4014 (n=3338)
+    Obesity: 3.2507 (n=5132)
+    NAFLD: 3.4952 (n=2748)
+
+--------------------------------------------------
+Feature: Prevotella
+--------------------------------------------------
+  Mean:     6.5114
+  Std:      5.2659
+  Min:      0.0000
+  Max:      30.0000
+  Median:   4.9800
+  Skewness: 1.9450
+  Kurtosis: 4.5944
+  Normality: Non-Normal (p=1.7740e-59)
+
+  Disease Group Means:
+    Healthy:  6.3078 (n=11353)
+    Diseased: 6.7788 (n=8647)
+    Type2_Diabetes: 6.7953 (n=3338)
+    Obesity: 6.6967 (n=5132)
+    NAFLD: 6.7868 (n=2748)
+
+--------------------------------------------------
+Feature: Blautia
+--------------------------------------------------
+  Mean:     4.9155
+  Std:      3.3775
+  Min:      0.0000
+  Max:      20.0000
+  Median:   4.0300
+  Skewness: 1.7492
+  Kurtosis: 3.9012
+  Normality: Non-Normal (p=3.0636e-56)
+
+  Disease Group Means:
+    Healthy:  5.0990 (n=11353)
+    Diseased: 4.6746 (n=8647)
+    Type2_Diabetes: 4.5007 (n=3338)
+    Obesity: 4.5498 (n=5132)
+    NAFLD: 4.4930 (n=2748)
+
+--------------------------------------------------
+Feature: Shannon_Diversity_Index
+--------------------------------------------------
+  Mean:     2.7895
+  Std:      0.6832
+  Min:      1.0000
+  Max:      5.0000
+  Median:   2.8111
+  Skewness: -0.1214
+  Kurtosis: -0.2185
+  Normality: Non-Normal (p=1.3782e-06)
+
+  Disease Group Means:
+    Healthy:  3.1064 (n=11353)
+    Diseased: 2.3734 (n=8647)
+    Type2_Diabetes: 2.0830 (n=3338)
+    Obesity: 2.2428 (n=5132)
+    NAFLD: 2.0729 (n=2748)
+
+==================================================
+DISEASE PREVALENCE
+==================================================
+  Type2_Diabetes: 3338 (16.7%)
+  Prediabetes: 3811 (19.1%)
+  Obesity: 5132 (25.7%)
+  Metabolic_Syndrome: 4030 (20.2%)
+  NAFLD: 2748 (13.7%)
+  Healthy: 11353 (56.8%)
+
+========================================================================
+END OF DISTRIBUTION REPORT
+========================================================================

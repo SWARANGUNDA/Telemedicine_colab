@@ -1,0 +1,54 @@
+flowchart LR
+    subgraph External Entities
+        P[Patient User]
+        D[Doctor User]
+        A[Admin User]
+    end
+
+    subgraph Process Layer 1: Data Intake & Validation
+        P1[1.0 Data Intake Engine]
+        P2[2.0 Schema Validator & Normalizer]
+    end
+
+    subgraph Process Layer 2: Machine Learning Inference
+        P3[3.1 Clinical Expert Engine 18]
+        P4[3.2 Wearable Expert Engine 15]
+        P5[3.3 Gut Microbiome Expert Engine 49]
+        P6[4.0 Multimodal Stacking Fusion Engine]
+    end
+
+    subgraph Process Layer 3: Intelligence & Explainability
+        P7[5.0 TreeSHAP XAI Engine]
+        P8[6.0 Medical RAG Engine]
+        P9[7.0 PDF Report Generator]
+    end
+
+    subgraph Data Stores
+        DS1[(D1: PostgreSQL Database)]
+        DS2[(D2: ChromaDB Medical Knowledge)]
+        DS3[(D3: Redis Session Store)]
+    end
+
+    ' Data Flows
+    P -->|Raw CSV / PDF / Form Inputs| P1
+    P1 -->|Unvalidated Data| P2
+    P2 -->|18 Clinical Features| P3
+    P2 -->|15 Wearable Features| P4
+    P2 -->|49 Gut Features| P5
+
+    P3 -->|Clinical Probabilities| P6
+    P4 -->|Wearable Probabilities| P6
+    P5 -->|Gut Probabilities| P6
+
+    P6 -->|5 Disease Predictions| DS1
+    DS1 -->|Prediction Snapshot| P7
+    DS1 -->|Prediction Snapshot| P8
+
+    DS2 -->|Clinical Evidence Context| P8
+    P7 -->|XAI Feature Attributions| DS1
+    P8 -->|Structured Clinical Report| DS1
+    P8 -->|Report Content| P9
+
+    P9 -->|Downloadable PDF| P
+    DS1 -->|Patient Risk Profile & Reports| D
+    DS1 -->|Audit Logs & Observability| A

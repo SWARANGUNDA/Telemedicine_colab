@@ -1,0 +1,14 @@
+# AASLD Practice Guidance on Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD/NAFLD)
+Organization: American Association for the Study of Liver Diseases (AASLD)
+Publication Date: 2023-12-01
+Document Version: 2023.1
+Evidence Type: CLINICAL_GUIDELINE
+
+## Section 1: Risk Assessment and Liver Biomarkers
+Non-Alcoholic Fatty Liver Disease (NAFLD / MASLD) risk is associated with hepatic steatosis, elevated liver enzymes (ALT > 35 U/L in males, > 25 U/L in females; AST), central obesity (BMI >= 28), elevated triglycerides (>= 150 mg/dL), and Type 2 Diabetes. 
+
+## Section 2: Weight Reduction and Dietary Strategy
+A weight loss of 7% to 10% is recommended for patients with NAFLD to achieve steatosis reduction and resolution of non-alcoholic steatohepatitis (NASH). A Mediterranean diet pattern, rich in monounsaturated fatty acids (MUFA), omega-3 fatty acids, and low in refined sugars/fructose, is strongly recommended.
+
+## Section 3: Gut-Liver Axis and Metabolic Homeostasis
+Substantial clinical evidence links gut microbial permeability and bacterial translocation to hepatic inflammation. Microbial fermentation products (Short-Chain Fatty Acids like butyrate and acetate) help maintain intestinal barrier integrity, dampening hepatic lipogenesis and systemic inflammation.

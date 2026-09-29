@@ -1,0 +1,7 @@
+{
+  "Type2_Diabetes": 0.1,
+  "Prediabetes": 0.1,
+  "Obesity": 0.1,
+  "Metabolic_Syndrome": 0.41,
+  "NAFLD": 0.43
+}

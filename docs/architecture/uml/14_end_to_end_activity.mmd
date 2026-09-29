@@ -1,0 +1,50 @@
+flowchart TD
+    Start([Start: User Access TeleMed Platform]) --> AuthCheck{Authenticated?}
+    
+    AuthCheck -- No --> Login[User Log In / Registration]
+    Login --> JWT[Issue Signed JWT Token & Role]
+    JWT --> DashboardSelect
+    
+    AuthCheck -- Yes --> DashboardSelect{User Role?}
+    
+    DashboardSelect -- Patient --> PatientFlow[Patient Portal Dashboard]
+    DashboardSelect -- Doctor --> DoctorFlow[Doctor Portal Workspace]
+    DashboardSelect -- Admin --> AdminFlow[Admin Governance Dashboard]
+
+    %% Patient Subflow
+    PatientFlow --> SelectIntake[Select New Health Assessment]
+    SelectIntake --> UploadInput[Upload / Input Biomarkers]
+    UploadInput --> ValidateData[Intake Schema Validation & Quality Check]
+    
+    ValidateData -- Invalid --> IntakeError[Display Data Error & Prompt Correction]
+    IntakeError --> UploadInput
+    
+    ValidateData -- Valid --> Preprocess[Feature Normalization & Preprocessing]
+    Preprocess --> ModalityDetect[Detect Active Modalities: Clinical, Wearable, Gut]
+    
+    ModalityDetect --> RunExperts[Execute Applicable Single-Modality Experts]
+    RunExperts --> FusionStacking[V4 Stacking Fusion Engine & Calibrator]
+    FusionStacking --> GenPredictions[Generate 5 Disease Probability Scores]
+    
+    GenPredictions --> PersistRecord[(Persist Health Record & Prediction Snapshot in PostgreSQL)]
+    PersistRecord --> TreeSHAP[Trigger XAI TreeSHAP Feature Attribution]
+    TreeSHAP --> RAGReport[Trigger Medical RAG Evidence Retrieval & Synthesis]
+    
+    RAGReport --> DisplayResults[Display Dashboard, Risk Scores, XAI Plots & Report]
+    DisplayResults --> OptPDF{Download PDF?}
+    OptPDF -- Yes --> GeneratePDF[ReportLab Engine Generates PDF Download]
+    OptPDF -- No --> HistoryView[Save to Patient Health History]
+
+    %% Doctor Subflow
+    DoctorFlow --> ReviewQueue[Review Consultation Requests & Patient Queue]
+    ReviewQueue --> OpenRecord[Inspect Patient Record, Predictions & XAI]
+    OpenRecord --> AddNote[Add Clinical Notes & Follow-up Guidance]
+    AddNote --> DoctorEnd([Complete Patient Consultation Review])
+
+    %% Admin Subflow
+    AdminFlow --> VerifyDocs[Verify Pending Doctor Registrations]
+    VerifyDocs --> AuditLogs[Inspect Immutable Security Audit Logs]
+    AuditLogs --> AdminEnd([Complete Governance Audit])
+
+    GeneratePDF --> HistoryView
+    HistoryView --> PatientEnd([End Assessment Flow])

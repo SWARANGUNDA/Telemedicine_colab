@@ -1,0 +1,58 @@
+{
+  "data/multimodal_v3/clinical_v3.csv": {
+    "sha256": "0c05dc94aaf1e1c7736b71e3bdb3d1dc90284ce844b7623b077eeea9682e8242",
+    "size_bytes": 1773130
+  },
+  "data/multimodal_v3/wearable_standard_v3.csv": {
+    "sha256": "3ff8aff4f6dd6bcc2671a9cc7ce3d465bd37240475c0fc49fe830ead147b3444",
+    "size_bytes": 1189650
+  },
+  "data/multimodal_v3/wearable_cgm_v3.csv": {
+    "sha256": "e0ad3ee19b4e5dc4771f393301c868a8df99ad59a0ec6acc43e88258d7052393",
+    "size_bytes": 357475
+  },
+  "data/multimodal_v3/gut_v3.csv": {
+    "sha256": "ced96863e237b3ae13d66266709673f14278202d1197137a53aa234d0d34b891",
+    "size_bytes": 3969131
+  },
+  "data/multimodal_v3/labels_v3.csv": {
+    "sha256": "e18ae98083a647f344ca2e19eb88344e70672a090244fc5cecf31077817cc7fc",
+    "size_bytes": 360072
+  },
+  "data/multimodal_v3/split_manifest_v3.csv": {
+    "sha256": "e1942e303a5878372198bfca0299469bedc26621f6dc61f422b245dc0213ec56",
+    "size_bytes": 271018
+  },
+  "expert_models/saved_models/clinical_v3/clinical_v3_payload.joblib": {
+    "sha256": "f4ecb3f7df25500155d92dcbe0dda0da9b18e3ec00320d1f1bb68637a68041b1",
+    "size_bytes": 1900516
+  },
+  "expert_models/saved_models/clinical_v3/clinical_v3_metrics.json": {
+    "sha256": "fb14fa3d1c6e26eae0e174eca68199f1e647adaebde18f7b08c1528b7730a416",
+    "size_bytes": 2040
+  },
+  "expert_models/saved_models/wearable_v3/wearable_v3_payload.joblib": {
+    "sha256": "1dfe6d7fd4e384063896de5fc2b2b1388d74d96e0e336d9adc39155b4d76d9ad",
+    "size_bytes": 1848995
+  },
+  "expert_models/saved_models/wearable_v3/wearable_v3_metrics.json": {
+    "sha256": "fc72f23c4bcfb190378b99e40785bf6b9d693c4ccc7293d20c1f7daade60f1e6",
+    "size_bytes": 4563
+  },
+  "expert_models/saved_models/gut_v3/gut_v3_payload.joblib": {
+    "sha256": "b0896d2f8d30dc3edcb7dadfd2ed324f03c4d6bc18fbba3d03cd54cbe6f40059",
+    "size_bytes": 1868627
+  },
+  "expert_models/saved_models/gut_v3/gut_v3_metrics.json": {
+    "sha256": "61ac6fd2f519640aa9a16d1a34e7efc8ec32f0741c7eb7fda71e97e9fc864ff0",
+    "size_bytes": 3072
+  },
+  "expert_models/saved_models/fusion_v3/fusion_v3_metrics.json": {
+    "sha256": "849f03b3e86f5a227be45a2e95242c6037b2595df8d3f45ec4bdba990e3f55ff",
+    "size_bytes": 54440
+  },
+  "expert_models/saved_models/fusion_v3/wg_logistic_regression_stacker.joblib": {
+    "sha256": "10a9da990c5550542d4938fc80a666752b4a98513afda85a029dccb220a7153f",
+    "size_bytes": 6591
+  }
+}

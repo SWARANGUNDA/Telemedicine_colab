@@ -1,0 +1,2 @@
+Patient_ID,Age,Gender,Height,Weight,BMI,Waist_Circumference,Systolic_BP,Diastolic_BP,Fasting_Blood_Glucose,HbA1c,Triglycerides,HDL,LDL,ALT,AST,Family_History_Diabetes,Family_History_Hypertension,Family_History_CVD
+P000301,48,Female,165.0,68.5,25.2,84.0,122.0,81.0,105.0,5.8,142.0,52.0,118.0,22.0,24.0,1,0,0

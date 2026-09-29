@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: telemed-ai-backend
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r app/backend/requirements.txt
+    startCommand: python -m uvicorn app.backend.main:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /api/health
+    envVars:
+      - key: TELEMED_ENV
+        value: production
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DATABASE_URL
+        sync: false
+      - key: TELEMED_JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: "https://*.vercel.app"

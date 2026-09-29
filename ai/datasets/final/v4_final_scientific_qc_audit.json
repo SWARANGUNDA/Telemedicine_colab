@@ -1,0 +1,343 @@
+{
+  "generator_version": "4.0.0-publication",
+  "generator_hash": "75308fa685df0643f0cc3eb51095ca34e60aeea497de031876f4a70e4060d2a2",
+  "environment": {
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.2.1",
+    "pandas": "2.2.3"
+  },
+  "schema_audit": {
+    "clinical_features": 18,
+    "clinical_total_columns": 19,
+    "clinical_schema_reconciliation": "18 physiological features + 1 Patient_ID column = 19 total CSV columns",
+    "wearable_features": 15,
+    "wearable_breakdown": "10 smartwatch features + 5 CGM features = 15 total features",
+    "gut_named_taxa": 40,
+    "gut_composition_structure": "40 named taxa + 1 Other_Taxa slot = 41 composition slots (Sum = 100.0%) + 9 derived indices",
+    "gut_total_columns": 51,
+    "target_diseases_count": 5
+  },
+  "integrity_audit": {
+    "total_patients": 100000,
+    "duplicate_rows": {
+      "clinical": 0,
+      "wearable": 0,
+      "gut": 0,
+      "labels": 0
+    },
+    "split_counts": {
+      "train": 70000,
+      "val": 15000,
+      "test": 15000
+    },
+    "split_patient_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "cgm_simplex_constraint": {
+      "min_sum": 99.98999999999998,
+      "max_sum": 100.01000000000002,
+      "status": "PASS (Exact 100.0% Sum)"
+    },
+    "gut_compositional_constraint": {
+      "min_sum": 0.0,
+      "max_sum": 100.0012,
+      "status": "PASS (Exact 100.0% Sum)"
+    },
+    "disease_prevalence_by_split": {
+      "Train": {
+        "Type2_Diabetes": 0.5263,
+        "Prediabetes": 0.5569,
+        "High_Adiposity_Risk": 0.3907,
+        "Metabolic_Syndrome": 0.5714,
+        "NAFLD": 0.5953
+      },
+      "Val": {
+        "Type2_Diabetes": 0.5263,
+        "Prediabetes": 0.5601,
+        "High_Adiposity_Risk": 0.3903,
+        "Metabolic_Syndrome": 0.5736,
+        "NAFLD": 0.5953
+      },
+      "Test": {
+        "Type2_Diabetes": 0.5248,
+        "Prediabetes": 0.5646,
+        "High_Adiposity_Risk": 0.389,
+        "Metabolic_Syndrome": 0.568,
+        "NAFLD": 0.598
+      }
+    }
+  },
+  "leakage_audit": {
+    "direct_deterministic_thresholds": "PASSED (Zero single-feature cutoffs in generator)",
+    "label_feedback_into_inputs": "PASSED (Features derived purely from shared 14D latent physiology vector L_i)",
+    "train_test_contamination": "PASSED (Zero patient ID overlap across splits)",
+    "max_univariate_correlations": {
+      "Type2_Diabetes": {
+        "max_feature": "Wearable.CGM_Glucose_CV",
+        "max_pearson_r": 0.4735
+      },
+      "Prediabetes": {
+        "max_feature": "Wearable.CGM_Glucose_CV",
+        "max_pearson_r": 0.43
+      },
+      "High_Adiposity_Risk": {
+        "max_feature": "Clinical.BMI",
+        "max_pearson_r": 0.424
+      },
+      "Metabolic_Syndrome": {
+        "max_feature": "Clinical.Triglycerides",
+        "max_pearson_r": 0.3845
+      },
+      "NAFLD": {
+        "max_feature": "Clinical.AST",
+        "max_pearson_r": 0.4241
+      }
+    },
+    "leakage_audit_conclusion": "NO TARGET LEAKAGE DETECTED across any modality"
+  },
+  "statistical_validation": [
+    {
+      "Modality": "Clinical",
+      "Disease_Target": "Type2_Diabetes",
+      "Top_Feature": "HbA1c",
+      "Max_Pearson_r": 0.4197,
+      "Max_Spearman_r": 0.4242,
+      "Max_Mutual_Info": 0.0934,
+      "LR_AUROC_CV": "0.7750 \u00b1 0.0036",
+      "LR_AUROC_95CI": "[0.7700, 0.7801]",
+      "LGBM_AUROC_CV": "0.7731 \u00b1 0.0038",
+      "LGBM_AUROC_95CI": "[0.7678, 0.7784]",
+      "LGBM_AUPRC_CV": "0.7804 \u00b1 0.0027",
+      "Test_AUROC": 0.7752,
+      "Test_AUPRC": 0.7789,
+      "Top_Permutation_Imp": 0.1273
+    },
+    {
+      "Modality": "Clinical",
+      "Disease_Target": "Prediabetes",
+      "Top_Feature": "HbA1c",
+      "Max_Pearson_r": 0.3793,
+      "Max_Spearman_r": 0.383,
+      "Max_Mutual_Info": 0.079,
+      "LR_AUROC_CV": "0.7483 \u00b1 0.0041",
+      "LR_AUROC_95CI": "[0.7426, 0.7539]",
+      "LGBM_AUROC_CV": "0.7466 \u00b1 0.0035",
+      "LGBM_AUROC_95CI": "[0.7417, 0.7515]",
+      "LGBM_AUPRC_CV": "0.7754 \u00b1 0.0035",
+      "Test_AUROC": 0.7463,
+      "Test_AUPRC": 0.7811,
+      "Top_Permutation_Imp": 0.1151
+    },
+    {
+      "Modality": "Clinical",
+      "Disease_Target": "High_Adiposity_Risk",
+      "Top_Feature": "BMI",
+      "Max_Pearson_r": 0.4241,
+      "Max_Spearman_r": 0.4246,
+      "Max_Mutual_Info": 0.0951,
+      "LR_AUROC_CV": "0.7550 \u00b1 0.0031",
+      "LR_AUROC_95CI": "[0.7508, 0.7593]",
+      "LGBM_AUROC_CV": "0.7538 \u00b1 0.0033",
+      "LGBM_AUROC_95CI": "[0.7492, 0.7583]",
+      "LGBM_AUPRC_CV": "0.6394 \u00b1 0.0059",
+      "Test_AUROC": 0.7533,
+      "Test_AUPRC": 0.6387,
+      "Top_Permutation_Imp": 0.1876
+    },
+    {
+      "Modality": "Clinical",
+      "Disease_Target": "Metabolic_Syndrome",
+      "Top_Feature": "Triglycerides",
+      "Max_Pearson_r": 0.3868,
+      "Max_Spearman_r": 0.3929,
+      "Max_Mutual_Info": 0.081,
+      "LR_AUROC_CV": "0.7588 \u00b1 0.0046",
+      "LR_AUROC_95CI": "[0.7524, 0.7651]",
+      "LGBM_AUROC_CV": "0.7564 \u00b1 0.0044",
+      "LGBM_AUROC_95CI": "[0.7504, 0.7625]",
+      "LGBM_AUPRC_CV": "0.7934 \u00b1 0.0041",
+      "Test_AUROC": 0.7558,
+      "Test_AUPRC": 0.7908,
+      "Top_Permutation_Imp": 0.0321
+    },
+    {
+      "Modality": "Clinical",
+      "Disease_Target": "NAFLD",
+      "Top_Feature": "ALT",
+      "Max_Pearson_r": 0.4254,
+      "Max_Spearman_r": 0.4354,
+      "Max_Mutual_Info": 0.0855,
+      "LR_AUROC_CV": "0.7731 \u00b1 0.0033",
+      "LR_AUROC_95CI": "[0.7685, 0.7777]",
+      "LGBM_AUROC_CV": "0.7715 \u00b1 0.0036",
+      "LGBM_AUROC_95CI": "[0.7665, 0.7765]",
+      "LGBM_AUPRC_CV": "0.8236 \u00b1 0.0020",
+      "Test_AUROC": 0.7729,
+      "Test_AUPRC": 0.8221,
+      "Top_Permutation_Imp": 0.0276
+    },
+    {
+      "Modality": "Wearable",
+      "Disease_Target": "Type2_Diabetes",
+      "Top_Feature": "Activity_Energy_Expenditure",
+      "Max_Pearson_r": 0.4743,
+      "Max_Spearman_r": 0.4773,
+      "Max_Mutual_Info": 0.0359,
+      "LR_AUROC_CV": "0.6737 \u00b1 0.0044",
+      "LR_AUROC_95CI": "[0.6676, 0.6798]",
+      "LGBM_AUROC_CV": "0.6715 \u00b1 0.0051",
+      "LGBM_AUROC_95CI": "[0.6644, 0.6786]",
+      "LGBM_AUPRC_CV": "0.6900 \u00b1 0.0055",
+      "Test_AUROC": 0.6743,
+      "Test_AUPRC": 0.6947,
+      "Top_Permutation_Imp": 0.0359
+    },
+    {
+      "Modality": "Wearable",
+      "Disease_Target": "Prediabetes",
+      "Top_Feature": "CGM_Glucose_CV",
+      "Max_Pearson_r": 0.4304,
+      "Max_Spearman_r": 0.4327,
+      "Max_Mutual_Info": 0.0296,
+      "LR_AUROC_CV": "0.6536 \u00b1 0.0057",
+      "LR_AUROC_95CI": "[0.6456, 0.6616]",
+      "LGBM_AUROC_CV": "0.6517 \u00b1 0.0053",
+      "LGBM_AUROC_95CI": "[0.6444, 0.6591]",
+      "LGBM_AUPRC_CV": "0.6965 \u00b1 0.0032",
+      "Test_AUROC": 0.6544,
+      "Test_AUPRC": 0.7089,
+      "Top_Permutation_Imp": 0.0336
+    },
+    {
+      "Modality": "Wearable",
+      "Disease_Target": "High_Adiposity_Risk",
+      "Top_Feature": "Sedentary_Time_Minutes",
+      "Max_Pearson_r": 0.2569,
+      "Max_Spearman_r": 0.2527,
+      "Max_Mutual_Info": 0.0328,
+      "LR_AUROC_CV": "0.6638 \u00b1 0.0033",
+      "LR_AUROC_95CI": "[0.6592, 0.6684]",
+      "LGBM_AUROC_CV": "0.6602 \u00b1 0.0039",
+      "LGBM_AUROC_95CI": "[0.6549, 0.6656]",
+      "LGBM_AUPRC_CV": "0.5418 \u00b1 0.0037",
+      "Test_AUROC": 0.6558,
+      "Test_AUPRC": 0.5324,
+      "Top_Permutation_Imp": 0.0741
+    },
+    {
+      "Modality": "Wearable",
+      "Disease_Target": "Metabolic_Syndrome",
+      "Top_Feature": "Sedentary_Time_Minutes",
+      "Max_Pearson_r": 0.2549,
+      "Max_Spearman_r": 0.2539,
+      "Max_Mutual_Info": 0.014,
+      "LR_AUROC_CV": "0.6161 \u00b1 0.0035",
+      "LR_AUROC_95CI": "[0.6112, 0.6209]",
+      "LGBM_AUROC_CV": "0.6145 \u00b1 0.0025",
+      "LGBM_AUROC_95CI": "[0.6111, 0.6179]",
+      "LGBM_AUPRC_CV": "0.6693 \u00b1 0.0031",
+      "Test_AUROC": 0.6207,
+      "Test_AUPRC": 0.6718,
+      "Top_Permutation_Imp": 0.0315
+    },
+    {
+      "Modality": "Wearable",
+      "Disease_Target": "NAFLD",
+      "Top_Feature": "Heart_Rate_Variability_RMSSD",
+      "Max_Pearson_r": 0.2284,
+      "Max_Spearman_r": 0.2271,
+      "Max_Mutual_Info": 0.009,
+      "LR_AUROC_CV": "0.5975 \u00b1 0.0070",
+      "LR_AUROC_95CI": "[0.5878, 0.6072]",
+      "LGBM_AUROC_CV": "0.5955 \u00b1 0.0064",
+      "LGBM_AUROC_95CI": "[0.5867, 0.6043]",
+      "LGBM_AUPRC_CV": "0.6726 \u00b1 0.0058",
+      "Test_AUROC": 0.5995,
+      "Test_AUPRC": 0.6778,
+      "Top_Permutation_Imp": 0.0243
+    },
+    {
+      "Modality": "Gut",
+      "Disease_Target": "Type2_Diabetes",
+      "Top_Feature": "Klebsiella_pneumoniae",
+      "Max_Pearson_r": 0.1327,
+      "Max_Spearman_r": 0.1384,
+      "Max_Mutual_Info": 0.0105,
+      "LR_AUROC_CV": "0.5899 \u00b1 0.0019",
+      "LR_AUROC_95CI": "[0.5873, 0.5925]",
+      "LGBM_AUROC_CV": "0.5874 \u00b1 0.0014",
+      "LGBM_AUROC_95CI": "[0.5854, 0.5894]",
+      "LGBM_AUPRC_CV": "0.5989 \u00b1 0.0020",
+      "Test_AUROC": 0.5935,
+      "Test_AUPRC": 0.6079,
+      "Top_Permutation_Imp": 0.0054
+    },
+    {
+      "Modality": "Gut",
+      "Disease_Target": "Prediabetes",
+      "Top_Feature": "Escherichia_coli",
+      "Max_Pearson_r": 0.1198,
+      "Max_Spearman_r": 0.1239,
+      "Max_Mutual_Info": 0.0068,
+      "LR_AUROC_CV": "0.5789 \u00b1 0.0068",
+      "LR_AUROC_95CI": "[0.5695, 0.5883]",
+      "LGBM_AUROC_CV": "0.5780 \u00b1 0.0069",
+      "LGBM_AUROC_95CI": "[0.5683, 0.5876]",
+      "LGBM_AUPRC_CV": "0.6185 \u00b1 0.0073",
+      "Test_AUROC": 0.5931,
+      "Test_AUPRC": 0.64,
+      "Top_Permutation_Imp": 0.0071
+    },
+    {
+      "Modality": "Gut",
+      "Disease_Target": "High_Adiposity_Risk",
+      "Top_Feature": "Enterococcus_faecalis",
+      "Max_Pearson_r": 0.0388,
+      "Max_Spearman_r": 0.0414,
+      "Max_Mutual_Info": 0.0053,
+      "LR_AUROC_CV": "0.5299 \u00b1 0.0018",
+      "LR_AUROC_95CI": "[0.5274, 0.5323]",
+      "LGBM_AUROC_CV": "0.5249 \u00b1 0.0039",
+      "LGBM_AUROC_95CI": "[0.5194, 0.5304]",
+      "LGBM_AUPRC_CV": "0.4098 \u00b1 0.0030",
+      "Test_AUROC": 0.5172,
+      "Test_AUPRC": 0.4002,
+      "Top_Permutation_Imp": 0.0023
+    },
+    {
+      "Modality": "Gut",
+      "Disease_Target": "Metabolic_Syndrome",
+      "Top_Feature": "Eggerthella_lenta",
+      "Max_Pearson_r": 0.1238,
+      "Max_Spearman_r": 0.1257,
+      "Max_Mutual_Info": 0.0099,
+      "LR_AUROC_CV": "0.5818 \u00b1 0.0058",
+      "LR_AUROC_95CI": "[0.5738, 0.5898]",
+      "LGBM_AUROC_CV": "0.5811 \u00b1 0.0046",
+      "LGBM_AUROC_95CI": "[0.5747, 0.5875]",
+      "LGBM_AUPRC_CV": "0.6386 \u00b1 0.0041",
+      "Test_AUROC": 0.5769,
+      "Test_AUPRC": 0.6316,
+      "Top_Permutation_Imp": 0.0053
+    },
+    {
+      "Modality": "Gut",
+      "Disease_Target": "NAFLD",
+      "Top_Feature": "Escherichia_coli",
+      "Max_Pearson_r": 0.2125,
+      "Max_Spearman_r": 0.2198,
+      "Max_Mutual_Info": 0.0227,
+      "LR_AUROC_CV": "0.6432 \u00b1 0.0051",
+      "LR_AUROC_95CI": "[0.6361, 0.6504]",
+      "LGBM_AUROC_CV": "0.6412 \u00b1 0.0060",
+      "LGBM_AUROC_95CI": "[0.6329, 0.6495]",
+      "LGBM_AUPRC_CV": "0.7106 \u00b1 0.0030",
+      "Test_AUROC": 0.6488,
+      "Test_AUPRC": 0.7173,
+      "Top_Permutation_Imp": 0.007
+    }
+  ]
+}

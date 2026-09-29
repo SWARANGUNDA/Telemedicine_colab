@@ -1,0 +1,14 @@
+# World Health Organization (WHO) Guidelines for Obesity Prevention and Management
+Organization: World Health Organization (WHO)
+Publication Date: 2023-06-15
+Document Version: 2023.2
+Evidence Type: CLINICAL_GUIDELINE
+
+## Section 1: Classification and Adiposity Risk
+Obesity is classified as Body Mass Index (BMI) >= 30.0 kg/m2. Central adiposity, indicated by waist circumference >= 102 cm in men and >= 88 cm in women, significantly increases cardiovascular and metabolic risk independently of BMI.
+
+## Section 2: Multimodal Physical Activity and Telemetry Guidelines
+Adults should engage in 150 to 300 minutes of moderate-intensity aerobic physical activity or 75 to 150 minutes of vigorous-intensity physical activity per week. Wearable step telemetry indicates that increasing step count from 3,500 steps/day to 8,000–10,000 steps/day markedly reduces mortality and metabolic disease risk.
+
+## Section 3: Sedentary Behavior and Sleep Duration
+Reducing sedentary screen time (< 480 minutes/day) and maintaining optimal sleep duration (7 to 9 hours per night) are essential. Chronic short sleep (< 6 hours) impairs ghrelin/leptin regulation, increasing appetite and visceral fat deposition.

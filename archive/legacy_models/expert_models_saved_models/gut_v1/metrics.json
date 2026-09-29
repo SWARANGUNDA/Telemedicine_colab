@@ -1,0 +1,90 @@
+{
+  "per_disease": {
+    "Type2_Diabetes": {
+      "roc_auc": 0.9359,
+      "pr_auc": 0.6981,
+      "precision": 0.6531,
+      "recall_sensitivity": 0.6427,
+      "specificity": 0.9316,
+      "f1_score": 0.6479,
+      "brier_score": 0.0807,
+      "threshold": 0.34,
+      "confusion_matrix": {
+        "TN": 2328,
+        "FP": 171,
+        "FN": 179,
+        "TP": 322
+      }
+    },
+    "Prediabetes": {
+      "roc_auc": 0.8324,
+      "pr_auc": 0.4383,
+      "precision": 0.4499,
+      "recall_sensitivity": 0.6748,
+      "specificity": 0.8056,
+      "f1_score": 0.5399,
+      "brier_score": 0.1227,
+      "threshold": 0.29,
+      "confusion_matrix": {
+        "TN": 1956,
+        "FP": 472,
+        "FN": 186,
+        "TP": 386
+      }
+    },
+    "Obesity": {
+      "roc_auc": 0.9372,
+      "pr_auc": 0.813,
+      "precision": 0.7082,
+      "recall_sensitivity": 0.7974,
+      "specificity": 0.8865,
+      "f1_score": 0.7502,
+      "brier_score": 0.0917,
+      "threshold": 0.34,
+      "confusion_matrix": {
+        "TN": 1977,
+        "FP": 253,
+        "FN": 156,
+        "TP": 614
+      }
+    },
+    "Metabolic_Syndrome": {
+      "roc_auc": 0.9322,
+      "pr_auc": 0.7361,
+      "precision": 0.654,
+      "recall_sensitivity": 0.7666,
+      "specificity": 0.8977,
+      "f1_score": 0.7058,
+      "brier_score": 0.0882,
+      "threshold": 0.26,
+      "confusion_matrix": {
+        "TN": 2151,
+        "FP": 245,
+        "FN": 141,
+        "TP": 463
+      }
+    },
+    "NAFLD": {
+      "roc_auc": 0.9307,
+      "pr_auc": 0.6362,
+      "precision": 0.6202,
+      "recall_sensitivity": 0.5825,
+      "specificity": 0.9432,
+      "f1_score": 0.6008,
+      "brier_score": 0.0756,
+      "threshold": 0.32,
+      "confusion_matrix": {
+        "TN": 2441,
+        "FP": 147,
+        "FN": 172,
+        "TP": 240
+      }
+    }
+  },
+  "summary": {
+    "macro_f1": 0.6489,
+    "micro_f1": 0.6562,
+    "hamming_loss": 0.1415,
+    "mean_brier_score": 0.0918
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "test_metrics": {
+    "macro_f1": 0.3473,
+    "micro_f1": 0.4442,
+    "hamming_loss": 0.5551,
+    "mean_brier": 0.1715,
+    "per_disease": {
+      "Type2_Diabetes": {
+        "f1": 0.5373,
+        "precision": 0.3673,
+        "recall": 1.0,
+        "roc_auc": 0.5052,
+        "pr_auc": 0.3471,
+        "brier_score": 0.2327,
+        "confusion_matrix": [
+          [
+            0,
+            1898
+          ],
+          [
+            0,
+            1102
+          ]
+        ]
+      },
+      "Prediabetes": {
+        "f1": 0.4772,
+        "precision": 0.3133,
+        "recall": 1.0,
+        "roc_auc": 0.4982,
+        "pr_auc": 0.3389,
+        "brier_score": 0.215,
+        "confusion_matrix": [
+          [
+            0,
+            2060
+          ],
+          [
+            0,
+            940
+          ]
+        ]
+      },
+      "High_Adiposity_Risk": {
+        "f1": 0.4872,
+        "precision": 0.3225,
+        "recall": 0.9959,
+        "roc_auc": 0.4982,
+        "pr_auc": 0.3227,
+        "brier_score": 0.2184,
+        "confusion_matrix": [
+          [
+            13,
+            2021
+          ],
+          [
+            4,
+            962
+          ]
+        ]
+      },
+      "Metabolic_Syndrome": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "roc_auc": 0.5032,
+        "pr_auc": 0.1104,
+        "brier_score": 0.0715,
+        "confusion_matrix": [
+          [
+            2768,
+            0
+          ],
+          [
+            232,
+            0
+          ]
+        ]
+      },
+      "NAFLD": {
+        "f1": 0.2348,
+        "precision": 0.1382,
+        "recall": 0.7788,
+        "roc_auc": 0.4999,
+        "pr_auc": 0.3067,
+        "brier_score": 0.1198,
+        "confusion_matrix": [
+          [
+            564,
+            2020
+          ],
+          [
+            92,
+            324
+          ]
+        ]
+      }
+    },
+    "bootstrap_95_ci_macro_f1": [
+      0.3399,
+      0.3553
+    ],
+    "selected_config": "SetA_20Taxa_RAW",
+    "selected_architecture": "XGBoost",
+    "thresholds": {
+      "Type2_Diabetes": 0.1,
+      "Prediabetes": 0.1,
+      "High_Adiposity_Risk": 0.17,
+      "Metabolic_Syndrome": 0.1,
+      "NAFLD": 0.12
+    }
+  },
+  "ablation_validation_results": {
+    "SetA_20Taxa_RAW__XGBoost": 0.0092,
+    "SetA_20Taxa_RAW__LightGBM": 0.0077,
+    "SetA_20Taxa_RAW__CatBoost": 0.0,
+    "SetA_20Taxa_CLR__XGBoost": 0.0076,
+    "SetA_20Taxa_CLR__LightGBM": 0.0092,
+    "SetA_20Taxa_CLR__CatBoost": 0.0
+  }
+}

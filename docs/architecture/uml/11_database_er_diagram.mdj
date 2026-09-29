@@ -1,0 +1,452 @@
+{
+  "_type": "Project",
+  "_id": "AAAA3D943D23717A4CDEB827",
+  "name": "TeleMed AI Platform \u2014 Entity Relationship (ER) Database Diagram",
+  "ownedElements": [
+    {
+      "_type": "ERDDataModel",
+      "_id": "AAAA041903102F5043F190D4",
+      "_parent": {
+        "$ref": "AAAA3D943D23717A4CDEB827"
+      },
+      "name": "Entity Relationship (ER) Database Diagram Model",
+      "ownedElements": [
+        {
+          "_type": "ERDDiagram",
+          "_id": "AAAACA133A66CB28484E8CA7",
+          "_parent": {
+            "$ref": "AAAA041903102F5043F190D4"
+          },
+          "name": "Entity Relationship (ER) Database Diagram",
+          "ownedViews": [
+            {
+              "_type": "ERDEntityView",
+              "_id": "AAAA3365E696CC914A8BB40A",
+              "_parent": {
+                "$ref": "AAAACA133A66CB28484E8CA7"
+              },
+              "model": {
+                "$ref": "AAAAE618B930A0454651A1E4"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "ERDEntityView",
+              "_id": "AAAA96B2068A57594AE2AE6E",
+              "_parent": {
+                "$ref": "AAAACA133A66CB28484E8CA7"
+              },
+              "model": {
+                "$ref": "AAAAE98DC25126244954A408"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "ERDEntityView",
+              "_id": "AAAA534DD9220456485FAF3F",
+              "_parent": {
+                "$ref": "AAAACA133A66CB28484E8CA7"
+              },
+              "model": {
+                "$ref": "AAAA67F32E801EA748358370"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "ERDEntityView",
+              "_id": "AAAA85E0FAED1D8443438712",
+              "_parent": {
+                "$ref": "AAAACA133A66CB28484E8CA7"
+              },
+              "model": {
+                "$ref": "AAAA192EEFC4C326444EA8EF"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "ERDEntityView",
+              "_id": "AAAAC46D4F72E4304260B6DA",
+              "_parent": {
+                "$ref": "AAAACA133A66CB28484E8CA7"
+              },
+              "model": {
+                "$ref": "AAAAD3CC42A4F9624EF9AAAF"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "ERDEntityView",
+              "_id": "AAAA8ED25E36498F4A25B627",
+              "_parent": {
+                "$ref": "AAAACA133A66CB28484E8CA7"
+              },
+              "model": {
+                "$ref": "AAAACC3EC018DDDB429499D9"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "ERDEntity",
+          "_id": "AAAAE618B930A0454651A1E4",
+          "_parent": {
+            "$ref": "AAAA041903102F5043F190D4"
+          },
+          "name": "users",
+          "columns": [
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA02F2A59E00FA4BAFA8BD",
+              "_parent": {
+                "$ref": "AAAAE618B930A0454651A1E4"
+              },
+              "name": "user_id",
+              "type": "VARCHAR",
+              "primaryKey": true,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA0DC4195ADF464FCC8A4E",
+              "_parent": {
+                "$ref": "AAAAE618B930A0454651A1E4"
+              },
+              "name": "email",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAAEDED5CEE32D647428CC2",
+              "_parent": {
+                "$ref": "AAAAE618B930A0454651A1E4"
+              },
+              "name": "password_hash",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA99396A8682554F689E4D",
+              "_parent": {
+                "$ref": "AAAAE618B930A0454651A1E4"
+              },
+              "name": "role",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            }
+          ]
+        },
+        {
+          "_type": "ERDEntity",
+          "_id": "AAAAE98DC25126244954A408",
+          "_parent": {
+            "$ref": "AAAA041903102F5043F190D4"
+          },
+          "name": "patient_profiles",
+          "columns": [
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA071C3599AAD64842AD30",
+              "_parent": {
+                "$ref": "AAAAE98DC25126244954A408"
+              },
+              "name": "patient_id",
+              "type": "VARCHAR",
+              "primaryKey": true,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA191CF84B7422424EB1FD",
+              "_parent": {
+                "$ref": "AAAAE98DC25126244954A408"
+              },
+              "name": "user_id",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": true
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA4D34215EE5D04D6CB9CD",
+              "_parent": {
+                "$ref": "AAAAE98DC25126244954A408"
+              },
+              "name": "full_name",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA6F10FC72A0D947318BE3",
+              "_parent": {
+                "$ref": "AAAAE98DC25126244954A408"
+              },
+              "name": "age",
+              "type": "INTEGER",
+              "primaryKey": false,
+              "foreignKey": false
+            }
+          ]
+        },
+        {
+          "_type": "ERDEntity",
+          "_id": "AAAA67F32E801EA748358370",
+          "_parent": {
+            "$ref": "AAAA041903102F5043F190D4"
+          },
+          "name": "doctor_profiles",
+          "columns": [
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA3C4565D5688B4FD398E7",
+              "_parent": {
+                "$ref": "AAAA67F32E801EA748358370"
+              },
+              "name": "doctor_id",
+              "type": "VARCHAR",
+              "primaryKey": true,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA0467D002D2024041B59C",
+              "_parent": {
+                "$ref": "AAAA67F32E801EA748358370"
+              },
+              "name": "user_id",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": true
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAAB160649EB10B4304931B",
+              "_parent": {
+                "$ref": "AAAA67F32E801EA748358370"
+              },
+              "name": "specialization",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA00B48EC7D399483DBEB9",
+              "_parent": {
+                "$ref": "AAAA67F32E801EA748358370"
+              },
+              "name": "verification_status",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            }
+          ]
+        },
+        {
+          "_type": "ERDEntity",
+          "_id": "AAAA192EEFC4C326444EA8EF",
+          "_parent": {
+            "$ref": "AAAA041903102F5043F190D4"
+          },
+          "name": "health_records",
+          "columns": [
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAAD28ADA0AA30A47D18B72",
+              "_parent": {
+                "$ref": "AAAA192EEFC4C326444EA8EF"
+              },
+              "name": "record_id",
+              "type": "VARCHAR",
+              "primaryKey": true,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAAB103D83E89554418BD0C",
+              "_parent": {
+                "$ref": "AAAA192EEFC4C326444EA8EF"
+              },
+              "name": "user_id",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": true
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA78C06B014BA944FDB2C1",
+              "_parent": {
+                "$ref": "AAAA192EEFC4C326444EA8EF"
+              },
+              "name": "effective_pathway",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA84CE2F76C536439BAA81",
+              "_parent": {
+                "$ref": "AAAA192EEFC4C326444EA8EF"
+              },
+              "name": "prediction_snapshot",
+              "type": "TEXT",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA3E9B9ECC55584728905A",
+              "_parent": {
+                "$ref": "AAAA192EEFC4C326444EA8EF"
+              },
+              "name": "xai_snapshot",
+              "type": "TEXT",
+              "primaryKey": false,
+              "foreignKey": false
+            }
+          ]
+        },
+        {
+          "_type": "ERDEntity",
+          "_id": "AAAAD3CC42A4F9624EF9AAAF",
+          "_parent": {
+            "$ref": "AAAA041903102F5043F190D4"
+          },
+          "name": "consultations",
+          "columns": [
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA794499BA762543DD93CC",
+              "_parent": {
+                "$ref": "AAAAD3CC42A4F9624EF9AAAF"
+              },
+              "name": "consultation_id",
+              "type": "VARCHAR",
+              "primaryKey": true,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAAF19B0AD419D3419DBB56",
+              "_parent": {
+                "$ref": "AAAAD3CC42A4F9624EF9AAAF"
+              },
+              "name": "patient_id",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAAB9C21DFD882E477E81B0",
+              "_parent": {
+                "$ref": "AAAAD3CC42A4F9624EF9AAAF"
+              },
+              "name": "assigned_doctor_id",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": true
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA0CC375C98CD44A699C17",
+              "_parent": {
+                "$ref": "AAAAD3CC42A4F9624EF9AAAF"
+              },
+              "name": "status",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            }
+          ]
+        },
+        {
+          "_type": "ERDEntity",
+          "_id": "AAAACC3EC018DDDB429499D9",
+          "_parent": {
+            "$ref": "AAAA041903102F5043F190D4"
+          },
+          "name": "audit_events",
+          "columns": [
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA89B4332EF7F0466C840B",
+              "_parent": {
+                "$ref": "AAAACC3EC018DDDB429499D9"
+              },
+              "name": "event_id",
+              "type": "VARCHAR",
+              "primaryKey": true,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAABC63276224804DDD8DF3",
+              "_parent": {
+                "$ref": "AAAACC3EC018DDDB429499D9"
+              },
+              "name": "actor_user_id",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA54157A299AC541888DCD",
+              "_parent": {
+                "$ref": "AAAACC3EC018DDDB429499D9"
+              },
+              "name": "action",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            },
+            {
+              "_type": "ERDColumn",
+              "_id": "AAAA1BA6F5D63CE748B0A78D",
+              "_parent": {
+                "$ref": "AAAACC3EC018DDDB429499D9"
+              },
+              "name": "event_hash",
+              "type": "VARCHAR",
+              "primaryKey": false,
+              "foreignKey": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

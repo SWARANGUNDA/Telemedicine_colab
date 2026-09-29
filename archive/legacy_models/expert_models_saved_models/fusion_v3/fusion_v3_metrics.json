@@ -1,0 +1,1987 @@
+{
+  "validation_matrix": {
+    "C": {
+      "Mean": 0.7902,
+      "Weighted": 0.7902,
+      "LogisticRegression": 0.7902,
+      "XGBoost": 0.7873,
+      "LightGBM": 0.7878
+    },
+    "W": {
+      "Mean": 0.5829,
+      "Weighted": 0.5829,
+      "LogisticRegression": 0.5829,
+      "XGBoost": 0.5801,
+      "LightGBM": 0.5794
+    },
+    "G": {
+      "Mean": 0.3515,
+      "Weighted": 0.3515,
+      "LogisticRegression": 0.3548,
+      "XGBoost": 0.3554,
+      "LightGBM": 0.3545
+    },
+    "C+W": {
+      "Mean": 0.7783,
+      "Weighted": 0.7901,
+      "LogisticRegression": 0.7881,
+      "XGBoost": 0.7879,
+      "LightGBM": 0.7871
+    },
+    "C+G": {
+      "Mean": 0.7869,
+      "Weighted": 0.7904,
+      "LogisticRegression": 0.7891,
+      "XGBoost": 0.7877,
+      "LightGBM": 0.7884
+    },
+    "W+G": {
+      "Mean": 0.5825,
+      "Weighted": 0.5841,
+      "LogisticRegression": 0.5827,
+      "XGBoost": 0.5816,
+      "LightGBM": 0.5814
+    },
+    "C+W+G": {
+      "Mean": 0.7776,
+      "Weighted": 0.7903,
+      "LogisticRegression": 0.7886,
+      "XGBoost": 0.7863,
+      "LightGBM": 0.7866
+    }
+  },
+  "test_results_by_pathway_and_arch": {
+    "C": {
+      "Mean": {
+        "macro_f1": 0.7758,
+        "micro_f1": 0.8667,
+        "hamming_loss": 0.0667,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9991,
+            "pr_auc": 0.9991,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9974,
+            "pr_auc": 0.9968,
+            "brier_score": 0.0074
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8488,
+            "precision": 0.8244,
+            "recall": 0.8747,
+            "roc_auc": 0.9666,
+            "pr_auc": 0.933,
+            "brier_score": 0.0683
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4604,
+            "precision": 0.3951,
+            "recall": 0.5517,
+            "roc_auc": 0.8775,
+            "pr_auc": 0.4396,
+            "brier_score": 0.0551
+          },
+          "NAFLD": {
+            "f1": 0.5876,
+            "precision": 0.5544,
+            "recall": 0.625,
+            "roc_auc": 0.9005,
+            "pr_auc": 0.6047,
+            "brier_score": 0.0787
+          }
+        }
+      },
+      "Weighted": {
+        "macro_f1": 0.7758,
+        "micro_f1": 0.8667,
+        "hamming_loss": 0.0667,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9991,
+            "pr_auc": 0.9991,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9974,
+            "pr_auc": 0.9968,
+            "brier_score": 0.0074
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8488,
+            "precision": 0.8244,
+            "recall": 0.8747,
+            "roc_auc": 0.9666,
+            "pr_auc": 0.933,
+            "brier_score": 0.0683
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4604,
+            "precision": 0.3951,
+            "recall": 0.5517,
+            "roc_auc": 0.8775,
+            "pr_auc": 0.4396,
+            "brier_score": 0.0551
+          },
+          "NAFLD": {
+            "f1": 0.5876,
+            "precision": 0.5544,
+            "recall": 0.625,
+            "roc_auc": 0.9005,
+            "pr_auc": 0.6047,
+            "brier_score": 0.0787
+          }
+        }
+      },
+      "LogisticRegression": {
+        "macro_f1": 0.7758,
+        "micro_f1": 0.8667,
+        "hamming_loss": 0.0667,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9991,
+            "pr_auc": 0.9991,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9974,
+            "pr_auc": 0.9968,
+            "brier_score": 0.0074
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8488,
+            "precision": 0.8244,
+            "recall": 0.8747,
+            "roc_auc": 0.9666,
+            "pr_auc": 0.933,
+            "brier_score": 0.0683
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4604,
+            "precision": 0.3951,
+            "recall": 0.5517,
+            "roc_auc": 0.8775,
+            "pr_auc": 0.4396,
+            "brier_score": 0.0551
+          },
+          "NAFLD": {
+            "f1": 0.5876,
+            "precision": 0.5544,
+            "recall": 0.625,
+            "roc_auc": 0.9005,
+            "pr_auc": 0.6047,
+            "brier_score": 0.0787
+          }
+        }
+      },
+      "XGBoost": {
+        "macro_f1": 0.7742,
+        "micro_f1": 0.8619,
+        "hamming_loss": 0.0698,
+        "mean_brier": 0.0427,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9979,
+            "pr_auc": 0.9984,
+            "brier_score": 0.0038
+          },
+          "Prediabetes": {
+            "f1": 0.9872,
+            "precision": 0.9904,
+            "recall": 0.984,
+            "roc_auc": 0.9988,
+            "pr_auc": 0.9975,
+            "brier_score": 0.0073
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8501,
+            "precision": 0.8268,
+            "recall": 0.8747,
+            "roc_auc": 0.9664,
+            "pr_auc": 0.9322,
+            "brier_score": 0.0687
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4554,
+            "precision": 0.3611,
+            "recall": 0.6164,
+            "roc_auc": 0.8801,
+            "pr_auc": 0.4618,
+            "brier_score": 0.0548
+          },
+          "NAFLD": {
+            "f1": 0.5836,
+            "precision": 0.5474,
+            "recall": 0.625,
+            "roc_auc": 0.9001,
+            "pr_auc": 0.614,
+            "brier_score": 0.0788
+          }
+        }
+      },
+      "LightGBM": {
+        "macro_f1": 0.7747,
+        "micro_f1": 0.8595,
+        "hamming_loss": 0.0717,
+        "mean_brier": 0.0427,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.995,
+            "precision": 0.9982,
+            "recall": 0.9918,
+            "roc_auc": 0.9986,
+            "pr_auc": 0.9982,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9872,
+            "precision": 0.9904,
+            "recall": 0.984,
+            "roc_auc": 0.9976,
+            "pr_auc": 0.9963,
+            "brier_score": 0.0078
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8497,
+            "precision": 0.8337,
+            "recall": 0.8665,
+            "roc_auc": 0.9671,
+            "pr_auc": 0.9337,
+            "brier_score": 0.0683
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.457,
+            "precision": 0.38,
+            "recall": 0.5733,
+            "roc_auc": 0.8778,
+            "pr_auc": 0.4541,
+            "brier_score": 0.0551
+          },
+          "NAFLD": {
+            "f1": 0.5845,
+            "precision": 0.4902,
+            "recall": 0.7236,
+            "roc_auc": 0.8998,
+            "pr_auc": 0.612,
+            "brier_score": 0.0785
+          }
+        }
+      }
+    },
+    "W": {
+      "Mean": {
+        "macro_f1": 0.5834,
+        "micro_f1": 0.6017,
+        "hamming_loss": 0.2714,
+        "mean_brier": 0.092,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9251,
+            "precision": 0.9148,
+            "recall": 0.9356,
+            "roc_auc": 0.9913,
+            "pr_auc": 0.9855,
+            "brier_score": 0.0365
+          },
+          "Prediabetes": {
+            "f1": 0.8301,
+            "precision": 0.8091,
+            "recall": 0.8521,
+            "roc_auc": 0.9626,
+            "pr_auc": 0.9224,
+            "brier_score": 0.0719
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6424,
+            "precision": 0.5433,
+            "recall": 0.7857,
+            "roc_auc": 0.8033,
+            "pr_auc": 0.6445,
+            "brier_score": 0.1653
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.2553,
+            "precision": 0.1625,
+            "recall": 0.5948,
+            "roc_auc": 0.7236,
+            "pr_auc": 0.1833,
+            "brier_score": 0.068
+          },
+          "NAFLD": {
+            "f1": 0.2643,
+            "precision": 0.1571,
+            "recall": 0.8317,
+            "roc_auc": 0.5737,
+            "pr_auc": 0.1583,
+            "brier_score": 0.1185
+          }
+        }
+      },
+      "Weighted": {
+        "macro_f1": 0.5834,
+        "micro_f1": 0.6017,
+        "hamming_loss": 0.2714,
+        "mean_brier": 0.092,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9251,
+            "precision": 0.9148,
+            "recall": 0.9356,
+            "roc_auc": 0.9913,
+            "pr_auc": 0.9855,
+            "brier_score": 0.0365
+          },
+          "Prediabetes": {
+            "f1": 0.8301,
+            "precision": 0.8091,
+            "recall": 0.8521,
+            "roc_auc": 0.9626,
+            "pr_auc": 0.9224,
+            "brier_score": 0.0719
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6424,
+            "precision": 0.5433,
+            "recall": 0.7857,
+            "roc_auc": 0.8033,
+            "pr_auc": 0.6445,
+            "brier_score": 0.1653
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.2553,
+            "precision": 0.1625,
+            "recall": 0.5948,
+            "roc_auc": 0.7236,
+            "pr_auc": 0.1833,
+            "brier_score": 0.068
+          },
+          "NAFLD": {
+            "f1": 0.2643,
+            "precision": 0.1571,
+            "recall": 0.8317,
+            "roc_auc": 0.5737,
+            "pr_auc": 0.1583,
+            "brier_score": 0.1185
+          }
+        }
+      },
+      "LogisticRegression": {
+        "macro_f1": 0.5834,
+        "micro_f1": 0.6017,
+        "hamming_loss": 0.2714,
+        "mean_brier": 0.092,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9251,
+            "precision": 0.9148,
+            "recall": 0.9356,
+            "roc_auc": 0.9913,
+            "pr_auc": 0.9855,
+            "brier_score": 0.0365
+          },
+          "Prediabetes": {
+            "f1": 0.8301,
+            "precision": 0.8091,
+            "recall": 0.8521,
+            "roc_auc": 0.9626,
+            "pr_auc": 0.9224,
+            "brier_score": 0.0719
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6424,
+            "precision": 0.5433,
+            "recall": 0.7857,
+            "roc_auc": 0.8033,
+            "pr_auc": 0.6445,
+            "brier_score": 0.1653
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.2553,
+            "precision": 0.1625,
+            "recall": 0.5948,
+            "roc_auc": 0.7236,
+            "pr_auc": 0.1833,
+            "brier_score": 0.068
+          },
+          "NAFLD": {
+            "f1": 0.2643,
+            "precision": 0.1571,
+            "recall": 0.8317,
+            "roc_auc": 0.5737,
+            "pr_auc": 0.1583,
+            "brier_score": 0.1185
+          }
+        }
+      },
+      "XGBoost": {
+        "macro_f1": 0.5827,
+        "micro_f1": 0.6448,
+        "hamming_loss": 0.2145,
+        "mean_brier": 0.0922,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9266,
+            "precision": 0.9143,
+            "recall": 0.9392,
+            "roc_auc": 0.9911,
+            "pr_auc": 0.9852,
+            "brier_score": 0.0364
+          },
+          "Prediabetes": {
+            "f1": 0.8347,
+            "precision": 0.8065,
+            "recall": 0.8649,
+            "roc_auc": 0.9628,
+            "pr_auc": 0.9245,
+            "brier_score": 0.072
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6413,
+            "precision": 0.5458,
+            "recall": 0.7774,
+            "roc_auc": 0.8022,
+            "pr_auc": 0.6465,
+            "brier_score": 0.1655
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.2621,
+            "precision": 0.176,
+            "recall": 0.5129,
+            "roc_auc": 0.7216,
+            "pr_auc": 0.1879,
+            "brier_score": 0.0682
+          },
+          "NAFLD": {
+            "f1": 0.2486,
+            "precision": 0.1671,
+            "recall": 0.4856,
+            "roc_auc": 0.5752,
+            "pr_auc": 0.1875,
+            "brier_score": 0.1187
+          }
+        }
+      },
+      "LightGBM": {
+        "macro_f1": 0.5859,
+        "micro_f1": 0.6373,
+        "hamming_loss": 0.2317,
+        "mean_brier": 0.0921,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9296,
+            "precision": 0.9082,
+            "recall": 0.9519,
+            "roc_auc": 0.991,
+            "pr_auc": 0.9852,
+            "brier_score": 0.0364
+          },
+          "Prediabetes": {
+            "f1": 0.8328,
+            "precision": 0.7703,
+            "recall": 0.9064,
+            "roc_auc": 0.9623,
+            "pr_auc": 0.9231,
+            "brier_score": 0.072
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6417,
+            "precision": 0.5324,
+            "recall": 0.8075,
+            "roc_auc": 0.8034,
+            "pr_auc": 0.642,
+            "brier_score": 0.1653
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.2655,
+            "precision": 0.1776,
+            "recall": 0.5259,
+            "roc_auc": 0.724,
+            "pr_auc": 0.1884,
+            "brier_score": 0.068
+          },
+          "NAFLD": {
+            "f1": 0.26,
+            "precision": 0.1657,
+            "recall": 0.6034,
+            "roc_auc": 0.5705,
+            "pr_auc": 0.1847,
+            "brier_score": 0.1187
+          }
+        }
+      }
+    },
+    "G": {
+      "Mean": {
+        "macro_f1": 0.3473,
+        "micro_f1": 0.4442,
+        "hamming_loss": 0.5551,
+        "mean_brier": 0.1715,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.5373,
+            "precision": 0.3673,
+            "recall": 1.0,
+            "roc_auc": 0.5052,
+            "pr_auc": 0.3471,
+            "brier_score": 0.2327
+          },
+          "Prediabetes": {
+            "f1": 0.4772,
+            "precision": 0.3133,
+            "recall": 1.0,
+            "roc_auc": 0.4982,
+            "pr_auc": 0.3389,
+            "brier_score": 0.215
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.4872,
+            "precision": 0.3225,
+            "recall": 0.9959,
+            "roc_auc": 0.4982,
+            "pr_auc": 0.3227,
+            "brier_score": 0.2184
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "roc_auc": 0.5032,
+            "pr_auc": 0.1104,
+            "brier_score": 0.0715
+          },
+          "NAFLD": {
+            "f1": 0.2348,
+            "precision": 0.1382,
+            "recall": 0.7788,
+            "roc_auc": 0.4999,
+            "pr_auc": 0.3067,
+            "brier_score": 0.1198
+          }
+        }
+      },
+      "Weighted": {
+        "macro_f1": 0.3473,
+        "micro_f1": 0.4442,
+        "hamming_loss": 0.5551,
+        "mean_brier": 0.1715,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.5373,
+            "precision": 0.3673,
+            "recall": 1.0,
+            "roc_auc": 0.5052,
+            "pr_auc": 0.3471,
+            "brier_score": 0.2327
+          },
+          "Prediabetes": {
+            "f1": 0.4772,
+            "precision": 0.3133,
+            "recall": 1.0,
+            "roc_auc": 0.4982,
+            "pr_auc": 0.3389,
+            "brier_score": 0.215
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.4872,
+            "precision": 0.3225,
+            "recall": 0.9959,
+            "roc_auc": 0.4982,
+            "pr_auc": 0.3227,
+            "brier_score": 0.2184
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "roc_auc": 0.5032,
+            "pr_auc": 0.1104,
+            "brier_score": 0.0715
+          },
+          "NAFLD": {
+            "f1": 0.2348,
+            "precision": 0.1382,
+            "recall": 0.7788,
+            "roc_auc": 0.4999,
+            "pr_auc": 0.3067,
+            "brier_score": 0.1198
+          }
+        }
+      },
+      "LogisticRegression": {
+        "macro_f1": 0.3489,
+        "micro_f1": 0.4441,
+        "hamming_loss": 0.5556,
+        "mean_brier": 0.1715,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.5373,
+            "precision": 0.3673,
+            "recall": 1.0,
+            "roc_auc": 0.5052,
+            "pr_auc": 0.3471,
+            "brier_score": 0.2327
+          },
+          "Prediabetes": {
+            "f1": 0.4772,
+            "precision": 0.3133,
+            "recall": 1.0,
+            "roc_auc": 0.4982,
+            "pr_auc": 0.3389,
+            "brier_score": 0.215
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.4872,
+            "precision": 0.3225,
+            "recall": 0.9959,
+            "roc_auc": 0.4982,
+            "pr_auc": 0.3227,
+            "brier_score": 0.2184
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.0083,
+            "precision": 0.1111,
+            "recall": 0.0043,
+            "roc_auc": 0.5001,
+            "pr_auc": 0.09,
+            "brier_score": 0.0715
+          },
+          "NAFLD": {
+            "f1": 0.2348,
+            "precision": 0.1382,
+            "recall": 0.7788,
+            "roc_auc": 0.4999,
+            "pr_auc": 0.3067,
+            "brier_score": 0.1198
+          }
+        }
+      },
+      "XGBoost": {
+        "macro_f1": 0.3515,
+        "micro_f1": 0.4403,
+        "hamming_loss": 0.5639,
+        "mean_brier": 0.1719,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.5373,
+            "precision": 0.3673,
+            "recall": 1.0,
+            "roc_auc": 0.4913,
+            "pr_auc": 0.3847,
+            "brier_score": 0.2334
+          },
+          "Prediabetes": {
+            "f1": 0.4771,
+            "precision": 0.3139,
+            "recall": 0.9936,
+            "roc_auc": 0.4919,
+            "pr_auc": 0.3157,
+            "brier_score": 0.2156
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.4824,
+            "precision": 0.3209,
+            "recall": 0.971,
+            "roc_auc": 0.5044,
+            "pr_auc": 0.642,
+            "brier_score": 0.219
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.0237,
+            "precision": 0.1429,
+            "recall": 0.0129,
+            "roc_auc": 0.4842,
+            "pr_auc": 0.1032,
+            "brier_score": 0.0716
+          },
+          "NAFLD": {
+            "f1": 0.237,
+            "precision": 0.1379,
+            "recall": 0.8413,
+            "roc_auc": 0.5026,
+            "pr_auc": 0.3097,
+            "brier_score": 0.1199
+          }
+        }
+      },
+      "LightGBM": {
+        "macro_f1": 0.353,
+        "micro_f1": 0.4359,
+        "hamming_loss": 0.5805,
+        "mean_brier": 0.1714,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.5373,
+            "precision": 0.3673,
+            "recall": 1.0,
+            "roc_auc": 0.5061,
+            "pr_auc": 0.3967,
+            "brier_score": 0.2325
+          },
+          "Prediabetes": {
+            "f1": 0.476,
+            "precision": 0.3163,
+            "recall": 0.9617,
+            "roc_auc": 0.4961,
+            "pr_auc": 0.3302,
+            "brier_score": 0.2152
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.4842,
+            "precision": 0.3221,
+            "recall": 0.9741,
+            "roc_auc": 0.5018,
+            "pr_auc": 0.3458,
+            "brier_score": 0.2185
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.0242,
+            "precision": 0.1875,
+            "recall": 0.0129,
+            "roc_auc": 0.4992,
+            "pr_auc": 0.0995,
+            "brier_score": 0.0714
+          },
+          "NAFLD": {
+            "f1": 0.2435,
+            "precision": 0.1387,
+            "recall": 0.9952,
+            "roc_auc": 0.5152,
+            "pr_auc": 0.1614,
+            "brier_score": 0.1195
+          }
+        }
+      }
+    },
+    "C+W": {
+      "Mean": {
+        "macro_f1": 0.7652,
+        "micro_f1": 0.8622,
+        "hamming_loss": 0.068,
+        "mean_brier": 0.046,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9936,
+            "precision": 0.9964,
+            "recall": 0.9909,
+            "roc_auc": 0.999,
+            "pr_auc": 0.9986,
+            "brier_score": 0.0044
+          },
+          "Prediabetes": {
+            "f1": 0.9856,
+            "precision": 0.9851,
+            "recall": 0.9862,
+            "roc_auc": 0.9972,
+            "pr_auc": 0.9941,
+            "brier_score": 0.0085
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8376,
+            "precision": 0.8368,
+            "recall": 0.8385,
+            "roc_auc": 0.9524,
+            "pr_auc": 0.9108,
+            "brier_score": 0.0785
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4414,
+            "precision": 0.4096,
+            "recall": 0.4784,
+            "roc_auc": 0.8569,
+            "pr_auc": 0.4124,
+            "brier_score": 0.0567
+          },
+          "NAFLD": {
+            "f1": 0.5676,
+            "precision": 0.5339,
+            "recall": 0.6058,
+            "roc_auc": 0.8808,
+            "pr_auc": 0.5957,
+            "brier_score": 0.0817
+          }
+        }
+      },
+      "Weighted": {
+        "macro_f1": 0.7756,
+        "micro_f1": 0.8662,
+        "hamming_loss": 0.0671,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9995,
+            "pr_auc": 0.9993,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9974,
+            "pr_auc": 0.9968,
+            "brier_score": 0.0074
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.85,
+            "precision": 0.8247,
+            "recall": 0.8768,
+            "roc_auc": 0.9667,
+            "pr_auc": 0.9337,
+            "brier_score": 0.0685
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4601,
+            "precision": 0.3969,
+            "recall": 0.5474,
+            "roc_auc": 0.8764,
+            "pr_auc": 0.4456,
+            "brier_score": 0.0548
+          },
+          "NAFLD": {
+            "f1": 0.5856,
+            "precision": 0.5419,
+            "recall": 0.637,
+            "roc_auc": 0.8984,
+            "pr_auc": 0.6047,
+            "brier_score": 0.0787
+          }
+        }
+      },
+      "LogisticRegression": {
+        "macro_f1": 0.7749,
+        "micro_f1": 0.8605,
+        "hamming_loss": 0.0713,
+        "mean_brier": 0.0428,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.995,
+            "precision": 0.9982,
+            "recall": 0.9918,
+            "roc_auc": 0.9993,
+            "pr_auc": 0.999,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9973,
+            "pr_auc": 0.9944,
+            "brier_score": 0.0071
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8494,
+            "precision": 0.8219,
+            "recall": 0.8789,
+            "roc_auc": 0.9656,
+            "pr_auc": 0.9318,
+            "brier_score": 0.0695
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4583,
+            "precision": 0.3897,
+            "recall": 0.556,
+            "roc_auc": 0.8759,
+            "pr_auc": 0.4491,
+            "brier_score": 0.055
+          },
+          "NAFLD": {
+            "f1": 0.5841,
+            "precision": 0.4887,
+            "recall": 0.726,
+            "roc_auc": 0.9007,
+            "pr_auc": 0.6062,
+            "brier_score": 0.0786
+          }
+        }
+      },
+      "XGBoost": {
+        "macro_f1": 0.7763,
+        "micro_f1": 0.8658,
+        "hamming_loss": 0.0673,
+        "mean_brier": 0.0428,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9984,
+            "pr_auc": 0.9977,
+            "brier_score": 0.0041
+          },
+          "Prediabetes": {
+            "f1": 0.9872,
+            "precision": 0.9904,
+            "recall": 0.984,
+            "roc_auc": 0.9986,
+            "pr_auc": 0.9968,
+            "brier_score": 0.0074
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8485,
+            "precision": 0.8183,
+            "recall": 0.881,
+            "roc_auc": 0.9664,
+            "pr_auc": 0.9325,
+            "brier_score": 0.0688
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4623,
+            "precision": 0.3835,
+            "recall": 0.5819,
+            "roc_auc": 0.882,
+            "pr_auc": 0.4544,
+            "brier_score": 0.0545
+          },
+          "NAFLD": {
+            "f1": 0.5889,
+            "precision": 0.5667,
+            "recall": 0.613,
+            "roc_auc": 0.8989,
+            "pr_auc": 0.6022,
+            "brier_score": 0.0791
+          }
+        }
+      },
+      "LightGBM": {
+        "macro_f1": 0.7749,
+        "micro_f1": 0.8593,
+        "hamming_loss": 0.0721,
+        "mean_brier": 0.0428,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.995,
+            "precision": 0.9982,
+            "recall": 0.9918,
+            "roc_auc": 0.9987,
+            "pr_auc": 0.9988,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9872,
+            "precision": 0.9904,
+            "recall": 0.984,
+            "roc_auc": 0.9966,
+            "pr_auc": 0.9958,
+            "brier_score": 0.0079
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8495,
+            "precision": 0.8239,
+            "recall": 0.8768,
+            "roc_auc": 0.9669,
+            "pr_auc": 0.9328,
+            "brier_score": 0.0684
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4573,
+            "precision": 0.3785,
+            "recall": 0.5776,
+            "roc_auc": 0.8806,
+            "pr_auc": 0.4442,
+            "brier_score": 0.0549
+          },
+          "NAFLD": {
+            "f1": 0.5853,
+            "precision": 0.4903,
+            "recall": 0.726,
+            "roc_auc": 0.8989,
+            "pr_auc": 0.5985,
+            "brier_score": 0.0792
+          }
+        }
+      }
+    },
+    "C+G": {
+      "Mean": {
+        "macro_f1": 0.7761,
+        "micro_f1": 0.8614,
+        "hamming_loss": 0.0703,
+        "mean_brier": 0.0436,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9936,
+            "precision": 0.9964,
+            "recall": 0.9909,
+            "roc_auc": 0.9954,
+            "pr_auc": 0.9955,
+            "brier_score": 0.0044
+          },
+          "Prediabetes": {
+            "f1": 0.9872,
+            "precision": 0.9904,
+            "recall": 0.984,
+            "roc_auc": 0.9938,
+            "pr_auc": 0.9818,
+            "brier_score": 0.0081
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8503,
+            "precision": 0.8396,
+            "recall": 0.8613,
+            "roc_auc": 0.9628,
+            "pr_auc": 0.9241,
+            "brier_score": 0.0707
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4635,
+            "precision": 0.3951,
+            "recall": 0.5603,
+            "roc_auc": 0.862,
+            "pr_auc": 0.4193,
+            "brier_score": 0.0555
+          },
+          "NAFLD": {
+            "f1": 0.5857,
+            "precision": 0.4942,
+            "recall": 0.7188,
+            "roc_auc": 0.8902,
+            "pr_auc": 0.6109,
+            "brier_score": 0.0794
+          }
+        }
+      },
+      "Weighted": {
+        "macro_f1": 0.7752,
+        "micro_f1": 0.8619,
+        "hamming_loss": 0.0702,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9991,
+            "pr_auc": 0.9991,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9974,
+            "pr_auc": 0.9968,
+            "brier_score": 0.0074
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8488,
+            "precision": 0.8244,
+            "recall": 0.8747,
+            "roc_auc": 0.9666,
+            "pr_auc": 0.9332,
+            "brier_score": 0.0683
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4604,
+            "precision": 0.3951,
+            "recall": 0.5517,
+            "roc_auc": 0.878,
+            "pr_auc": 0.4372,
+            "brier_score": 0.0551
+          },
+          "NAFLD": {
+            "f1": 0.5842,
+            "precision": 0.4991,
+            "recall": 0.7043,
+            "roc_auc": 0.9003,
+            "pr_auc": 0.6105,
+            "brier_score": 0.0785
+          }
+        }
+      },
+      "LogisticRegression": {
+        "macro_f1": 0.7722,
+        "micro_f1": 0.8623,
+        "hamming_loss": 0.0694,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9838,
+            "precision": 0.9742,
+            "recall": 0.9936,
+            "roc_auc": 0.9994,
+            "pr_auc": 0.9992,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9975,
+            "pr_auc": 0.9958,
+            "brier_score": 0.0074
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8492,
+            "precision": 0.8252,
+            "recall": 0.8747,
+            "roc_auc": 0.9668,
+            "pr_auc": 0.9333,
+            "brier_score": 0.0683
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4571,
+            "precision": 0.3902,
+            "recall": 0.5517,
+            "roc_auc": 0.8773,
+            "pr_auc": 0.4403,
+            "brier_score": 0.0551
+          },
+          "NAFLD": {
+            "f1": 0.5828,
+            "precision": 0.5388,
+            "recall": 0.6346,
+            "roc_auc": 0.9005,
+            "pr_auc": 0.6024,
+            "brier_score": 0.0787
+          }
+        }
+      },
+      "XGBoost": {
+        "macro_f1": 0.7763,
+        "micro_f1": 0.8602,
+        "hamming_loss": 0.0715,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9992,
+            "pr_auc": 0.9991,
+            "brier_score": 0.0038
+          },
+          "Prediabetes": {
+            "f1": 0.9867,
+            "precision": 0.9872,
+            "recall": 0.9862,
+            "roc_auc": 0.998,
+            "pr_auc": 0.9964,
+            "brier_score": 0.0077
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8495,
+            "precision": 0.8266,
+            "recall": 0.8737,
+            "roc_auc": 0.9664,
+            "pr_auc": 0.9324,
+            "brier_score": 0.0691
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4681,
+            "precision": 0.3976,
+            "recall": 0.569,
+            "roc_auc": 0.8827,
+            "pr_auc": 0.4706,
+            "brier_score": 0.0542
+          },
+          "NAFLD": {
+            "f1": 0.5826,
+            "precision": 0.4834,
+            "recall": 0.7332,
+            "roc_auc": 0.8996,
+            "pr_auc": 0.617,
+            "brier_score": 0.0783
+          }
+        }
+      },
+      "LightGBM": {
+        "macro_f1": 0.7735,
+        "micro_f1": 0.859,
+        "hamming_loss": 0.072,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.995,
+            "precision": 0.9982,
+            "recall": 0.9918,
+            "roc_auc": 0.9987,
+            "pr_auc": 0.9983,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9872,
+            "precision": 0.9904,
+            "recall": 0.984,
+            "roc_auc": 0.9981,
+            "pr_auc": 0.9968,
+            "brier_score": 0.0077
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8497,
+            "precision": 0.8337,
+            "recall": 0.8665,
+            "roc_auc": 0.9667,
+            "pr_auc": 0.9327,
+            "brier_score": 0.0687
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4522,
+            "precision": 0.379,
+            "recall": 0.5603,
+            "roc_auc": 0.8813,
+            "pr_auc": 0.4455,
+            "brier_score": 0.0546
+          },
+          "NAFLD": {
+            "f1": 0.5835,
+            "precision": 0.4856,
+            "recall": 0.7308,
+            "roc_auc": 0.8998,
+            "pr_auc": 0.6151,
+            "brier_score": 0.0782
+          }
+        }
+      }
+    },
+    "W+G": {
+      "Mean": {
+        "macro_f1": 0.5774,
+        "micro_f1": 0.6107,
+        "hamming_loss": 0.2629,
+        "mean_brier": 0.0933,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9245,
+            "precision": 0.911,
+            "recall": 0.9383,
+            "roc_auc": 0.988,
+            "pr_auc": 0.9807,
+            "brier_score": 0.0387
+          },
+          "Prediabetes": {
+            "f1": 0.8354,
+            "precision": 0.7971,
+            "recall": 0.8777,
+            "roc_auc": 0.9569,
+            "pr_auc": 0.9097,
+            "brier_score": 0.0741
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6359,
+            "precision": 0.511,
+            "recall": 0.8416,
+            "roc_auc": 0.7981,
+            "pr_auc": 0.6279,
+            "brier_score": 0.1665
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.236,
+            "precision": 0.1673,
+            "recall": 0.4009,
+            "roc_auc": 0.7015,
+            "pr_auc": 0.1741,
+            "brier_score": 0.0689
+          },
+          "NAFLD": {
+            "f1": 0.2551,
+            "precision": 0.1521,
+            "recall": 0.7885,
+            "roc_auc": 0.5713,
+            "pr_auc": 0.1655,
+            "brier_score": 0.1185
+          }
+        }
+      },
+      "Weighted": {
+        "macro_f1": 0.5838,
+        "micro_f1": 0.6395,
+        "hamming_loss": 0.2221,
+        "mean_brier": 0.0921,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9251,
+            "precision": 0.9148,
+            "recall": 0.9356,
+            "roc_auc": 0.9913,
+            "pr_auc": 0.9854,
+            "brier_score": 0.0366
+          },
+          "Prediabetes": {
+            "f1": 0.8344,
+            "precision": 0.8031,
+            "recall": 0.8681,
+            "roc_auc": 0.9627,
+            "pr_auc": 0.9227,
+            "brier_score": 0.0718
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6419,
+            "precision": 0.5421,
+            "recall": 0.7867,
+            "roc_auc": 0.8036,
+            "pr_auc": 0.644,
+            "brier_score": 0.1654
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.2568,
+            "precision": 0.1718,
+            "recall": 0.5086,
+            "roc_auc": 0.7206,
+            "pr_auc": 0.1765,
+            "brier_score": 0.0681
+          },
+          "NAFLD": {
+            "f1": 0.2607,
+            "precision": 0.1704,
+            "recall": 0.5553,
+            "roc_auc": 0.5758,
+            "pr_auc": 0.1576,
+            "brier_score": 0.1184
+          }
+        }
+      },
+      "LogisticRegression": {
+        "macro_f1": 0.584,
+        "micro_f1": 0.6024,
+        "hamming_loss": 0.2716,
+        "mean_brier": 0.092,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9247,
+            "precision": 0.914,
+            "recall": 0.9356,
+            "roc_auc": 0.991,
+            "pr_auc": 0.9852,
+            "brier_score": 0.0365
+          },
+          "Prediabetes": {
+            "f1": 0.8344,
+            "precision": 0.8078,
+            "recall": 0.8628,
+            "roc_auc": 0.9627,
+            "pr_auc": 0.9196,
+            "brier_score": 0.0718
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6421,
+            "precision": 0.5429,
+            "recall": 0.7857,
+            "roc_auc": 0.8032,
+            "pr_auc": 0.6444,
+            "brier_score": 0.1653
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.2541,
+            "precision": 0.1616,
+            "recall": 0.5948,
+            "roc_auc": 0.7248,
+            "pr_auc": 0.1846,
+            "brier_score": 0.068
+          },
+          "NAFLD": {
+            "f1": 0.2647,
+            "precision": 0.1573,
+            "recall": 0.8341,
+            "roc_auc": 0.5729,
+            "pr_auc": 0.158,
+            "brier_score": 0.1186
+          }
+        }
+      },
+      "XGBoost": {
+        "macro_f1": 0.5849,
+        "micro_f1": 0.6341,
+        "hamming_loss": 0.2339,
+        "mean_brier": 0.0921,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9266,
+            "precision": 0.9143,
+            "recall": 0.9392,
+            "roc_auc": 0.991,
+            "pr_auc": 0.9851,
+            "brier_score": 0.0365
+          },
+          "Prediabetes": {
+            "f1": 0.8349,
+            "precision": 0.8014,
+            "recall": 0.8713,
+            "roc_auc": 0.9627,
+            "pr_auc": 0.9222,
+            "brier_score": 0.0717
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6377,
+            "precision": 0.5153,
+            "recall": 0.8364,
+            "roc_auc": 0.802,
+            "pr_auc": 0.6417,
+            "brier_score": 0.1651
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.2567,
+            "precision": 0.1689,
+            "recall": 0.5345,
+            "roc_auc": 0.721,
+            "pr_auc": 0.1651,
+            "brier_score": 0.0684
+          },
+          "NAFLD": {
+            "f1": 0.2685,
+            "precision": 0.1721,
+            "recall": 0.6106,
+            "roc_auc": 0.5715,
+            "pr_auc": 0.1455,
+            "brier_score": 0.1188
+          }
+        }
+      },
+      "LightGBM": {
+        "macro_f1": 0.586,
+        "micro_f1": 0.635,
+        "hamming_loss": 0.2374,
+        "mean_brier": 0.0922,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9296,
+            "precision": 0.9082,
+            "recall": 0.9519,
+            "roc_auc": 0.991,
+            "pr_auc": 0.985,
+            "brier_score": 0.0365
+          },
+          "Prediabetes": {
+            "f1": 0.8327,
+            "precision": 0.7708,
+            "recall": 0.9053,
+            "roc_auc": 0.9627,
+            "pr_auc": 0.9231,
+            "brier_score": 0.0721
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.6365,
+            "precision": 0.5137,
+            "recall": 0.8364,
+            "roc_auc": 0.8006,
+            "pr_auc": 0.639,
+            "brier_score": 0.1656
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.262,
+            "precision": 0.174,
+            "recall": 0.5302,
+            "roc_auc": 0.7246,
+            "pr_auc": 0.168,
+            "brier_score": 0.068
+          },
+          "NAFLD": {
+            "f1": 0.2692,
+            "precision": 0.1705,
+            "recall": 0.6394,
+            "roc_auc": 0.5787,
+            "pr_auc": 0.1671,
+            "brier_score": 0.1186
+          }
+        }
+      }
+    },
+    "C+W+G": {
+      "Mean": {
+        "macro_f1": 0.7656,
+        "micro_f1": 0.8594,
+        "hamming_loss": 0.0699,
+        "mean_brier": 0.0463,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9918,
+            "precision": 0.9954,
+            "recall": 0.9882,
+            "roc_auc": 0.9981,
+            "pr_auc": 0.998,
+            "brier_score": 0.0052
+          },
+          "Prediabetes": {
+            "f1": 0.982,
+            "precision": 0.9778,
+            "recall": 0.9862,
+            "roc_auc": 0.996,
+            "pr_auc": 0.9881,
+            "brier_score": 0.0092
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8341,
+            "precision": 0.8328,
+            "recall": 0.8354,
+            "roc_auc": 0.9511,
+            "pr_auc": 0.9088,
+            "brier_score": 0.0788
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4423,
+            "precision": 0.405,
+            "recall": 0.4871,
+            "roc_auc": 0.8526,
+            "pr_auc": 0.4038,
+            "brier_score": 0.0572
+          },
+          "NAFLD": {
+            "f1": 0.5779,
+            "precision": 0.5256,
+            "recall": 0.6418,
+            "roc_auc": 0.8775,
+            "pr_auc": 0.5981,
+            "brier_score": 0.0809
+          }
+        }
+      },
+      "Weighted": {
+        "macro_f1": 0.7753,
+        "micro_f1": 0.8624,
+        "hamming_loss": 0.0699,
+        "mean_brier": 0.0426,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9995,
+            "pr_auc": 0.9993,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9974,
+            "pr_auc": 0.9968,
+            "brier_score": 0.0074
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.85,
+            "precision": 0.8247,
+            "recall": 0.8768,
+            "roc_auc": 0.9667,
+            "pr_auc": 0.9337,
+            "brier_score": 0.0685
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4601,
+            "precision": 0.3969,
+            "recall": 0.5474,
+            "roc_auc": 0.8764,
+            "pr_auc": 0.4457,
+            "brier_score": 0.0548
+          },
+          "NAFLD": {
+            "f1": 0.5842,
+            "precision": 0.4991,
+            "recall": 0.7043,
+            "roc_auc": 0.9003,
+            "pr_auc": 0.6105,
+            "brier_score": 0.0785
+          }
+        }
+      },
+      "LogisticRegression": {
+        "macro_f1": 0.7747,
+        "micro_f1": 0.8657,
+        "hamming_loss": 0.0674,
+        "mean_brier": 0.0427,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.995,
+            "precision": 0.9982,
+            "recall": 0.9918,
+            "roc_auc": 0.9992,
+            "pr_auc": 0.999,
+            "brier_score": 0.0035
+          },
+          "Prediabetes": {
+            "f1": 0.9878,
+            "precision": 0.9883,
+            "recall": 0.9872,
+            "roc_auc": 0.9972,
+            "pr_auc": 0.9939,
+            "brier_score": 0.0071
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8486,
+            "precision": 0.8203,
+            "recall": 0.8789,
+            "roc_auc": 0.9656,
+            "pr_auc": 0.9322,
+            "brier_score": 0.0694
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4591,
+            "precision": 0.3909,
+            "recall": 0.556,
+            "roc_auc": 0.8754,
+            "pr_auc": 0.4487,
+            "brier_score": 0.055
+          },
+          "NAFLD": {
+            "f1": 0.5833,
+            "precision": 0.5487,
+            "recall": 0.6226,
+            "roc_auc": 0.9002,
+            "pr_auc": 0.6049,
+            "brier_score": 0.0787
+          }
+        }
+      },
+      "XGBoost": {
+        "macro_f1": 0.775,
+        "micro_f1": 0.8584,
+        "hamming_loss": 0.0727,
+        "mean_brier": 0.0427,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.9945,
+            "precision": 0.9973,
+            "recall": 0.9918,
+            "roc_auc": 0.9986,
+            "pr_auc": 0.9981,
+            "brier_score": 0.004
+          },
+          "Prediabetes": {
+            "f1": 0.9867,
+            "precision": 0.9872,
+            "recall": 0.9862,
+            "roc_auc": 0.9984,
+            "pr_auc": 0.9973,
+            "brier_score": 0.0072
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8495,
+            "precision": 0.8266,
+            "recall": 0.8737,
+            "roc_auc": 0.9665,
+            "pr_auc": 0.9322,
+            "brier_score": 0.0687
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4582,
+            "precision": 0.3743,
+            "recall": 0.5905,
+            "roc_auc": 0.8792,
+            "pr_auc": 0.4542,
+            "brier_score": 0.055
+          },
+          "NAFLD": {
+            "f1": 0.586,
+            "precision": 0.488,
+            "recall": 0.7332,
+            "roc_auc": 0.899,
+            "pr_auc": 0.6069,
+            "brier_score": 0.0788
+          }
+        }
+      },
+      "LightGBM": {
+        "macro_f1": 0.7756,
+        "micro_f1": 0.8617,
+        "hamming_loss": 0.0699,
+        "mean_brier": 0.0427,
+        "per_disease": {
+          "Type2_Diabetes": {
+            "f1": 0.995,
+            "precision": 0.9982,
+            "recall": 0.9918,
+            "roc_auc": 0.9986,
+            "pr_auc": 0.9982,
+            "brier_score": 0.0036
+          },
+          "Prediabetes": {
+            "f1": 0.9872,
+            "precision": 0.9904,
+            "recall": 0.984,
+            "roc_auc": 0.9982,
+            "pr_auc": 0.9969,
+            "brier_score": 0.0078
+          },
+          "High_Adiposity_Risk": {
+            "f1": 0.8518,
+            "precision": 0.8527,
+            "recall": 0.8509,
+            "roc_auc": 0.9667,
+            "pr_auc": 0.9328,
+            "brier_score": 0.0685
+          },
+          "Metabolic_Syndrome": {
+            "f1": 0.4615,
+            "precision": 0.3945,
+            "recall": 0.556,
+            "roc_auc": 0.8817,
+            "pr_auc": 0.4469,
+            "brier_score": 0.0549
+          },
+          "NAFLD": {
+            "f1": 0.5826,
+            "precision": 0.4909,
+            "recall": 0.7163,
+            "roc_auc": 0.8988,
+            "pr_auc": 0.6047,
+            "brier_score": 0.0788
+          }
+        }
+      }
+    }
+  },
+  "best_overall_key": "C+G__Weighted",
+  "bootstrap_comparisons": {
+    "C_vs_C+W": {
+      "p1_architecture": "Mean",
+      "p2_architecture": "Weighted",
+      "mean_delta_macro_f1": -0.0004,
+      "ci_95_delta_macro_f1": [
+        -0.0032,
+        0.0018
+      ],
+      "per_disease_delta_auc_95_ci": {
+        "Type2_Diabetes": [
+          -0.0,
+          0.0012
+        ],
+        "Prediabetes": [
+          0.0,
+          0.0
+        ],
+        "High_Adiposity_Risk": [
+          -0.0003,
+          0.0004
+        ],
+        "Metabolic_Syndrome": [
+          -0.0046,
+          0.0023
+        ],
+        "NAFLD": [
+          -0.0032,
+          -0.0008
+        ]
+      }
+    },
+    "C_vs_C+G": {
+      "p1_architecture": "Mean",
+      "p2_architecture": "Weighted",
+      "mean_delta_macro_f1": -0.0004,
+      "ci_95_delta_macro_f1": [
+        -0.0047,
+        0.0031
+      ],
+      "per_disease_delta_auc_95_ci": {
+        "Type2_Diabetes": [
+          0.0,
+          0.0
+        ],
+        "Prediabetes": [
+          0.0,
+          0.0
+        ],
+        "High_Adiposity_Risk": [
+          -0.0001,
+          0.0002
+        ],
+        "Metabolic_Syndrome": [
+          -0.0027,
+          0.003
+        ],
+        "NAFLD": [
+          -0.0008,
+          0.0003
+        ]
+      }
+    },
+    "C_vs_C+W+G": {
+      "p1_architecture": "Mean",
+      "p2_architecture": "Weighted",
+      "mean_delta_macro_f1": -0.0007,
+      "ci_95_delta_macro_f1": [
+        -0.0045,
+        0.0029
+      ],
+      "per_disease_delta_auc_95_ci": {
+        "Type2_Diabetes": [
+          -0.0,
+          0.0012
+        ],
+        "Prediabetes": [
+          0.0,
+          0.0
+        ],
+        "High_Adiposity_Risk": [
+          -0.0002,
+          0.0003
+        ],
+        "Metabolic_Syndrome": [
+          -0.0043,
+          0.0027
+        ],
+        "NAFLD": [
+          -0.0008,
+          0.0006
+        ]
+      }
+    },
+    "W_vs_W+G": {
+      "p1_architecture": "Mean",
+      "p2_architecture": "Weighted",
+      "mean_delta_macro_f1": 0.0002,
+      "ci_95_delta_macro_f1": [
+        -0.0054,
+        0.0047
+      ],
+      "per_disease_delta_auc_95_ci": {
+        "Type2_Diabetes": [
+          -0.0,
+          -0.0
+        ],
+        "Prediabetes": [
+          -0.0,
+          0.0001
+        ],
+        "High_Adiposity_Risk": [
+          -0.0004,
+          0.0011
+        ],
+        "Metabolic_Syndrome": [
+          -0.0095,
+          0.0032
+        ],
+        "NAFLD": [
+          -0.0137,
+          0.0146
+        ]
+      }
+    },
+    "C+W_vs_C+W+G": {
+      "p1_architecture": "Weighted",
+      "p2_architecture": "Weighted",
+      "mean_delta_macro_f1": -0.0003,
+      "ci_95_delta_macro_f1": [
+        -0.0053,
+        0.004
+      ],
+      "per_disease_delta_auc_95_ci": {
+        "Type2_Diabetes": [
+          0.0,
+          0.0
+        ],
+        "Prediabetes": [
+          0.0,
+          0.0
+        ],
+        "High_Adiposity_Risk": [
+          0.0,
+          0.0
+        ],
+        "Metabolic_Syndrome": [
+          -0.0001,
+          0.0001
+        ],
+        "NAFLD": [
+          0.0009,
+          0.0031
+        ]
+      }
+    }
+  },
+  "shuffled_modality_negative_controls": {
+    "C+W+G_aligned_vs_shuffled_G": {
+      "aligned_macro_f1": 0.7753,
+      "shuffled_macro_f1_mean": 0.615,
+      "delta_macro_f1_alignment_gain": 0.1603,
+      "permutation_p_values": {
+        "Type2_Diabetes": 0.0,
+        "Prediabetes": 0.17,
+        "High_Adiposity_Risk": 0.0,
+        "Metabolic_Syndrome": 0.0,
+        "NAFLD": 0.0
+      }
+    },
+    "C+W_aligned_vs_shuffled_W": {
+      "aligned_macro_f1": 0.7756,
+      "shuffled_macro_f1_mean": 0.6226,
+      "delta_macro_f1_alignment_gain": 0.153,
+      "permutation_p_values": {
+        "Type2_Diabetes": 0.0,
+        "Prediabetes": 0.0,
+        "High_Adiposity_Risk": 0.0,
+        "Metabolic_Syndrome": 0.0,
+        "NAFLD": 0.0
+      }
+    },
+    "W+G_aligned_vs_shuffled_G": {
+      "aligned_macro_f1": 0.5838,
+      "shuffled_macro_f1_mean": 0.5647,
+      "delta_macro_f1_alignment_gain": 0.0191,
+      "permutation_p_values": {
+        "Type2_Diabetes": 0.0,
+        "Prediabetes": 0.0,
+        "High_Adiposity_Risk": 0.0,
+        "Metabolic_Syndrome": 0.0,
+        "NAFLD": 0.09
+      }
+    }
+  },
+  "error_complementarity": {
+    "Type2_Diabetes": {
+      "clinical_errors_corrected_by_wearable": 4,
+      "clinical_errors_corrected_by_gut": 9,
+      "wearable_errors_corrected_by_gut": 71,
+      "errors_corrected_by_fusion": 0,
+      "errors_introduced_by_fusion": 0,
+      "net_predictions_corrected": 0
+    },
+    "Prediabetes": {
+      "clinical_errors_corrected_by_wearable": 13,
+      "clinical_errors_corrected_by_gut": 12,
+      "wearable_errors_corrected_by_gut": 139,
+      "errors_corrected_by_fusion": 0,
+      "errors_introduced_by_fusion": 0,
+      "net_predictions_corrected": 0
+    },
+    "High_Adiposity_Risk": {
+      "clinical_errors_corrected_by_wearable": 147,
+      "clinical_errors_corrected_by_gut": 121,
+      "wearable_errors_corrected_by_gut": 208,
+      "errors_corrected_by_fusion": 2,
+      "errors_introduced_by_fusion": 0,
+      "net_predictions_corrected": 2
+    },
+    "Metabolic_Syndrome": {
+      "clinical_errors_corrected_by_wearable": 129,
+      "clinical_errors_corrected_by_gut": 196,
+      "wearable_errors_corrected_by_gut": 711,
+      "errors_corrected_by_fusion": 6,
+      "errors_introduced_by_fusion": 4,
+      "net_predictions_corrected": 2
+    },
+    "NAFLD": {
+      "clinical_errors_corrected_by_wearable": 162,
+      "clinical_errors_corrected_by_gut": 174,
+      "wearable_errors_corrected_by_gut": 465,
+      "errors_corrected_by_fusion": 33,
+      "errors_introduced_by_fusion": 85,
+      "net_predictions_corrected": -52
+    }
+  }
+}

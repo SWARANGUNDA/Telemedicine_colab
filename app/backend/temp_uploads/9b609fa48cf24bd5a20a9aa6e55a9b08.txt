@@ -1,0 +1,45 @@
+PATIENT CLINICAL LAB REPORT
+Patient ID: DEMO_CASE_A
+Age: 55 years
+Gender: Male
+Height: 175 cm
+Weight: 95 kg
+BMI: 31.0
+Waist Circumference: 102 cm
+Systolic BP: 145 mmHg
+Diastolic BP: 92 mmHg
+Fasting Blood Glucose: 130 mg/dL
+HbA1c: 7.2 %
+LDL Cholesterol: 160 mg/dL
+HDL Cholesterol: 38 mg/dL
+Triglycerides: 220 mg/dL
+ALT: 55 U/L
+AST: 42 U/L
+Family History Diabetes: 1
+Family History Obesity: 1
+Family History Hypertension: 1
+Family History NAFLD: 0
+
+WEARABLE TELEMETRY SYNC REPORT
+Average Daily Steps: 3500
+Active Minutes: 15
+Sedentary Time Minutes: 660
+Resting Heart Rate: 82
+Sleep Duration: 5.5
+Calories Burned: 1800
+Average Glucose: 145
+Glucose Variability: 35
+Time In Range: 55
+Time Above Range: 38
+
+GUT MICROBIOME PROFILE REPORT
+Akkermansia: 0.5
+Faecalibacterium: 2.0
+Bifidobacterium: 1.5
+Roseburia: 1.0
+Alistipes: 0.8
+Escherichia_Shigella: 5.0
+Collinsella: 3.0
+Prevotella: 2.5
+Blautia: 1.2
+Shannon Diversity Index: 2.0

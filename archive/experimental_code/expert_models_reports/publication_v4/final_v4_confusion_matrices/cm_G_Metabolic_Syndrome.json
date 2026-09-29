@@ -1,0 +1,8 @@
+{
+  "disease": "Metabolic_Syndrome",
+  "pathway": "G",
+  "tn": 3455,
+  "fp": 3025,
+  "fn": 3661,
+  "tp": 4859
+}

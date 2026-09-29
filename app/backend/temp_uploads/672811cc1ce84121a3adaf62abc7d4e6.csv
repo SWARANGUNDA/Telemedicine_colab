@@ -1,0 +1,2 @@
+Patient_ID,Average_Daily_Steps,Active_Minutes,Sedentary_Time_Minutes,Resting_Heart_Rate,Heart_Rate_Variability_RMSSD,Sleep_Duration_Hours,Sleep_Efficiency_Score,Autonomic_Stress_Score,Activity_Energy_Expenditure,Exercise_Frequency_Days,CGM_Average_Glucose,CGM_Glucose_CV,CGM_Time_In_Range,CGM_Time_Above_Range,CGM_Time_Below_Range
+P000301,8450,42.0,510.0,64.0,42.5,7.2,88.0,32.0,420.0,4,108.5,18.2,82.0,14.0,4.0

@@ -1,0 +1,14 @@
+{
+  "modality": "Gut Microbiome",
+  "version": "2.0",
+  "description": "Approved predictor features for Gut Microbiome Expert Model v2 (CLR + Ecological + Functional)",
+  "predictors": [
+    "Akkermansia_CLR", "Faecalibacterium_CLR", "Roseburia_CLR", "Bifidobacterium_CLR", "Bacteroides_CLR",
+    "Prevotella_CLR", "Ruminococcus_CLR", "Blautia_CLR", "Collinsella_CLR", "Escherichia_Shigella_CLR",
+    "Coprococcus_CLR", "Alistipes_CLR", "Subdoligranulum_CLR", "Enterococcus_CLR", "Eubacterium_CLR",
+    "Parabacteroides_CLR", "Lactobacillus_CLR", "Klebsiella_CLR", "Streptococcus_CLR", "Eggerthella_CLR",
+    "Shannon_Diversity_Index", "Simpson_Diversity_Index", "Observed_Richness", "Pielou_Evenness",
+    "SCFA_Producer_Score", "Butyrate_Producer_Score", "Barrier_Support_Score", "Inflammatory_Dysbiosis_Score",
+    "Firmicutes_Bacteroidetes_Ratio"
+  ]
+}

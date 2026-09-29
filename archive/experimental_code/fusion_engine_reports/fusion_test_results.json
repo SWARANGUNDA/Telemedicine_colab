@@ -1,0 +1,632 @@
+{
+  "C": {
+    "per_disease": {
+      "Type2_Diabetes": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 501,
+          "TN": 2499,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Prediabetes": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 572,
+          "TN": 2428,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Obesity": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 770,
+          "TN": 2230,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Metabolic_Syndrome": {
+        "precision": 0.9917,
+        "recall_sensitivity": 0.9851,
+        "specificity": 0.9979,
+        "f1_score": 0.9884,
+        "roc_auc": 0.9992,
+        "pr_auc": 0.9917,
+        "brier_score": 0.0044,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 595,
+          "TN": 2391,
+          "FP": 5,
+          "FN": 9
+        }
+      },
+      "NAFLD": {
+        "precision": 0.8614,
+        "recall_sensitivity": 0.7694,
+        "specificity": 0.9803,
+        "f1_score": 0.8128,
+        "roc_auc": 0.958,
+        "pr_auc": 0.8527,
+        "brier_score": 0.0437,
+        "threshold": 0.16,
+        "confusion_matrix": {
+          "TP": 317,
+          "TN": 2537,
+          "FP": 51,
+          "FN": 95
+        }
+      }
+    },
+    "summary": {
+      "macro_f1": 0.9602,
+      "micro_f1": 0.9718,
+      "hamming_loss": 0.0107,
+      "mean_brier_score": 0.0097
+    }
+  },
+  "W": {
+    "per_disease": {
+      "Type2_Diabetes": {
+        "precision": 0.9749,
+        "recall_sensitivity": 0.9321,
+        "specificity": 0.9952,
+        "f1_score": 0.9531,
+        "roc_auc": 0.9962,
+        "pr_auc": 0.9868,
+        "brier_score": 0.0141,
+        "threshold": 0.37,
+        "confusion_matrix": {
+          "TP": 467,
+          "TN": 2487,
+          "FP": 12,
+          "FN": 34
+        }
+      },
+      "Prediabetes": {
+        "precision": 0.8755,
+        "recall_sensitivity": 0.8357,
+        "specificity": 0.972,
+        "f1_score": 0.8551,
+        "roc_auc": 0.9767,
+        "pr_auc": 0.9222,
+        "brier_score": 0.0495,
+        "threshold": 0.14,
+        "confusion_matrix": {
+          "TP": 478,
+          "TN": 2360,
+          "FP": 68,
+          "FN": 94
+        }
+      },
+      "Obesity": {
+        "precision": 0.8668,
+        "recall_sensitivity": 0.8026,
+        "specificity": 0.9574,
+        "f1_score": 0.8334,
+        "roc_auc": 0.9594,
+        "pr_auc": 0.9183,
+        "brier_score": 0.0667,
+        "threshold": 0.35,
+        "confusion_matrix": {
+          "TP": 618,
+          "TN": 2135,
+          "FP": 95,
+          "FN": 152
+        }
+      },
+      "Metabolic_Syndrome": {
+        "precision": 0.7289,
+        "recall_sensitivity": 0.8013,
+        "specificity": 0.9249,
+        "f1_score": 0.7634,
+        "roc_auc": 0.9461,
+        "pr_auc": 0.8352,
+        "brier_score": 0.0752,
+        "threshold": 0.16,
+        "confusion_matrix": {
+          "TP": 484,
+          "TN": 2216,
+          "FP": 180,
+          "FN": 120
+        }
+      },
+      "NAFLD": {
+        "precision": 0.7849,
+        "recall_sensitivity": 0.7087,
+        "specificity": 0.9691,
+        "f1_score": 0.7449,
+        "roc_auc": 0.9357,
+        "pr_auc": 0.7745,
+        "brier_score": 0.0554,
+        "threshold": 0.3,
+        "confusion_matrix": {
+          "TP": 292,
+          "TN": 2508,
+          "FP": 80,
+          "FN": 120
+        }
+      }
+    },
+    "summary": {
+      "macro_f1": 0.83,
+      "micro_f1": 0.8305,
+      "hamming_loss": 0.0637,
+      "mean_brier_score": 0.0522
+    }
+  },
+  "G": {
+    "per_disease": {
+      "Type2_Diabetes": {
+        "precision": 0.621,
+        "recall_sensitivity": 0.7425,
+        "specificity": 0.9092,
+        "f1_score": 0.6764,
+        "roc_auc": 0.9338,
+        "pr_auc": 0.681,
+        "brier_score": 0.084,
+        "threshold": 0.23,
+        "confusion_matrix": {
+          "TP": 372,
+          "TN": 2272,
+          "FP": 227,
+          "FN": 129
+        }
+      },
+      "Prediabetes": {
+        "precision": 0.43,
+        "recall_sensitivity": 0.7413,
+        "specificity": 0.7685,
+        "f1_score": 0.5443,
+        "roc_auc": 0.8379,
+        "pr_auc": 0.4809,
+        "brier_score": 0.122,
+        "threshold": 0.21,
+        "confusion_matrix": {
+          "TP": 424,
+          "TN": 1866,
+          "FP": 562,
+          "FN": 148
+        }
+      },
+      "Obesity": {
+        "precision": 0.6683,
+        "recall_sensitivity": 0.887,
+        "specificity": 0.848,
+        "f1_score": 0.7623,
+        "roc_auc": 0.9372,
+        "pr_auc": 0.8089,
+        "brier_score": 0.0927,
+        "threshold": 0.19,
+        "confusion_matrix": {
+          "TP": 683,
+          "TN": 1891,
+          "FP": 339,
+          "FN": 87
+        }
+      },
+      "Metabolic_Syndrome": {
+        "precision": 0.6304,
+        "recall_sensitivity": 0.8046,
+        "specificity": 0.8811,
+        "f1_score": 0.7069,
+        "roc_auc": 0.9322,
+        "pr_auc": 0.7274,
+        "brier_score": 0.0898,
+        "threshold": 0.2,
+        "confusion_matrix": {
+          "TP": 486,
+          "TN": 2111,
+          "FP": 285,
+          "FN": 118
+        }
+      },
+      "NAFLD": {
+        "precision": 0.5766,
+        "recall_sensitivity": 0.6942,
+        "specificity": 0.9189,
+        "f1_score": 0.63,
+        "roc_auc": 0.9313,
+        "pr_auc": 0.6315,
+        "brier_score": 0.0772,
+        "threshold": 0.19,
+        "confusion_matrix": {
+          "TP": 286,
+          "TN": 2378,
+          "FP": 210,
+          "FN": 126
+        }
+      }
+    },
+    "summary": {
+      "macro_f1": 0.664,
+      "micro_f1": 0.6686,
+      "hamming_loss": 0.1487,
+      "mean_brier_score": 0.0931
+    }
+  },
+  "C+W": {
+    "per_disease": {
+      "Type2_Diabetes": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 501,
+          "TN": 2499,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Prediabetes": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 572,
+          "TN": 2428,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Obesity": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 770,
+          "TN": 2230,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Metabolic_Syndrome": {
+        "precision": 0.9917,
+        "recall_sensitivity": 0.9851,
+        "specificity": 0.9979,
+        "f1_score": 0.9884,
+        "roc_auc": 0.9992,
+        "pr_auc": 0.9915,
+        "brier_score": 0.0044,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 595,
+          "TN": 2391,
+          "FP": 5,
+          "FN": 9
+        }
+      },
+      "NAFLD": {
+        "precision": 0.861,
+        "recall_sensitivity": 0.767,
+        "specificity": 0.9803,
+        "f1_score": 0.8113,
+        "roc_auc": 0.956,
+        "pr_auc": 0.8462,
+        "brier_score": 0.0433,
+        "threshold": 0.19,
+        "confusion_matrix": {
+          "TP": 316,
+          "TN": 2537,
+          "FP": 51,
+          "FN": 96
+        }
+      }
+    },
+    "summary": {
+      "macro_f1": 0.9599,
+      "micro_f1": 0.9716,
+      "hamming_loss": 0.0107,
+      "mean_brier_score": 0.0096
+    }
+  },
+  "C+G": {
+    "per_disease": {
+      "Type2_Diabetes": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 501,
+          "TN": 2499,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Prediabetes": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 572,
+          "TN": 2428,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Obesity": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 770,
+          "TN": 2230,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Metabolic_Syndrome": {
+        "precision": 0.9933,
+        "recall_sensitivity": 0.9834,
+        "specificity": 0.9983,
+        "f1_score": 0.9884,
+        "roc_auc": 0.9993,
+        "pr_auc": 0.9963,
+        "brier_score": 0.0046,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 594,
+          "TN": 2392,
+          "FP": 4,
+          "FN": 10
+        }
+      },
+      "NAFLD": {
+        "precision": 0.848,
+        "recall_sensitivity": 0.7718,
+        "specificity": 0.978,
+        "f1_score": 0.8081,
+        "roc_auc": 0.9701,
+        "pr_auc": 0.8525,
+        "brier_score": 0.043,
+        "threshold": 0.16,
+        "confusion_matrix": {
+          "TP": 318,
+          "TN": 2531,
+          "FP": 57,
+          "FN": 94
+        }
+      }
+    },
+    "summary": {
+      "macro_f1": 0.9593,
+      "micro_f1": 0.9709,
+      "hamming_loss": 0.011,
+      "mean_brier_score": 0.0096
+    }
+  },
+  "W+G": {
+    "per_disease": {
+      "Type2_Diabetes": {
+        "precision": 0.9691,
+        "recall_sensitivity": 0.9401,
+        "specificity": 0.994,
+        "f1_score": 0.9544,
+        "roc_auc": 0.9973,
+        "pr_auc": 0.9908,
+        "brier_score": 0.0134,
+        "threshold": 0.22,
+        "confusion_matrix": {
+          "TP": 471,
+          "TN": 2484,
+          "FP": 15,
+          "FN": 30
+        }
+      },
+      "Prediabetes": {
+        "precision": 0.8344,
+        "recall_sensitivity": 0.9161,
+        "specificity": 0.9572,
+        "f1_score": 0.8733,
+        "roc_auc": 0.9827,
+        "pr_auc": 0.9343,
+        "brier_score": 0.0398,
+        "threshold": 0.14,
+        "confusion_matrix": {
+          "TP": 524,
+          "TN": 2324,
+          "FP": 104,
+          "FN": 48
+        }
+      },
+      "Obesity": {
+        "precision": 0.8584,
+        "recall_sensitivity": 0.874,
+        "specificity": 0.9502,
+        "f1_score": 0.8662,
+        "roc_auc": 0.9798,
+        "pr_auc": 0.9471,
+        "brier_score": 0.053,
+        "threshold": 0.21,
+        "confusion_matrix": {
+          "TP": 673,
+          "TN": 2119,
+          "FP": 111,
+          "FN": 97
+        }
+      },
+      "Metabolic_Syndrome": {
+        "precision": 0.7704,
+        "recall_sensitivity": 0.7666,
+        "specificity": 0.9424,
+        "f1_score": 0.7685,
+        "roc_auc": 0.9571,
+        "pr_auc": 0.8555,
+        "brier_score": 0.0685,
+        "threshold": 0.33,
+        "confusion_matrix": {
+          "TP": 463,
+          "TN": 2258,
+          "FP": 138,
+          "FN": 141
+        }
+      },
+      "NAFLD": {
+        "precision": 0.7922,
+        "recall_sensitivity": 0.6942,
+        "specificity": 0.971,
+        "f1_score": 0.74,
+        "roc_auc": 0.9583,
+        "pr_auc": 0.7897,
+        "brier_score": 0.0543,
+        "threshold": 0.34,
+        "confusion_matrix": {
+          "TP": 286,
+          "TN": 2513,
+          "FP": 75,
+          "FN": 126
+        }
+      }
+    },
+    "summary": {
+      "macro_f1": 0.8405,
+      "micro_f1": 0.8453,
+      "hamming_loss": 0.059,
+      "mean_brier_score": 0.0458
+    }
+  },
+  "C+W+G": {
+    "per_disease": {
+      "Type2_Diabetes": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 501,
+          "TN": 2499,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Prediabetes": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 572,
+          "TN": 2428,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Obesity": {
+        "precision": 1.0,
+        "recall_sensitivity": 1.0,
+        "specificity": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.0001,
+        "threshold": 0.1,
+        "confusion_matrix": {
+          "TP": 770,
+          "TN": 2230,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Metabolic_Syndrome": {
+        "precision": 0.9933,
+        "recall_sensitivity": 0.9834,
+        "specificity": 0.9983,
+        "f1_score": 0.9884,
+        "roc_auc": 0.9993,
+        "pr_auc": 0.9963,
+        "brier_score": 0.0045,
+        "threshold": 0.15,
+        "confusion_matrix": {
+          "TP": 594,
+          "TN": 2392,
+          "FP": 4,
+          "FN": 10
+        }
+      },
+      "NAFLD": {
+        "precision": 0.8333,
+        "recall_sensitivity": 0.7767,
+        "specificity": 0.9753,
+        "f1_score": 0.804,
+        "roc_auc": 0.9697,
+        "pr_auc": 0.8537,
+        "brier_score": 0.0429,
+        "threshold": 0.14,
+        "confusion_matrix": {
+          "TP": 320,
+          "TN": 2524,
+          "FP": 64,
+          "FN": 92
+        }
+      }
+    },
+    "summary": {
+      "macro_f1": 0.9585,
+      "micro_f1": 0.9701,
+      "hamming_loss": 0.0113,
+      "mean_brier_score": 0.0095
+    }
+  }
+}

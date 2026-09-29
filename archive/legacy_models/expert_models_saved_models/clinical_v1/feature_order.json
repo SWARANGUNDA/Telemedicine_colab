@@ -1,0 +1,21 @@
+[
+  "Age",
+  "Gender",
+  "Height_cm",
+  "Weight_kg",
+  "BMI",
+  "Waist_Circumference_cm",
+  "Systolic_BP",
+  "Diastolic_BP",
+  "Fasting_Blood_Glucose",
+  "HbA1c",
+  "LDL_Cholesterol",
+  "HDL_Cholesterol",
+  "Triglycerides",
+  "ALT",
+  "AST",
+  "Family_History_Diabetes",
+  "Family_History_Obesity",
+  "Family_History_Hypertension",
+  "Family_History_NAFLD"
+]

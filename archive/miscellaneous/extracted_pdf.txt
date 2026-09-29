@@ -1,0 +1,676 @@
+
+--- PAGE 1 ---
+Dataset Overview
+We will create a 20,000-patient synthetic clinical dataset  to train machine-learning models that predict
+Type 2 Diabetes, Prediabetes, Obesity, Metabolic Syndrome, and NAFLD (non-alcoholic fatty liver disease) in
+a telemedicine platform. The data should mimic a real hospital EHR: medically plausible, multi-label
+(patients may have multiple conditions), and reflecting clinical diagnostic criteria. Using synthetic data
+avoids patient privacy issues【31†L117-L125】 and allows full control over disease prevalence, feature
+correlations, and missingness. It also enables reproducibility and easy adjustment of rules (for example,
+adding new risk factors or changing prevalence) without requiring new IRB approvals【31†L117-L125】. 
+Key goals are: ( 1) Medical realism:  follow evidence-based clinical guidelines for all lab values, vital signs,
+and disease definitions【1†L449-L454】【9†L313-L323】. ( 2) Balanced case mix:  reflect a hospital-like
+population (with significant rates of the target conditions) rather than a healthier community sample. ( 3) 
+Machine-learning readiness:  ensure features have known ranges, controlled noise, and manage missing
+data thoughtfully. We will document all assumptions so that the data can be automatically generated and
+validated . 
+Note:  Because all data are fully synthetic, there are no PHI concerns. We still apply standard
+ethical considerations: avoid built-in biases (for example, not simulating race unless clinically
+justified), use medically defensible rules, and document every design choice for transparency.
+Disease Background
+We target five metabolic-related conditions often managed in primary/specialty care. Each is described
+below with its clinical features and risk factors.
+Type 2 Diabetes (T2D):  A chronic disease of insulin resistance and pancreatic β-cell dysfunction.
+Adults (often >45 years) develop hyperglycemia marked by high blood glucose and HbA1c【1†L449-
+L454】【18†L163-L170】. Key risk factors include obesity/overweight, family history of diabetes,
+sedentary lifestyle, and older age【18†L163-L170】. Major biomarkers are fasting plasma glucose
+(FPG) and hemoglobin A1c (HbA1c)【1†L449-L454】【18†L163-L170】. T2D is important because it
+leads to cardiovascular and renal complications; we include it to model glycemic dysregulation in the
+patient population. 
+Prediabetes:  A state of elevated blood sugar that is not yet in the diabetes range【1†L449-L454】. It
+is an early warning of insulin resistance. Diagnostic criteria are FPG 100–125 mg/dL or HbA1c 5.7–
+6.4%【1†L449-L454】【18†L163-L170】. Risk factors largely mirror T2D: overweight/obesity, family
+history, inactivity, and NAFLD【18†L163-L170】. We include prediabetes because it often precedes
+T2D and is common (tens of millions in the US【29†L438-L447】), and it can co-occur with other
+metabolic conditions. • 
+• 
+1
+--- PAGE 2 ---
+Obesity:  A chronic condition of excess body fat, defined by BMI ≥30 kg/m²【10†L279-L282】.
+Causes include diet/environment interactions, genetics, and certain medications【10†L251-L259】.
+Obesity is a major risk factor for T2D, NAFLD, and Metabolic Syndrome. We follow WHO/CDC
+definitions: overweight is BMI 25–29.9, obesity ≥30【3†L99-L107】【10†L279-L282】. It is clinically
+important due to associated hypertension, dyslipidemia, and organ stress. We include obesity as a
+disease label to capture patients whose BMI/waist values exceed these thresholds【3†L99-L107】
+【9†L311-L319】. 
+Metabolic Syndrome:  A cluster of metabolic risk factors that together greatly increase
+cardiovascular risk. It is diagnosed when ≥3  of the following are present: large waist circumference
+(visceral obesity), high triglycerides, low HDL, elevated blood pressure, and elevated fasting glucose
+【5†L407-L416】【9†L313-L323】. Underlying causes include insulin resistance, obesity, inactivity,
+age, and genetics【5†L424-L429】. We include it because it captures the interplay of multiple risk
+factors. It often coexists with T2D and NAFLD, and signifies high cumulative risk. 
+NAFLD (Metabolic dysfunction-associated steatotic liver disease):  Excess fat accumulation in the
+liver (steatosis) not due to alcohol . It is defined by >5%–10% hepatic fat【15†L425-L430】. Risk
+factors include obesity, insulin resistance, dyslipidemia, and diabetes【15†L455-L458】. Nearly all
+NAFLD patients have at least one feature of Metabolic Syndrome. We include NAFLD as a label
+because it is highly prevalent (~25% of adults【15†L445-L448】) and adds a liver-health dimension to
+our predictions. There is no simple blood test for NAFLD, so we will assign it based on correlated
+features (see Section 7). 
+Each disease’s natural history influences feature values. For example, early-stage T2D  may only mildly
+elevate fasting glucose with near-normal A1c, while severe T2D  often has FPG >>180 mg/dL and HbA1c
+>10%. We will simulate mild, moderate, and severe cases by distributing values across clinically observed
+ranges for each condition. 
+Clinical Features
+We will include the following variables. Each feature is chosen because it is routinely measured and relevant
+to the target diseases.
+Patient_ID: String.  A unique identifier (e.g. “P00001”). Unit:  none. Importance:  Ensures uniqueness. 
+Mandatory:  Yes. Availability:  Always (by design). Validation:  Unique, non-null. 
+Age: Integer (years).  Range ~18–85. Unit:  years. Clinical Role:  Risk factor for all conditions (older age
+→ higher metabolic risk). Mandatory:  Yes. Availability:  Always known. Validation:  ≥18 (adult). 
+Gender: Category.  Typically “Male” or “Female”. Mandatory:  Yes. Availability:  Always. Validation:
+Must be one of the categories. (Sex-specific thresholds apply below.) 
+Height_cm: Float (cm).  Adult height. Mandatory:  Yes. Availability:  Almost always measured. Clinical
+Role:  Used to compute BMI; slight correlations with risk. Range:  ~145–190 cm (female) or 155–200 cm
+(male). Validation:  Consistency check (weight vs. height for plausible BMI). • 
+• 
+• 
+• 
+• 
+• 
+• 
+2
+--- PAGE 3 ---
+Weight_kg: Float (kg).  Body weight. Mandatory:  Yes. Availability:  Almost always. Range:  ~40–150 kg.
+Validation:  Check BMI bounds after computation. 
+BMI: Float (kg/m²).  Body mass index. Computed:  from height and weight (BMI = kg/m²). Mandatory:
+Yes (we compute it). Unit:  none. Range:  16–45 (covering underweight to class III obesity). 
+Importance:  Direct measure for obesity label; strongly related to glucose, lipids, liver enzymes, and
+blood pressure. Validation:  Must match Weight/Height (±rounding). 
+Waist_Circumference_cm: Float (cm).  Abdominal girth. Mandatory:  No (often optional). 
+Availability:  Often measured in metabolic/risk clinics; missing maybe 2–5%. Range:  ~60–130 cm
+(women), 65–140 cm (men)【9†L349-L357】. Role:  Indicator of central obesity; used in Metabolic
+Syndrome diagnosis. Validation:  Consistent with BMI (very high waist with low BMI should be rare). 
+Systolic_BP: Integer (mmHg).  Systolic blood pressure. Mandatory:  Yes. Range:  ~90–190. Role:
+Elevated BP is both a risk factor and a Metabolic Syndrome component【9†L324-L332】. Validation:
+≥80 and ≥(Diastolic_BP + few mmHg). 
+Diastolic_BP: Integer (mmHg).  Diastolic blood pressure. Mandatory:  Yes. Range:  ~60–120. Validation:
+< Systolic_BP. 
+Fasting_Blood_Glucose: Integer (mg/dL).  Fasting plasma glucose (before eating). Mandatory:  Yes. 
+Range:  70–250. Role:  Primary screening measure for (pre)diabetes【1†L469-L472】. Validation:  ≥0;
+FPG of ~70–99 normal, 100–125 prediabetes, ≥126 diabetes【1†L469-L472】. 
+HbA1c: Float (%).  Glycated hemoglobin (2–3 month average glucose). Mandatory:  Yes. Range:  4.5–
+12.0%. Role:  Diabetes screening/monitoring【1†L449-L454】. Validation:  4.5–5.6 normal, 5.7–6.4
+prediabetes, ≥6.5 diabetes【1†L449-L454】. 
+LDL_Chol: Integer (mg/dL).  LDL cholesterol (“bad” chol). Mandatory:  No (often optional in outpatient
+settings). Availability:  Common in lipid panels; missing ~2–5%. Range:  40–250. Interpretation:
+Optimal <100, near-optimal 100–129【25†L154-L163】. High LDL is a CVD risk factor often co-
+occurring with metabolic syndrome. Validation:  ≥0. 
+HDL_Chol: Integer (mg/dL).  HDL cholesterol (“good” chol). Mandatory:  No. Availability:  Same as LDL.
+Range:  20–90. Interpretation:  Men ≥40, women ≥50 are considered normal【25†L160-L163】; lower
+levels contribute to MetS. Validation:  ≥0. 
+Triglycerides: Integer (mg/dL).  Blood triglycerides. Mandatory:  No. Range:  40–500. Interpretation:
+Normal <150【25†L163-L166】; 150–199 borderline, 200–499 high; high TG is a MetS criterion
+【9†L313-L320】. Validation:  ≥0. 
+ALT: Integer (U/L).  Alanine transaminase, a liver enzyme. Mandatory:  No. Availability:  Often ordered
+if liver disease is suspected. Range:  10–200. Normal:  ~7–55【23†L462-L470】. Elevated ALT often
+indicates NAFLD or other liver injury. Validation:  ≥0. 
+AST: Integer (U/L).  Aspartate transaminase. Mandatory:  No. Range:  10–150. Normal:  ~8–48
+【23†L462-L470】. Elevated AST can accompany ALT in NAFLD. Validation:  ≥0. • 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+3
+--- PAGE 4 ---
+Family_History_Diabetes: Binary (0/1). Mandatory:  No. Meaning:  1 if first-degree relative has T2D. 
+Availability:  Often self-reported; missing in 5–10%. Role:  Risk factor for diabetes【18†L163-L170】. 
+Validation:  {0,1}. 
+Family_History_Obesity: 0/1. Relative with obesity. Mandatory:  No. Role:  Genetic risk indicator;
+missing ~5–10%. 
+Family_History_Hypertension: 0/1. Relative with high BP. Mandatory:  No. 
+Family_History_NAFLD: 0/1. Relative with fatty liver . Mandatory:  No. Family history of NAFLD is less
+commonly known; missing could be 8–10%. 
+Notes on “Mandatory vs. Optional”:  We treat Age, Gender , Height, Weight, BMI, BP, FPG, HbA1c, and
+disease labels as mandatory (no missing) in the synthetic training set to simplify modeling. Other features
+(waist, lipids, liver enzymes, family history) are “optional” (allow missing) since in practice not every patient
+has those tests or reports those histories.
+Clinical Ranges
+We define medically accepted ranges for each numerical feature, based on guidelines and physiology:
+Age: Range:  18–85 years (adult population). (Synthetic dataset restricted to adults.) 
+Height:  Adult human range; we allow ∼140–210 cm. (For a 5th–95th percentile, ~150–200 cm.) 
+Weight:  Allow 40–150 kg. (Below 40 kg is extreme adult underweight; above 150 kg is severe obesity.)
+BMI: Categories:  Underweight <18.5, Normal 18.5–24.9, Overweight 25–29.9, Obesity ≥30【3†L99-
+L107】【10†L279-L282】. Use: Diagnose obesity. Range for dataset:  16–45. 
+Waist Circumference: Thresholds:  Elevated risk starts at ≥94 cm (men) and ≥80 cm (women);
+obesity at ≥102 cm men, ≥88 cm women【9†L349-L357】. Ranges:  60–140 cm (female 60–130; male
+65–140). 
+Systolic BP: Normal:  <120 mmHg【35†L229-L237】. Elevated:  120–129. Stage 1 Hypertension:  130–139.
+Stage 2:  ≥140【35†L229-L237】. Range:  90–190. 
+Diastolic BP: Normal:  <80 mmHg【35†L229-L237】. Stage 1:  80–89. Stage 2:  ≥90【35†L229-L237】. 
+Range:  60–120. 
+Fasting Blood Glucose (FPG): Normal:  <100 mg/dL【1†L469-L472】. Prediabetes:  100–125【1†L469-
+L472】. Diabetes:  ≥126【1†L469-L472】. Range:  70–250. 
+HbA1c: Normal:  <5.7%. Prediabetes:  5.7–6.4%. Diabetes:  ≥6.5%【1†L449-L454】. Range:  4.5–12%. 
+LDL Cholesterol: Optimal:  ~<100 mg/dL; Near-optimal:  100–129【25†L154-L163】. High:  ≥160. Range:
+40–250. 
+HDL Cholesterol: Desirable:  ≥40 mg/dL (men), ≥50 mg/dL (women)【25†L160-L163】. Low:  <40
+(men)/<50 (women). Range:  20–90. 
+Triglycerides: Normal:  <150 mg/dL【25†L163-L166】. Borderline:  150–199. High:  200–499. Range:  40–
+500. • 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+4
+--- PAGE 5 ---
+ALT: Normal:  ~7–55 U/L【23†L462-L470】. Mild elevation:  56–100. Significant:  >100. Range:  10–200. 
+AST: Normal:  ~8–48 U/L【23†L462-L470】. Range:  10–150. 
+These ranges will guide data generation to avoid implausible values (e.g. ALT/AST >200 very unlikely; BMI
+<16 or >45 extremely rare). We cite official guidelines for the cutoffs: ADA for glucose/HbA1c【1†L449-
+L454】【1†L469-L472】, CDC/WHO for BMI【3†L99-L107】【10†L279-L282】, AHA/ACC for blood pressure
+【35†L229-L237】, and CDC for lipids【25†L154-L163】【25†L160-L163】【25†L163-L166】. 
+Population Design
+Age/Gender:  We simulate an adult clinic population (18–85). We use the specified age distribution: roughly
+20% aged 18–30, 30% in 31–45, 30% in 46–60, 20% in 61–85. Gender is balanced ~50/50. (Older age and
+equal gender produce a realistic mix.) 
+BMI Distribution:  Obesity is common. We target ~24% obese (BMI≥30) and a higher percentage
+overweight (25–29.9), reflecting global trends (WHO: ~43% overweight, 16% obesity worldwide【10†L314-
+L322】). This yields a mean BMI around 27–30, with some values above 40 (class III obesity). 
+Blood Pressure:  Given age and obesity, we expect many pre-hypertensive/hypertensive patients. We might
+simulate ~30–40% with SBP ≥130 or on meds, matching guidelines that ~45% of U.S. adults have “high BP”
+under the new definition【35†L229-L237】. 
+Glucose/Lipids:  Corresponding to the BMI distribution, a substantial fraction will have elevated glucose or
+dyslipidemia. For example, ~15% may have undiagnosed diabetes-level fasting glucose and ~20–30%
+prediabetes. We will inject ~10–20% with LDL >130 mg/dL and similar with low HDL, consistent with
+metabolic risk. 
+Liver Enzymes:  Most patients will have normal ALT/AST; we plan ~2–5% with mild elevation (possible
+NAFLD) and ~1–2% with moderate/severe elevation. 
+Dataset Size:  We use 20,000 patients (as requested). This is large enough for stable model training and
+capturing tail patterns. (Academic synthetic-data studies often use similar sizes【31†L117-L125】.) 
+Justification:  The chosen distributions mirror known population statistics (e.g., 12% adult diabetes, 35%
+prediabetes in the US【29†L438-L447】; 43% overweight globally【10†L314-L322】) but are tuned to the
+requested prevalence in Section 9. The mix reflects a clinically realistic sampling rather than a healthy
+volunteer sample.• 
+• 
+5
+--- PAGE 6 ---
+Feature Relationships
+We will enforce medically valid correlations between features:
+BMI & Waist Circumference: Very strong positive . By definition, higher BMI (due to weight)
+implies larger waist. We will make them nearly deterministic (e.g. waist = 0.5×BMI*2.5 with noise) so
+BMI and waist track closely. 
+BMI & Blood Pressure: Moderate positive . Higher BMI increases risk of hypertension. We will
+model SBP/DBP increasing somewhat with BMI (e.g. +1–2 mmHg per BMI point above 25). 
+BMI & Glucose/HbA1c: Moderate positive.  Obesity promotes insulin resistance, so fasting glucose
+and HbA1c tend to rise with BMI. For example, among high-BMI patients, a larger fraction will have
+prediabetic or diabetic glucose levels【18†L163-L170】. 
+BMI & Triglycerides (TG): Moderate positive.  Obesity/diet can raise TG. We will correlate TG with
+BMI modestly. 
+BMI & HDL: Moderate negative.  Higher BMI often associates with lower HDL. We will ensure HDL
+tends to be lower in high-BMI individuals. 
+Age & Risk Factors: Positive.  Older patients are more likely to have hypertension, diabetes, and
+Metabolic Syndrome. We will trend SBP, FPG, and disease risk upward with age. 
+Fasting Glucose & HbA1c: Strong positive.  Both measure glycemia. We will ensure consistent
+labeling: if FPG is in the diabetic range, HbA1c should also generally be high. 
+Triglycerides & HDL: Inverse moderate.  Dyslipidemia often presents with high TG and low HDL
+simultaneously. 
+Waist & Metabolic Risk:  Larger waist correlates with all MetS factors. We’ll often only label MetS=1 if
+waist is high or several other factors are high. 
+Diabetes & NAFLD: Positive correlation.  NAFLD frequently co-occurs with diabetes (as they share
+pathophysiology【15†L455-L458】【18†L163-L170】). We will increase NAFLD probability in patients
+with obesity, high TG, and/or diabetes. 
+Other:  Systolic and diastolic BP correlate strongly (we ensure SBP > DBP). Male/female differences:
+e.g., women tend to have higher HDL on average【25†L160-L163】, so we’ll add a slight gender
+effect on HDL. 
+These relationships ensure that the synthetic population follows known medical patterns: e.g. obese
+patients tend to be hypertensive and dyslipidemic, diabetic patients tend to have metabolic syndrome
+features, etc【18†L163-L170】【15†L455-L458】.
+Disease Assignment Strategy
+Each disease label will be assigned based on multiple features, following clinical criteria with some
+randomness to simulate variability. We use multi-factor rules  rather than single cutoffs:
+Type 2 Diabetes:  Assign if Fasting Glucose ≥126 mg/dL OR HbA1c ≥6.5% 【1†L449-L454】
+【1†L469-L472】. In practice, we might not require both, but a patient meeting either threshold will
+be labeled diabetic. (If both FPG and A1c are borderline high, we may use probability or secondary
+criteria.) We ensure patients labeled T2D usually have other risk factors (e.g. BMI≥30, high TG,
+hypertension) to reflect severity. • 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+6
+--- PAGE 7 ---
+Prediabetes:  Assign if (100 ≤ Fasting Glucose ≤ 125) OR (5.7% ≤ HbA1c ≤ 6.4%) , and NOT already
+labeled T2D 【1†L449-L454】【1†L469-L472】. Prediabetic patients should have mildly elevated
+glucose/A1c without reaching diabetic thresholds. We’ll also simulate that some with borderline lab
+values but fewer risk factors get Prediabetes. 
+Obesity:  Assign if BMI ≥ 30  (or equivalently waist ≥102 cm men / ≥88 cm women)【3†L111-L119】
+【9†L349-L357】. We generate Class I/II/III obesity labels depending on BMI (e.g. 30–34.9, 35–39.9,
+≥40) but the main binary label is 1 for any BMI≥30. (This follows WHO/CDC standards【3†L111-
+L119】【10†L279-L282】.) 
+Metabolic Syndrome:  Assign MetS=1 if any 3 or more  of the following criteria are met【5†L407-
+L416】【9†L313-L323】: (1) Waist circumference above threshold (men ≥102 cm or women ≥88 cm)
+【9†L349-L357】; (2) Triglycerides ≥150 mg/dL【9†L313-L317】; (3) HDL <40 mg/dL (men) or
+<50 mg/dL (women)【9†L317-L323】; (4) BP ≥130/85 mmHg【9†L324-L329】; (5) Fasting glucose
+≥100 mg/dL【9†L329-L334】. These are the ATP III/AHA/NHLBI criteria【9†L313-L323】. We will
+ensure at least 3 factors to label MetS. (For example, a patient with central obesity, high TG, and high
+BP would qualify.) 
+NAFLD (MASLD):  Since we don’t have imaging, we assign NAFLD probabilistically based on risk
+factors. Patients with obesity  (high BMI), hypertriglyceridemia , elevated ALT/AST , or existing 
+diabetes  get higher NAFLD probability. For example, if BMI>28 and TG>180 mg/dL and ALT>50 U/L,
+label NAFLD=1 with high probability. We also ensure patients with both obesity and T2D often have
+NAFLD【15†L455-L458】【18†L163-L170】. Conversely, lean patients with normal labs will rarely get
+NAFLD. (In effect, NAFLD depends on a weighted sum of factors: obesity, dyslipidemia,
+transaminases, diabetes, age.) 
+Healthy:  Assign Healthy=1 only if all five disease labels = 0 . Otherwise Healthy=0. This ensures non-
+overlap (e.g., if any disease is present, Healthy must be 0). 
+We implement these rules in code so that each synthetic patient’s lab/vital values jointly determine the
+labels. For realism, we add randomness: e.g. a few cases might have BMI 32 but not labeled obesity
+(measurement error), or borderline MetS factors that randomly count. This avoids deterministic, step-
+function data.
+Disease Co-occurrence
+Real patients often have multiple conditions concurrently. Our synthetic data will reflect known co-
+occurrences:
+Diabetes and Obesity:  Very common. Most T2D patients will also have obesity (or at least
+overweight). We will simulate that ~70–80% of labeled diabetics also have BMI>30. (This mirrors the
+fact that obesity is the strongest risk factor for T2D【18†L163-L170】.) 
+Diabetes and Metabolic Syndrome:  Almost all T2D patients meet MetS criteria (type 2 diabetes
+itself would add one criterion)【9†L329-L334】. We will ensure most diabetics also trigger MetS. • 
+• 
+• 
+• 
+• 
+• 
+• 
+7
+--- PAGE 8 ---
+Obesity and MetS:  Overlap is high. Many obese individuals have high TG, low HDL, or hypertension.
+We will make sure a large fraction of BMI≥30 patients are labeled MetS=1. 
+NAFLD with MetS/Diabetes:  NAFLD almost never occurs in isolation; it strongly overlaps with MetS
+components【15†L455-L458】. We will have NAFLD positive patients usually also meet MetS criteria
+or have T2D. (For instance, >80% of NAFLD cases will coincide with obesity or elevated fasting
+glucose.) 
+Prediabetes with MetS:  Common. Many prediabetics will also have dyslipidemia or hypertension.
+We will allow overlap: a patient can be both Prediabetes=1 and MetS=1 if they meet both rule sets. 
+These co-occurrences will not be 100% deterministic but will follow probabilities. We can cite that metabolic
+risk factors tend to cluster: e.g., NAFLD “tends to develop in people who have increased body fat or have
+diabetes, high cholesterol, or high triglycerides; having a combination of these is known as metabolic
+syndrome”【15†L455-L458】. In short, comorbidities will naturally cluster . 
+Disease Prevalence
+We aim for these approximate prevalences in the synthetic dataset  (note: these are higher than general-
+population rates, reflecting a clinical population):
+Healthy (no diseases): ~30%.  (Majority have at least one metabolic condition.) 
+Prediabetes:  ~18%. (By comparison, in the U.S. ~30–35% of adults have prediabetes【29†L438-
+L447】; we target a somewhat lower figure since we deliberately include many chronic cases.) 
+Type 2 Diabetes:  ~16%. (In the U.S., ~12% of adults have diagnosed diabetes【29†L438-L447】. We
+use ~16% to represent a clinic population with more risk factors.) 
+Obesity:  ~24%. (We target ~24% with BMI≥30. Globally ~16% of adults are obese【10†L314-L322】;
+prevalence is higher in some countries and in health-care settings.) 
+Metabolic Syndrome:  ~18%. (Literature reports varying prevalence (e.g. 14–39% in different
+countries【26†L6-L10】). Around 20% is reasonable for a synthetic outpatient mix.) 
+NAFLD:  ~12%. (General estimates say ~25% of people have NAFLD【15†L445-L448】; we use a lower
+12% to avoid dominating the dataset, while still allowing NAFLD cases.) 
+These targets are achieved by adjusting the rules and random sampling. We cite authoritative stats for
+context: e.g., ADA reports ~12% diabetes and 35% prediabetes in U.S. adults【29†L438-L447】, WHO/CDC
+report ~43% overweight and 16% obesity in adults【10†L314-L322】, and liver associations estimate ~25%
+NAFLD prevalence【15†L445-L448】. Our synthetic prevalences are approximate  and may slightly fluctuate,
+but we will validate after generation (Section 14) to ensure they are in the desired range.
+Borderline Cases
+We will include a significant fraction (~15% of patients) with values near diagnostic thresholds . This
+creates “edge” cases for robustness. Examples of borderline values (and few cases around them) include:
+BMI:  values like 29.5–30.5 (around the obesity cutoff of 30). 
+HbA1c:  values like 5.8–6.5% (prediabetes/diabetes boundary). 
+Fasting Glucose:  e.g. 124–127 mg/dL (just below/above 126). 
+Blood Pressure:  e.g. SBP 128–132 mmHg and DBP 84–86 mmHg (around the 130/85 cutoff). • 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+8
+--- PAGE 9 ---
+Triglycerides:  e.g. 145–152 mg/dL (near 150). 
+HDL:  e.g. 39–42 mg/dL (men, cutoff 40). 
+Waist Circumference:  e.g. 100–104 cm (male) or 86–90 cm (female) (around MetS criteria). 
+LDL:  e.g. 124–131 mg/dL (near 130 threshold). 
+Including these borderline patients helps train models to distinguish mild from moderate cases. It also tests
+that the label assignment logic handles exact-threshold values correctly. In practice, medical decisions often
+hinge on such borderline labs, so modeling them improves real-world utility. (In contrast, random
+assignment might yield fewer such cases.) 
+Noise Model
+To mimic real clinical measurements, we will add small random variability to numeric values:
+Height:  ±0.5 cm (measurement error or rounding). 
+Weight:  ±1 kg (scale variation). 
+BMI:  recomputed from noisy height/weight. 
+Blood Pressure:  ±3 mmHg (typical cuff error) for both SBP and DBP. 
+HbA1c:  ±0.2%. 
+Fasting Glucose:  ±5 mg/dL. 
+LDL:  ±5 mg/dL. 
+HDL:  ±3 mg/dL. 
+Triglycerides:  ±8 mg/dL. 
+ALT/AST:  ±3 U/L. 
+These perturbations are small (on the order of normal laboratory or measurement error) so they break
+exact ties  but do not blur disease definitions. We will ensure no value goes outside physiologically possible
+limits after adding noise. Excessive noise is avoided because clinical measurements are relatively precise;
+we only want to reflect typical lab/imaging variability. 
+Outlier Strategy
+To capture rare extreme cases, we will include a small number (~2%) of outliers with severe but plausible
+values. Examples of extreme yet valid cases:
+Extreme obesity:  BMI ~40–45, weight > 120 kg. 
+Severe dyslipidemia:  Triglycerides 300–500 mg/dL, LDL >200 mg/dL. 
+Poorly controlled diabetes:  HbA1c 10–12%, Fasting Glucose >200 mg/dL. 
+Elevated liver enzymes:  ALT ~150–180 U/L, AST ~100–130 U/L. 
+Combined crises:  e.g. BMI 43 with HbA1c 10.5% and TG 400. 
+These cases should remain physiologically plausible. For instance, we would never generate ALT=1000 or
+LDL=500 (those exceed human limits). We also avoid contradictory outliers (e.g. BMI 18 with 150 kg weight).
+Outliers increase the model’s robustness to rare presentations, but we keep their proportion low.• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+9
+--- PAGE 10 ---
+Missing Data Strategy
+In real clinical data, not every feature is measured for every patient. We classify features by expected
+missingness:
+Always Available (0% missing):  Patient_ID, Age, Gender , Height, Weight, BMI, SBP, DBP,
+Fasting_Glucose, HbA1c, and all disease labels . These are mandatory in our generated dataset so
+the model always has core inputs and labels. 
+Usually Available (<5% missing):  e.g. Waist_Circumference and Family_History fields. We simulate a
+small fraction (1–5%) of these as missing (NULL) to reflect that some clinics may omit waist
+measurements or patients may not know family history. 
+Occasionally Missing (5–10%):  Liver enzymes (ALT, AST) may be missing in many routine visits.
+Family_History_NAFLD may be missing up to ~8–10%, since patients often don’t know if relatives had
+fatty liver . We will implement: Waist ~3% missing; LDL, HDL, TG ~2–3% missing; ALT, AST ~5%; Family
+histories ~5–8%. 
+Missingness will not be purely random . We will induce realistic patterns: for example, younger healthy
+patients are less likely  to have extensive labs (so we’ll make missing lipid tests more likely if BMI<25 and
+age<30). Conversely, a patient with obesity/diabetes is more likely to have a full lipid panel. Family history
+fields will be missing at random or based on age/family size (e.g. older patients more likely to know family
+history of hypertension). 
+We will record missing values explicitly as NULL and ensure the model can impute or ignore them. (In
+practice, one could use median imputation or a learned imputer on training data.) Documenting
+missingness patterns is important for the ML pipeline to handle them appropriately.
+Data Validation Rules
+After generating each patient, we apply strict validation to catch errors:
+Value Ranges:  Every numeric value must lie within the specified realistic bounds (see Section 4). E.g.
+70≤FPG≤250, 4.5≤HbA1c≤12, 0≤LDL<300, 0≤AST<200, etc. Negative or physiologically
+impossible values are rejected. 
+BMI Consistency:  Compute BMI from height and weight; it must match the stored BMI (within
+rounding). If not, we correct or regenerate the record. 
+Blood Pressure:  Ensure SBP ≥ DBP and both are >=0. Also reject SBP<50 or DBP<30, which are
+incompatible with life. 
+Diabetes Labels:  If T2D=1, verify the patient has qualifying labs (FPG≥126 or HbA1c≥6.5)【1†L449-
+L454】【1†L469-L472】. If not, fix the label. Similarly, Prediabetes=1 requires FPG 100–125 or HbA1c
+5.7–6.4; if the labs are inconsistent, relabel or adjust labs. (We ensure no patient is marked diabetic
+without lab evidence.) • 
+• 
+• 
+• 
+• 
+• 
+• 
+10
+--- PAGE 11 ---
+Metabolic Syndrome Label:  If Metabolic_Syndrome=1, check that the patient has at least 3 of the
+defining criteria【5†L407-L416】【9†L313-L323】. If fewer , we remove the label. Conversely, if 3+
+criteria are met, ensure MetS=1. 
+Obesity Label:  If Obesity=1, ensure BMI≥30 or waist meets the cutoffs【3†L111-L119】【9†L349-
+L357】. If not, correct it. 
+NAFLD Label:  Since this is probabilistic, we still verify that NAFLD cases have elevated liver enzymes
+or severe metabolic features; if a NAFLD label appears for a perfectly healthy profile, it will be
+flagged for review. 
+Healthy Label:  Enforce Healthy=1 only when all other disease labels are 0. If any disease is 1,
+Healthy must be 0. 
+Duplicates:  Patient_ID must be unique. We check for duplicate rows and reject or reseed as needed. 
+Cross-checks:  We prevent impossible combos, e.g. BMI=18 with Weight=150 kg (contradiction), or
+HDL>LDL (while possible, it’s unusual if values are normal). If an inconsistency is found (e.g. Weight
+and Height give BMI 23 but the record lists BMI 35), we either correct it or regenerate. 
+Missing Label Leakage:  No feature should be directly determined by a label. For example, we must
+ensure HbA1c or FPG values do not “see” the disease label  – we generate features first, then
+labels from them, so there is no leakage of the label into the feature values. 
+All these rules will be coded into the generator’s validation step. Any patient failing a rule is either corrected
+(if easy) or discarded and re-sampled. This ensures the final CSV has no obvious data errors. 
+Machine Learning Considerations
+We prepare the dataset with standard ML best practices:
+Encoding:  Gender will be binary-coded (e.g. 0/1). All other features are numeric. Disease labels are
+binary. No additional categorical variables. 
+Scaling:  Since tree-based models (Random Forest, XGBoost, LightGBM) are planned, scaling is not
+strictly necessary. If we also use logistic regression or neural nets, we could normalize continuous
+features (e.g. zero-mean/unit-variance). But in a tree ensemble, raw scales (mmHg, mg/dL, etc.) are
+acceptable. 
+Missing Values:  For model training, missing numeric fields (waist, lipids, ALT/AST) could be imputed
+(e.g. with the median or mean of training data) or a missing indicator could be added. We will handle
+missingness carefully – for example, imputing NAFLD risk factors as normal if unknown. Categorical
+missingness (none in our design except family history flags) could be filled with 0/“None”. Any
+imputation should be fit on the training set only  and then applied to validation/test. 
+Feature Engineering:  We already compute BMI from height/weight. We could also create features
+like “Waist/BMI”, pulse pressure (SBP–DBP), or interactions, but we won’t overcomplicate. The chosen
+raw features themselves (especially lab values and vitals) should suffice for gradient-boosted trees. 
+Class Imbalance:  Some labels (e.g. NAFLD at 12%) are imbalanced. We can use techniques like class
+weighting or oversampling positive cases in training for those diseases. Evaluation metrics (below)
+will account for imbalance. 
+Validation:  Use stratified K-fold cross-validation, ensuring each fold has similar disease prevalence.
+We also reserve a final test set (e.g. 20%) for unbiased evaluation. 
+Evaluation Metrics:  For each disease label (multi-label setting), we will report sensitivity, specificity,
+precision, recall, F1-score, and ROC-AUC. Overall accuracy is less informative due to imbalance;
+macro-averaged F1 is better . Precision-recall curves can be used for rare conditions. • 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+11
+--- PAGE 12 ---
+Explainability:  We will compute feature importances and SHAP values for each model. For example,
+we expect BMI, fasting glucose, and age to rank high for diabetes predictions. This interpretable
+analysis will be part of the deliverable. 
+Final Dataset Blueprint
+Feature Data Type UnitRange
+(min–
+max)Mandatory/
+OptionalMissing
+%Related
+DiseasesImportanceValidation
+Rules
+Patient_ID String —P00001…
+P20000Mandatory 0% — Unique IDUnique, non-
+null
+Age Integer years 18–85 Mandatory 0% All High ≥18, ≤85
+Gender Categorical —Male /
+FemaleMandatory 0% All MediumMust be “Male”
+or “Female”
+Height_cm Float cm140–200
+(adult)Mandatory 0%Obesity,
+MetS, NAFLDHigh>0, consistent
+with Weight/
+BMI
+Weight_kg Float kg 40–150 Mandatory 0%Obesity,
+MetS, NAFLDHigh>0, consistent
+with Height/
+BMI
+BMI Float kg/m² 16–45Mandatory
+(calc)0%Obesity,
+MetS,
+Diabetes,
+NAFLDHighMatch Height/
+Weight (±0.1)
+Waist_Circumference_cm Float cm 60–140 Optional ~3%Obesity,
+MetS, NAFLDHigh≥0, consistent
+with BMI
+Systolic_BP Integer mmHg 90–190 Mandatory 0%Hypertension,
+MetSMedium≥ DBP, within
+range
+Diastolic_BP Integer mmHg 60–120 Mandatory 0%Hypertension,
+MetSMedium < SBP, ≥0
+Fasting_Blood_Glucose Integer mg/dL 70–250 Mandatory 0%Prediabetes,
+Diabetes,
+MetSHigh≥0, < FPG <
+300
+HbA1c Float % 4.5–12.0 Mandatory 0%Prediabetes,
+DiabetesHigh4.5 ≤ A1c ≤
+12.0
+LDL_Cholesterol Integer mg/dL 40–250 Optional ~2%MetS, CVD
+RiskMedium ≥0• 
+12
+--- PAGE 13 ---
+Feature Data Type UnitRange
+(min–
+max)Mandatory/
+OptionalMissing
+%Related
+DiseasesImportanceValidation
+Rules
+HDL_Cholesterol Integer mg/dL 20–90 Optional ~2%MetS, CVD
+RiskMedium ≥0
+Triglycerides Integer mg/dL 40–500 Optional ~2% MetS Medium ≥0
+ALT Integer U/L 10–200 Optional ~5% NAFLD Medium ≥0
+AST Integer U/L 10–150 Optional ~5% NAFLD Medium ≥0
+Family_History_DiabetesBinary
+(0/1)—0 / 1
+(Yes/No)Optional ~5% Diabetes Medium 0 or 1
+Family_History_Obesity Binary — 0 / 1 Optional ~5% Obesity Medium 0 or 1
+Family_History_Hypertension Binary — 0 / 1 Optional ~5% Hypertension Medium 0 or 1
+Family_History_NAFLD Binary — 0 / 1 Optional ~8% NAFLD Medium 0 or 1
+Type2_Diabetes Binary — 0 / 1Mandatory
+(target)0%All metabolic
+markersHigh (label)If 1 ⇒
+(Glc≥126 or
+A1c≥6.5)
+【1†L449-
+L454】
+【1†L469-
+L472】
+Prediabetes Binary — 0 / 1Mandatory
+(target)0%Glucose/A1c
+mildly highHigh (label)If 1 ⇒
+(100≤Glc≤125
+or
+5.7≤A1c≤6.4)
+【1†L449-
+L454】
+【1†L469-
+L472】
+Obesity Binary — 0 / 1Mandatory
+(target)0% BMI, Waist High (label)If 1 ⇒
+(BMI≥30 or
+waist≥102/88)
+【3†L111-
+L119】
+【9†L349-
+L357】
+13
+--- PAGE 14 ---
+Feature Data Type UnitRange
+(min–
+max)Mandatory/
+OptionalMissing
+%Related
+DiseasesImportanceValidation
+Rules
+Metabolic_Syndrome Binary — 0 / 1Mandatory
+(target)0%WC, BP, TG,
+HDL, GlucoseHigh (label)If 1 ⇒ ≥3 of
+(waist,
+TG≥150, HDL
+low,
+BP≥130/85,
+Glc≥100)
+【5†L407-
+L416】
+【9†L313-
+L323】
+NAFLD Binary — 0 / 1Mandatory
+(target)0%Obesity, TG,
+ALT/AST, T2DMedium(label)If 1 ⇒ obesity/
+high TG/
+elevated
+enzymes
+(probabilistic)
+【15†L455-
+L458】
+Healthy Binary — 0 / 1Mandatory
+(target)0% — High (label)1 only if all
+above diseases
+= 0
+(“Importance” ranks features for prediction; e.g. Age/Fasting_Glucose/BMI are High for diabetes modeling.
+“Validation” notes key rules: see sections above and cited guidelines.)
+References
+ADA Standards and NIH Guidelines for diabetes diagnosis【1†L449-L454】【1†L469-L472】. 
+CDC/NIH on diabetes risk factors【18†L163-L170】. 
+CDC/WHO obesity definitions【3†L99-L107】【10†L279-L282】. 
+AHA/ACC definitions of metabolic syndrome and hypertension【5†L407-L416】【9†L313-L323】
+【35†L229-L237】. 
+CDC guidelines for cholesterol and triglycerides【25†L154-L163】【25†L160-L163】【25†L163-
+L166】. 
+Mayo Clinic normal ALT/AST ranges【23†L462-L470】. 
+Liver Foundation on NAFLD definition and risk【15†L425-L430】【15†L455-L458】. 
+Prevalence statistics (ADA “Statistics About Diabetes”)【29†L438-L447】, WHO obesity facts
+【10†L314-L322】, and others cited above. 
+Synthetic data literature noting privacy benefits【31†L117-L125】. 
+Each feature range, disease cutoff, and risk relationship is grounded in these authoritative sources,
+ensuring our synthetic dataset is clinically accurate and defensible.• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+14
+--- PAGE 15 ---
+15

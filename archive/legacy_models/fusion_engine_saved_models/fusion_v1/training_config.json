@@ -1,0 +1,127 @@
+{
+  "fusion_version": "v1",
+  "oof_n_folds": 5,
+  "random_seed": 42,
+  "pathway_model_types": {
+    "C": "logistic_regression",
+    "W": "logistic_regression",
+    "G": "xgboost",
+    "C+W": "logistic_regression",
+    "C+G": "logistic_regression",
+    "W+G": "xgboost",
+    "C+W+G": "logistic_regression"
+  },
+  "pathway_comparisons": {
+    "C": {
+      "logistic_regression": {
+        "selection_score": 0.9797928169661776,
+        "mean_roc_auc": 0.9905,
+        "mean_pr_auc": 0.9691
+      },
+      "xgboost": {
+        "selection_score": 0.9252046516141443,
+        "mean_roc_auc": 0.9372,
+        "mean_pr_auc": 0.9132
+      }
+    },
+    "W": {
+      "logistic_regression": {
+        "selection_score": 0.9215028090744156,
+        "mean_roc_auc": 0.9587,
+        "mean_pr_auc": 0.8844
+      },
+      "xgboost": {
+        "selection_score": 0.9174908099354748,
+        "mean_roc_auc": 0.9582,
+        "mean_pr_auc": 0.8768
+      }
+    },
+    "G": {
+      "logistic_regression": {
+        "selection_score": 0.7784448679660796,
+        "mean_roc_auc": 0.9081,
+        "mean_pr_auc": 0.6488
+      },
+      "xgboost": {
+        "selection_score": 0.783938761368737,
+        "mean_roc_auc": 0.9112,
+        "mean_pr_auc": 0.6567
+      }
+    },
+    "C+W": {
+      "logistic_regression": {
+        "selection_score": 0.9792406539744398,
+        "mean_roc_auc": 0.9897,
+        "mean_pr_auc": 0.9688
+      },
+      "xgboost": {
+        "selection_score": 0.9566169123028945,
+        "mean_roc_auc": 0.9706,
+        "mean_pr_auc": 0.9427
+      }
+    },
+    "C+G": {
+      "logistic_regression": {
+        "selection_score": 0.9827939262548692,
+        "mean_roc_auc": 0.9941,
+        "mean_pr_auc": 0.9715
+      },
+      "xgboost": {
+        "selection_score": 0.9567048546417622,
+        "mean_roc_auc": 0.9763,
+        "mean_pr_auc": 0.9371
+      }
+    },
+    "W+G": {
+      "logistic_regression": {
+        "selection_score": 0.933081775802493,
+        "mean_roc_auc": 0.9717,
+        "mean_pr_auc": 0.8945
+      },
+      "xgboost": {
+        "selection_score": 0.938386837341947,
+        "mean_roc_auc": 0.9741,
+        "mean_pr_auc": 0.9027
+      }
+    },
+    "C+W+G": {
+      "logistic_regression": {
+        "selection_score": 0.9828040068321313,
+        "mean_roc_auc": 0.994,
+        "mean_pr_auc": 0.9716
+      },
+      "xgboost": {
+        "selection_score": 0.968202373759329,
+        "mean_roc_auc": 0.9847,
+        "mean_pr_auc": 0.9517
+      }
+    }
+  },
+  "modality_attribution_cwg": {
+    "Type2_Diabetes": {
+      "clinical": 54.8,
+      "wearable": 32.3,
+      "gut": 12.9
+    },
+    "Prediabetes": {
+      "clinical": 69.9,
+      "wearable": 18.6,
+      "gut": 11.5
+    },
+    "Obesity": {
+      "clinical": 69.7,
+      "wearable": 15.8,
+      "gut": 14.5
+    },
+    "Metabolic_Syndrome": {
+      "clinical": 66.4,
+      "wearable": 10.1,
+      "gut": 23.5
+    },
+    "NAFLD": {
+      "clinical": 44.1,
+      "wearable": 12.3,
+      "gut": 43.6
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "Type2_Diabetes": {
+    "Clinical": 0.8047,
+    "Wearable": 0.1953,
+    "Gut": 0.0
+  },
+  "Prediabetes": {
+    "Clinical": 0.6571,
+    "Wearable": 0.325,
+    "Gut": 0.0179
+  },
+  "High_Adiposity_Risk": {
+    "Clinical": 0.8204,
+    "Wearable": 0.1396,
+    "Gut": 0.04
+  },
+  "Metabolic_Syndrome": {
+    "Clinical": 0.9029,
+    "Wearable": 0.0453,
+    "Gut": 0.0518
+  },
+  "NAFLD": {
+    "Clinical": 0.9538,
+    "Wearable": 0.0462,
+    "Gut": 0.0
+  }
+}

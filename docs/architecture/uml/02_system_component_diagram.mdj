@@ -1,0 +1,349 @@
+{
+  "_type": "Project",
+  "_id": "AAAA5B25E191925147B4B2EE",
+  "name": "TeleMed AI Platform \u2014 High-Level System Component Diagram",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAA7F5CA042D87E4BA5973D",
+      "_parent": {
+        "$ref": "AAAA5B25E191925147B4B2EE"
+      },
+      "name": "High-Level System Component Diagram Model",
+      "ownedElements": [
+        {
+          "_type": "UMLComponentDiagram",
+          "_id": "AAAAB6B56E35397D4A37ADD6",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "High-Level System Component Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAA1DE26F7521E46AEA0C7",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAAC9022D1DC0344FBA85BB"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA63BA0BB88BE74CE8AFC1",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAAA1733D9CB147413BBECD"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA2364C6EC0B094677891E",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAACECE819651F046518015"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAE63D088ABDD44B28974E",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAAB6C7B6D0A77B4B18A7AD"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAC2B6E55B03D247D1B655",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAA56690A9EC78F47BCBE10"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAB7E8A7B1FF3C489E8F6E",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAA0A20342607994A068039"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAACD564C5027BC4B8AAD97",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAA48226082D90F489097EE"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAF403922C66164E148FFA",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAAB3D81D8407434470AFB9"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA588675881EF14F1ABBC8",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAAB272CBD645AF4F69BD7C"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA43F17C868FA5453CB395",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAA8A02C27B321A464A8A82"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA28C36A2F3E9C4FE08784",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAABEB42A3736D6452EBBCA"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAB371C6040DFD4DD09B6A",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAA86D873EFC19C4C4988FA"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAAC2E72D6330274E4C8F99",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAA86756F670F5549DBA305"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 580,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLComponentView",
+              "_id": "AAAA5B97A8AC88844C28BD09",
+              "_parent": {
+                "$ref": "AAAAB6B56E35397D4A37ADD6"
+              },
+              "model": {
+                "$ref": "AAAA8B5DF4E48DDC48CD86A5"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 580,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAC9022D1DC0344FBA85BB",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "React Vite Frontend SPA"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAA1733D9CB147413BBECD",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "FastAPI Application Core"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAACECE819651F046518015",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Auth & RBAC Service"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAB6C7B6D0A77B4B18A7AD",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Multimodal Intake Engine"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA56690A9EC78F47BCBE10",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Clinical Expert (18 Features)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA0A20342607994A068039",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Wearable Expert (15 Features)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA48226082D90F489097EE",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Gut Expert (49 Model Features)"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAB3D81D8407434470AFB9",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "V4 Stacking Fusion Engine"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAB272CBD645AF4F69BD7C",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "TreeSHAP Explainability Engine"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA8A02C27B321A464A8A82",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Medical RAG Evidence Synthesizer"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAABEB42A3736D6452EBBCA",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "PostgreSQL 17 Database"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA86D873EFC19C4C4988FA",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Redis Session Store"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA86756F670F5549DBA305",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Celery Asynchronous Workers"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAA8B5DF4E48DDC48CD86A5",
+          "_parent": {
+            "$ref": "AAAA7F5CA042D87E4BA5973D"
+          },
+          "name": "Prometheus Observability Engine"
+        }
+      ]
+    }
+  ]
+}

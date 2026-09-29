@@ -1,0 +1,49 @@
+{
+  "sprint": "25.5",
+  "title": "Publication V4 Final Evidence & Reproducibility Package",
+  "date_generated": "2026-08-15",
+  "cohort_characteristics": {
+    "total_synchronized_patients": 100000,
+    "train_patients": 70000,
+    "validation_patients": 15000,
+    "test_patients": 15000,
+    "random_seed": 42
+  },
+  "feature_dimensions": {
+    "Clinical": 18,
+    "Wearable": 15,
+    "Gut": 49,
+    "Total_Input_Features": 82,
+    "Metadata_Field": "Patient_ID (Excluded from model input vectors)"
+  },
+  "disease_targets": [
+    "Type2_Diabetes",
+    "Prediabetes",
+    "High_Adiposity_Risk",
+    "Metabolic_Syndrome",
+    "NAFLD"
+  ],
+  "modality_pathways": [
+    "C",
+    "W",
+    "G",
+    "C+W",
+    "C+G",
+    "W+G",
+    "C+W+G"
+  ],
+  "artifact_hashes": {
+    "Clinical_Payload": "16dbc550b4a7129cb29078493ded87fea6bdf156c2bac97ed0f3dacd7c4ff9bf",
+    "Wearable_Payload": "6468ce8d9bb8cbdbcb4f303503dd5205d5f24b564374b5fa4b42fdb698d801ce",
+    "Gut_Payload": "39a470e0c279a06e5007fc445575712270968dbbae2d63a990ecb15dfe485712",
+    "Fusion_Payload": "addd8976e79347f434a273da03d0d8cb731c80ee21179cc3bec635259cfd7792",
+    "Clinical_Dataset": "c322473ece815d2f7d6fc3e0d735c52e710b9f5385f3ab439635f744d718df43",
+    "Wearable_Dataset": "9eaf7fecef0f2cb5fec3cc69f1c49f5fabe6da47048b60f03b0480f256c9bd98",
+    "Gut_Dataset": "8b7ae70ee8e9890f7dd75b06ee32b0ce5289f04959d2ddc054a38c891f76ea56",
+    "Test_IDs": "1dfde420c63026e595a671f6c583c405e55d66dfbdd2d724092064fbb90d1f07"
+  },
+  "evaluation_environment": {
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "operating_system": "Windows 11"
+  }
+}

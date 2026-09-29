@@ -1,0 +1,539 @@
+{
+  "_type": "Project",
+  "_id": "AAAAA70233342855498DBCCD",
+  "name": "TeleMed AI Platform \u2014 Backend Class Diagram (FastAPI & SQLAlchemy ORM)",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAA941965B6B7DA41EA86BC",
+      "_parent": {
+        "$ref": "AAAAA70233342855498DBCCD"
+      },
+      "name": "Backend Class Diagram (FastAPI & SQLAlchemy ORM) Model",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "AAAA37191732CC56483A9E58",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "Backend Class Diagram (FastAPI & SQLAlchemy ORM)",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA4823D192A49643F3BD2D",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAAA07BE5437357479E8C91"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA1C77D66A64D4438BB333",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAAC12874C2B3C8432997C2"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAE0C16E6E500C41BEA790",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAA685994B0DD494873947B"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAF451B873683A4AE8A545",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAA89C7981A11F045CB8110"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA2CF10B5B453F4D76990A",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAABB36C32E28574A76BDF1"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA651391636EBC4535B527",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAAFF1D5D25E0D94AE5A093"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAC4BC0FA324AF4F4E8B4C",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAA46949752A35F450ABEAA"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA60F84F22B5AB4F618FD5",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAAAB9A5A526DC549328ACF"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA93ECFA74B6BF419894A6",
+              "_parent": {
+                "$ref": "AAAA37191732CC56483A9E58"
+              },
+              "model": {
+                "$ref": "AAAAF3FB91774923480892AC"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAA07BE5437357479E8C91",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "User",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAC61A03B88A784DFB9E46",
+              "_parent": {
+                "$ref": "AAAAA07BE5437357479E8C91"
+              },
+              "name": "user_id",
+              "type": "String PK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAEBD7257E9A964F29AA0D",
+              "_parent": {
+                "$ref": "AAAAA07BE5437357479E8C91"
+              },
+              "name": "email",
+              "type": "String"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA1A3EB2C943EA42EF89BF",
+              "_parent": {
+                "$ref": "AAAAA07BE5437357479E8C91"
+              },
+              "name": "password_hash",
+              "type": "String"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA85915FD2855C465BB2C0",
+              "_parent": {
+                "$ref": "AAAAA07BE5437357479E8C91"
+              },
+              "name": "role",
+              "type": "String"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAC12874C2B3C8432997C2",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "PatientProfile",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA30576C7B61AD4262A9EC",
+              "_parent": {
+                "$ref": "AAAAC12874C2B3C8432997C2"
+              },
+              "name": "patient_id",
+              "type": "String PK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA25C57D86A3364CE5AE94",
+              "_parent": {
+                "$ref": "AAAAC12874C2B3C8432997C2"
+              },
+              "name": "user_id",
+              "type": "String FK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA43BBA3BEECFE4288BD5F",
+              "_parent": {
+                "$ref": "AAAAC12874C2B3C8432997C2"
+              },
+              "name": "full_name",
+              "type": "String"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA68C4EC65367A45EF8CCD",
+              "_parent": {
+                "$ref": "AAAAC12874C2B3C8432997C2"
+              },
+              "name": "age",
+              "type": "Integer"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA813EC87ABF3B40B8A3A9",
+              "_parent": {
+                "$ref": "AAAAC12874C2B3C8432997C2"
+              },
+              "name": "gender",
+              "type": "String"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA685994B0DD494873947B",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "DoctorProfile",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA8EC6D2E27E934DF9A768",
+              "_parent": {
+                "$ref": "AAAA685994B0DD494873947B"
+              },
+              "name": "doctor_id",
+              "type": "String PK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA035DE53D85FE434DA427",
+              "_parent": {
+                "$ref": "AAAA685994B0DD494873947B"
+              },
+              "name": "user_id",
+              "type": "String FK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAF026FBEB387C43E38E5F",
+              "_parent": {
+                "$ref": "AAAA685994B0DD494873947B"
+              },
+              "name": "specialization",
+              "type": "String"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA9EE96A70A1AA4F35B1CD",
+              "_parent": {
+                "$ref": "AAAA685994B0DD494873947B"
+              },
+              "name": "verification_status",
+              "type": "String"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA89C7981A11F045CB8110",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "HealthRecord",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAFAF2ACCAE56744EA813B",
+              "_parent": {
+                "$ref": "AAAA89C7981A11F045CB8110"
+              },
+              "name": "record_id",
+              "type": "String PK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAF9403DB8E0B445D3BF3F",
+              "_parent": {
+                "$ref": "AAAA89C7981A11F045CB8110"
+              },
+              "name": "user_id",
+              "type": "String FK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAA586209A17B546F5A109",
+              "_parent": {
+                "$ref": "AAAA89C7981A11F045CB8110"
+              },
+              "name": "effective_pathway",
+              "type": "String"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAD12F5901D62C450B9515",
+              "_parent": {
+                "$ref": "AAAA89C7981A11F045CB8110"
+              },
+              "name": "prediction_snapshot",
+              "type": "Text"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA352FF742B5BA4C2BA4C5",
+              "_parent": {
+                "$ref": "AAAA89C7981A11F045CB8110"
+              },
+              "name": "xai_snapshot",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAABB36C32E28574A76BDF1",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "Consultation",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA06B670DDB0EF45D3899E",
+              "_parent": {
+                "$ref": "AAAABB36C32E28574A76BDF1"
+              },
+              "name": "consultation_id",
+              "type": "String PK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA7BC8AA31E333432FB522",
+              "_parent": {
+                "$ref": "AAAABB36C32E28574A76BDF1"
+              },
+              "name": "patient_id",
+              "type": "String"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAA10C0A17369A74941A66B",
+              "_parent": {
+                "$ref": "AAAABB36C32E28574A76BDF1"
+              },
+              "name": "assigned_doctor_id",
+              "type": "String FK"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAAB71AE5248A8482B898F",
+              "_parent": {
+                "$ref": "AAAABB36C32E28574A76BDF1"
+              },
+              "name": "reason",
+              "type": "Text"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "AAAAEACACC5EC934478F8BE0",
+              "_parent": {
+                "$ref": "AAAABB36C32E28574A76BDF1"
+              },
+              "name": "status",
+              "type": "String"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAFF1D5D25E0D94AE5A093",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "V3InferenceEngine",
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA2B6AB2AF1C834F71B2B0",
+              "_parent": {
+                "$ref": "AAAAFF1D5D25E0D94AE5A093"
+              },
+              "name": "predict_clinical(X)"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA289DDD7F0BD74F1190AD",
+              "_parent": {
+                "$ref": "AAAAFF1D5D25E0D94AE5A093"
+              },
+              "name": "predict_wearable(X)"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA2601EFED759C4083924B",
+              "_parent": {
+                "$ref": "AAAAFF1D5D25E0D94AE5A093"
+              },
+              "name": "predict_gut(X)"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA3AC177B55A3847CAA8DD",
+              "_parent": {
+                "$ref": "AAAAFF1D5D25E0D94AE5A093"
+              },
+              "name": "predict_multimodal(data)"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA46949752A35F450ABEAA",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "V3ScientificRouter",
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA98A9524DA3954868A1BC",
+              "_parent": {
+                "$ref": "AAAA46949752A35F450ABEAA"
+              },
+              "name": "route_prediction(payload)"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAAC13E5474258748FFBC7D",
+              "_parent": {
+                "$ref": "AAAA46949752A35F450ABEAA"
+              },
+              "name": "evaluate_stasis_pathway(pathway)"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAB9A5A526DC549328ACF",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "XAIService",
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAAA65A94B852EB4E28A6F9",
+              "_parent": {
+                "$ref": "AAAAAB9A5A526DC549328ACF"
+              },
+              "name": "get_shap_explanations(record)"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAAA4827231B7274A14BC80",
+              "_parent": {
+                "$ref": "AAAAAB9A5A526DC549328ACF"
+              },
+              "name": "compute_treeshap_attributions(model, X)"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAF3FB91774923480892AC",
+          "_parent": {
+            "$ref": "AAAA941965B6B7DA41EA86BC"
+          },
+          "name": "MedicalRAGEngine",
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAAFA89946222464763BC23",
+              "_parent": {
+                "$ref": "AAAAF3FB91774923480892AC"
+              },
+              "name": "retrieve_medical_evidence(query)"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "AAAA316409184A7F46E8AE13",
+              "_parent": {
+                "$ref": "AAAAF3FB91774923480892AC"
+              },
+              "name": "generate_comprehensive_report(snapshot)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

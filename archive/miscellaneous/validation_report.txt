@@ -1,0 +1,110 @@
+========================================================================
+GUT MICROBIOME DATASET - VALIDATION REPORT
+========================================================================
+
+OVERALL RESULT: ✓ PASSED
+Total Patients: 20000
+Row Count Match: True
+
+----------------------------------------
+NaN VALUES
+----------------------------------------
+  ✓ Akkermansia: 0
+  ✓ Faecalibacterium: 0
+  ✓ Bifidobacterium: 0
+  ✓ Roseburia: 0
+  ✓ Alistipes: 0
+  ✓ Escherichia_Shigella: 0
+  ✓ Collinsella: 0
+  ✓ Prevotella: 0
+  ✓ Blautia: 0
+  ✓ Shannon_Diversity_Index: 0
+
+----------------------------------------
+NEGATIVE VALUES
+----------------------------------------
+  ✓ Akkermansia: 0
+  ✓ Faecalibacterium: 0
+  ✓ Bifidobacterium: 0
+  ✓ Roseburia: 0
+  ✓ Alistipes: 0
+  ✓ Escherichia_Shigella: 0
+  ✓ Collinsella: 0
+  ✓ Prevotella: 0
+  ✓ Blautia: 0
+
+----------------------------------------
+BOUNDS VIOLATIONS
+----------------------------------------
+  ✓ Akkermansia: 0
+  ✓ Faecalibacterium: 0
+  ✓ Bifidobacterium: 0
+  ✓ Roseburia: 0
+  ✓ Alistipes: 0
+  ✓ Escherichia_Shigella: 0
+  ✓ Collinsella: 0
+  ✓ Prevotella: 0
+  ✓ Blautia: 0
+  ✓ Shannon_Diversity_Index: 0
+
+----------------------------------------
+FEATURE STATISTICS
+----------------------------------------
+  Akkermansia:
+    Mean=4.1857  Std=2.5061  Min=0.0000  Max=13.3100
+    Q25=2.2100  Median=3.9700  Q75=5.8700
+  Faecalibacterium:
+    Mean=8.5880  Std=4.4949  Min=0.0000  Max=23.8200
+    Q25=5.2300  Median=8.4000  Q75=11.6400
+  Bifidobacterium:
+    Mean=4.9469  Std=2.7932  Min=0.0000  Max=14.5800
+    Q25=2.8100  Median=4.7300  Q75=6.8500
+  Roseburia:
+    Mean=4.3202  Std=2.4169  Min=0.0000  Max=13.0900
+    Q25=2.4400  Median=4.1800  Q75=5.9625
+  Alistipes:
+    Mean=3.4784  Std=1.9306  Min=0.0000  Max=10.1200
+    Q25=2.0300  Median=3.3500  Q75=4.7700
+  Escherichia_Shigella:
+    Mean=2.9158  Std=1.9815  Min=0.0000  Max=11.1500
+    Q25=1.3000  Median=2.6100  Q75=4.2100
+  Collinsella:
+    Mean=2.0966  Std=1.4134  Min=0.0000  Max=7.7800
+    Q25=0.9400  Median=1.9100  Q75=3.0300
+  Prevotella:
+    Mean=6.5114  Std=5.2659  Min=0.0000  Max=30.0000
+    Q25=2.9700  Median=4.9800  Q75=8.2600
+  Blautia:
+    Mean=4.9155  Std=3.3775  Min=0.0000  Max=20.0000
+    Q25=2.6100  Median=4.0300  Q75=6.2200
+  Shannon_Diversity_Index:
+    Mean=2.7895  Std=0.6832  Min=1.0000  Max=5.0000
+    Q25=2.3329  Median=2.8111  Q75=3.2672
+
+----------------------------------------
+CORRELATION DIRECTION CHECKS
+----------------------------------------
+  ✓ Akkermansia_vs_Faecalibacterium: r=0.2889 (expected positive)
+  ✓ Faecalibacterium_vs_Roseburia: r=0.3345 (expected positive)
+  ✓ Escherichia_Shigella_vs_Faecalibacterium: r=-0.2881 (expected negative)
+  ✓ Escherichia_Shigella_vs_Akkermansia: r=-0.2296 (expected negative)
+  ✓ Collinsella_vs_Faecalibacterium: r=-0.2509 (expected negative)
+  ✓ Shannon_Diversity_Index_vs_Faecalibacterium: r=0.5151 (expected positive)
+  ✓ Shannon_Diversity_Index_vs_Escherichia_Shigella: r=-0.5042 (expected negative)
+
+----------------------------------------
+PATIENT ALIGNMENT
+----------------------------------------
+  ✓ Patient_ID: MATCH
+  ✓ Age: MATCH
+  ✓ Gender: MATCH
+  ✓ Type2_Diabetes: MATCH
+  ✓ Prediabetes: MATCH
+  ✓ Obesity: MATCH
+  ✓ Metabolic_Syndrome: MATCH
+  ✓ NAFLD: MATCH
+  ✓ Healthy: MATCH
+
+========================================================================
+END OF VALIDATION REPORT
+========================================================================

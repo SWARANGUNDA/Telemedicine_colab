@@ -1,0 +1,188 @@
+{
+  "_type": "Project",
+  "_id": "AAAA43770A6CCC7B4C6481EA",
+  "name": "TeleMed AI Platform \u2014 Infrastructure Deployment Diagram (Docker / Production)",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAADCDA852B7084F21865F",
+      "_parent": {
+        "$ref": "AAAA43770A6CCC7B4C6481EA"
+      },
+      "name": "Infrastructure Deployment Diagram (Docker / Production) Model",
+      "ownedElements": [
+        {
+          "_type": "UMLDeploymentDiagram",
+          "_id": "AAAAFD8076B750A243EBBA8C",
+          "_parent": {
+            "$ref": "AAAAADCDA852B7084F21865F"
+          },
+          "name": "Infrastructure Deployment Diagram (Docker / Production)",
+          "ownedViews": [
+            {
+              "_type": "UMLNodeView",
+              "_id": "AAAAC1915A9F93414C6EB18A",
+              "_parent": {
+                "$ref": "AAAAFD8076B750A243EBBA8C"
+              },
+              "model": {
+                "$ref": "AAAA8C87498C26FA40BEA4B8"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLNodeView",
+              "_id": "AAAAD2B89BBDB89C4176B198",
+              "_parent": {
+                "$ref": "AAAAFD8076B750A243EBBA8C"
+              },
+              "model": {
+                "$ref": "AAAAE5A6C65E3F084997A3AF"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLNodeView",
+              "_id": "AAAA191438AF18A24BFC9C80",
+              "_parent": {
+                "$ref": "AAAAFD8076B750A243EBBA8C"
+              },
+              "model": {
+                "$ref": "AAAAAD1349F353204CC59780"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLNodeView",
+              "_id": "AAAA3CE1E54FB69F48B8AAC7",
+              "_parent": {
+                "$ref": "AAAAFD8076B750A243EBBA8C"
+              },
+              "model": {
+                "$ref": "AAAA264245F023624EE48ED7"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLNodeView",
+              "_id": "AAAA80C14EE43F964FED90F9",
+              "_parent": {
+                "$ref": "AAAAFD8076B750A243EBBA8C"
+              },
+              "model": {
+                "$ref": "AAAA5EA296205B304DD08752"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLNodeView",
+              "_id": "AAAA914FB1F40C24404FB1F8",
+              "_parent": {
+                "$ref": "AAAAFD8076B750A243EBBA8C"
+              },
+              "model": {
+                "$ref": "AAAA14D1BCED0F424EA08BD9"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLNodeView",
+              "_id": "AAAAE0A94A26FA414FEAB814",
+              "_parent": {
+                "$ref": "AAAAFD8076B750A243EBBA8C"
+              },
+              "model": {
+                "$ref": "AAAADD627BA3D13D4917B282"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLNode",
+          "_id": "AAAA8C87498C26FA40BEA4B8",
+          "_parent": {
+            "$ref": "AAAAADCDA852B7084F21865F"
+          },
+          "name": "Client Workstation (Web Browser)"
+        },
+        {
+          "_type": "UMLNode",
+          "_id": "AAAAE5A6C65E3F084997A3AF",
+          "_parent": {
+            "$ref": "AAAAADCDA852B7084F21865F"
+          },
+          "name": "Docker Container: telemed-frontend (Nginx/Vite :5173)"
+        },
+        {
+          "_type": "UMLNode",
+          "_id": "AAAAAD1349F353204CC59780",
+          "_parent": {
+            "$ref": "AAAAADCDA852B7084F21865F"
+          },
+          "name": "Docker Container: telemed-backend (Uvicorn/FastAPI :8000)"
+        },
+        {
+          "_type": "UMLNode",
+          "_id": "AAAA264245F023624EE48ED7",
+          "_parent": {
+            "$ref": "AAAAADCDA852B7084F21865F"
+          },
+          "name": "Docker Container: telemed-db (PostgreSQL 17 :5432)"
+        },
+        {
+          "_type": "UMLNode",
+          "_id": "AAAA5EA296205B304DD08752",
+          "_parent": {
+            "$ref": "AAAAADCDA852B7084F21865F"
+          },
+          "name": "Docker Container: telemed-redis (Redis Store :6379)"
+        },
+        {
+          "_type": "UMLNode",
+          "_id": "AAAA14D1BCED0F424EA08BD9",
+          "_parent": {
+            "$ref": "AAAAADCDA852B7084F21865F"
+          },
+          "name": "Docker Container: telemed-celery (Asynchronous Task Workers)"
+        },
+        {
+          "_type": "UMLNode",
+          "_id": "AAAADD627BA3D13D4917B282",
+          "_parent": {
+            "$ref": "AAAAADCDA852B7084F21865F"
+          },
+          "name": "Docker Container: telemed-prometheus (Metrics Collector :9090)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Patient Name: Demo Patient
+Systolic_BP: 135 mmHg
+Diastolic_BP: 88 mmHg
+Fasting_Blood_Glucose: 115 mg/dL
+HbA1c: 6.4 %
+LDL: 155 mg/dL

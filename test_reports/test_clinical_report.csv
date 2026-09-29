@@ -1,0 +1,2 @@
+Age,Gender,Height,Weight,BMI,Waist_Circumference,Systolic_BP,Diastolic_BP,Fasting_Blood_Glucose,HbA1c,Triglycerides,HDL,LDL,ALT,AST,Family_History_Diabetes,Family_History_Hypertension,Family_History_CVD
+45,1,175,85,27.7,95,135,85,110,6.1,180,40,130,45,35,1,1,0

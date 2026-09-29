@@ -1,0 +1,8 @@
+{
+  "disease": "Prediabetes",
+  "pathway": "W+G",
+  "tn": 5902,
+  "fp": 629,
+  "fn": 7000,
+  "tp": 1469
+}

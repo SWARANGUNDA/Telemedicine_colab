@@ -1,0 +1,14 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+node_modules
+web_platform/frontend/dist
+web_platform/frontend/node_modules
+*.db
+*.sqlite3
+telemed.db

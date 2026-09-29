@@ -1,0 +1,67 @@
+{
+  "dataset_version": "V4",
+  "model_version": "V4",
+  "cohort": {
+    "total_patients": 100000,
+    "train_size": 70000,
+    "val_size": 15000,
+    "test_size": 15000
+  },
+  "random_seeds": {
+    "dataset_generation": 42,
+    "model_training": 42,
+    "bootstrap_ci": 42
+  },
+  "target_diseases": [
+    "Type2_Diabetes",
+    "Prediabetes",
+    "High_Adiposity_Risk",
+    "Metabolic_Syndrome",
+    "NAFLD"
+  ],
+  "individual_experts": [
+    "Clinical",
+    "Wearable",
+    "Gut"
+  ],
+  "multimodal_pathways": [
+    "C",
+    "W",
+    "G",
+    "C+W",
+    "C+G",
+    "W+G",
+    "C+W+G"
+  ],
+  "evaluation_metrics": [
+    "ROC-AUC",
+    "PR-AUC",
+    "Accuracy",
+    "Precision",
+    "Recall",
+    "F1-score",
+    "Sensitivity",
+    "Specificity",
+    "Brier_Score",
+    "Confusion_Matrix",
+    "Calibration_Curve"
+  ],
+  "confidence_interval_method": "Bootstrap 1000 resamples (95% percentile CI)",
+  "statistical_testing_method": "DeLong test for ROC-AUC & Paired Bootstrap Test for PR-AUC",
+  "dataset_hashes": {
+    "clinical_v4.csv": "c322473ece815d2f7d6fc3e0d735c52e710b9f5385f3ab439635f744d718df43",
+    "wearable_v4.csv": "9eaf7fecef0f2cb5fec3cc69f1c49f5fabe6da47048b60f03b0480f256c9bd98",
+    "gut_v4.csv": "8b7ae70ee8e9890f7dd75b06ee32b0ce5289f04959d2ddc054a38c891f76ea56",
+    "labels_v4.csv": "55702d46c33c63157dc1e940103361ec3e6f4bd2e383d85e1d8db5a2ab5e8096",
+    "patient_metadata_v4.csv": "59a19018bd869b9cb8a13813ab028a87a3f330e604b591b1ef53e39f95b8a707",
+    "train_ids_v4.csv": "b323daea17b8d9e5da1bd95474d48a91a95121756436954e5c30f869f3d2a4b8",
+    "val_ids_v4.csv": "278ce13219d3a14e6e4790111e1242110eb244653659a56f84d548a5068c3bc0",
+    "test_ids_v4.csv": "1dfde420c63026e595a671f6c583c405e55d66dfbdd2d724092064fbb90d1f07"
+  },
+  "model_hashes": {
+    "clinical_v4_expert_payload.joblib": "16dbc550b4a7129cb29078493ded87fea6bdf156c2bac97ed0f3dacd7c4ff9bf",
+    "wearable_v4_expert_payload.joblib": "6468ce8d9bb8cbdbcb4f303503dd5205d5f24b564374b5fa4b42fdb698d801ce",
+    "gut_v4_expert_payload.joblib": "39a470e0c279a06e5007fc445575712270968dbbae2d63a990ecb15dfe485712",
+    "v4_multimodal_fusion_payload.joblib": "addd8976e79347f434a273da03d0d8cb731c80ee21179cc3bec635259cfd7792"
+  }
+}

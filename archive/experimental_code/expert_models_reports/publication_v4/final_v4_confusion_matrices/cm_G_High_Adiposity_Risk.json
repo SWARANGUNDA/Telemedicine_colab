@@ -1,0 +1,8 @@
+{
+  "disease": "High_Adiposity_Risk",
+  "pathway": "G",
+  "tn": 4889,
+  "fp": 4276,
+  "fn": 2927,
+  "tp": 2908
+}

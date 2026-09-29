@@ -1,0 +1,188 @@
+{
+  "_type": "Project",
+  "_id": "AAAA07F7E771278743DFB802",
+  "name": "TeleMed AI Platform \u2014 Medical RAG & PDF Report Generation Sequence",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAA496EF31456264346AE3B",
+      "_parent": {
+        "$ref": "AAAA07F7E771278743DFB802"
+      },
+      "name": "Medical RAG & PDF Report Generation Sequence Model",
+      "ownedElements": [
+        {
+          "_type": "UMLSequenceDiagram",
+          "_id": "AAAA8D359E542D154E7CA23C",
+          "_parent": {
+            "$ref": "AAAA496EF31456264346AE3B"
+          },
+          "name": "Medical RAG & PDF Report Generation Sequence",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAA5804D15E0714BAC80BA",
+              "_parent": {
+                "$ref": "AAAA8D359E542D154E7CA23C"
+              },
+              "model": {
+                "$ref": "AAAAAF99BE9F3CCB4C69A693"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA6F0713F95E4143FCA2EC",
+              "_parent": {
+                "$ref": "AAAA8D359E542D154E7CA23C"
+              },
+              "model": {
+                "$ref": "AAAA7B53FBC6A8374509A1FF"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAF4D75ACE5C9140A5A001",
+              "_parent": {
+                "$ref": "AAAA8D359E542D154E7CA23C"
+              },
+              "model": {
+                "$ref": "AAAACB5064F89166453F9DC3"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAACF77241460944C648764",
+              "_parent": {
+                "$ref": "AAAA8D359E542D154E7CA23C"
+              },
+              "model": {
+                "$ref": "AAAA8B51F2B7370B42789E06"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA3DF78B481C1742B79157",
+              "_parent": {
+                "$ref": "AAAA8D359E542D154E7CA23C"
+              },
+              "model": {
+                "$ref": "AAAA5C43CFF697A54DD6A71F"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAACA38FF0223FC45C8A8F3",
+              "_parent": {
+                "$ref": "AAAA8D359E542D154E7CA23C"
+              },
+              "model": {
+                "$ref": "AAAA5CF8EFC5A3404A28AAAB"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAE1754C64FB0F4B1A9895",
+              "_parent": {
+                "$ref": "AAAA8D359E542D154E7CA23C"
+              },
+              "model": {
+                "$ref": "AAAA30E7368B4012424599A6"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAF99BE9F3CCB4C69A693",
+          "_parent": {
+            "$ref": "AAAA496EF31456264346AE3B"
+          },
+          "name": "User Report View (ReportPage.jsx)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA7B53FBC6A8374509A1FF",
+          "_parent": {
+            "$ref": "AAAA496EF31456264346AE3B"
+          },
+          "name": "RAG Router (rag_routes.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAACB5064F89166453F9DC3",
+          "_parent": {
+            "$ref": "AAAA496EF31456264346AE3B"
+          },
+          "name": "PostgreSQL Record Store"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA8B51F2B7370B42789E06",
+          "_parent": {
+            "$ref": "AAAA496EF31456264346AE3B"
+          },
+          "name": "Medical RAG Engine (rag_service_wrapper.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA5C43CFF697A54DD6A71F",
+          "_parent": {
+            "$ref": "AAAA496EF31456264346AE3B"
+          },
+          "name": "ChromaDB Medical Vector Store"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA5CF8EFC5A3404A28AAAB",
+          "_parent": {
+            "$ref": "AAAA496EF31456264346AE3B"
+          },
+          "name": "Clinical Evidence Synthesizer"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA30E7368B4012424599A6",
+          "_parent": {
+            "$ref": "AAAA496EF31456264346AE3B"
+          },
+          "name": "ReportLab PDF Export Engine"
+        }
+      ]
+    }
+  ]
+}

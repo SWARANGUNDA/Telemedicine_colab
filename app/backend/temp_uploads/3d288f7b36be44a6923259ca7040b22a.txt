@@ -1,0 +1,38 @@
+Sunrise Diagnostic Centre
+
+CLINICAL CHEMISTRY & ANTHROPOMETRY REPORT
+
+Patient ID: TEST_C002 Report ID: SYN-CLN-0002 Age / Gender: 52 years /
+Male Collection Date: 2026-07-02
+
+RESULTS
+
+Height: 170 cm Reference / Note: Recorded
+
+Weight: 91 kg Reference / Note: Recorded
+
+BMI: 31.5 kg/m2 Reference / Note: 18.5-24.9
+
+Waist Circumference: 108 cm Reference / Note: Recorded
+
+Systolic BP: 146 mmHg Reference / Note: <120
+
+Diastolic BP: 94 mmHg Reference / Note: <80
+
+Fasting Blood Glucose: 154 mg/dL Reference / Note: 70-99
+
+HbA1c: 7.4 % Reference / Note: 4.0-5.6
+
+LDL Cholesterol: 152 mg/dL Reference / Note: <100
+
+HDL Cholesterol: 34 mg/dL Reference / Note: 40+
+
+Triglycerides: 245 mg/dL Reference / Note: <150
+
+ALT: 62 U/L Reference / Note: 7-56
+
+AST: 45 U/L Reference / Note: 10-40
+
+FAMILY HISTORY
+
+Diabetes: Yes Obesity: Yes Hypertension: Yes NAFLD: Yes

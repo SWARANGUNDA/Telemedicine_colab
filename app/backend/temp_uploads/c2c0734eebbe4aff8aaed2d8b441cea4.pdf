@@ -1,0 +1,37 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 652 >>
+stream
+BT /F1 12 Tf 50 720 Td (Patient_ID: P_WEAR_001) Tj ET
+BT /F1 12 Tf 50 700 Td (Average Daily Steps: 8500 steps/day) Tj ET
+BT /F1 12 Tf 50 680 Td (Resting Heart Rate: 62 bpm) Tj ET
+BT /F1 12 Tf 50 660 Td (Average Glucose: 112 mg/dL) Tj ET
+BT /F1 12 Tf 50 640 Td (Active Minutes: 45 min/day) Tj ET
+BT /F1 12 Tf 50 620 Td (Sedentary Time Minutes: 480 min/day) Tj ET
+BT /F1 12 Tf 50 600 Td (Sleep Duration: 7.5 hours) Tj ET
+BT /F1 12 Tf 50 580 Td (Calories Burned: 2350 kcal/day) Tj ET
+BT /F1 12 Tf 50 560 Td (Glucose Variability: 18.2 mg/dL) Tj ET
+BT /F1 12 Tf 50 540 Td (Time In Range: 88.0 %) Tj ET
+BT /F1 12 Tf 50 520 Td (Time Above Range: 10.0 %) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+500
+%%EOF

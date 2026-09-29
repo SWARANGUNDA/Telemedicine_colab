@@ -1,0 +1,9 @@
+PATIENT CLINICAL LAB REPORT (INCOMPLETE)
+Patient ID: DEMO_CASE_C
+Age: 52 years
+Gender: Female
+Systolic BP: 140 mmHg
+Diastolic BP: 88 mmHg
+Fasting Blood Glucose: 118 mg/dL
+HbA1c: 6.2 %
+ALT: 48 U/L

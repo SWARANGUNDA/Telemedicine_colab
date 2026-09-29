@@ -1,0 +1,51 @@
+{
+  "C": {
+    "Type2_Diabetes": 0.1,
+    "Prediabetes": 0.1,
+    "Obesity": 0.1,
+    "Metabolic_Syndrome": 0.1,
+    "NAFLD": 0.16
+  },
+  "W": {
+    "Type2_Diabetes": 0.37,
+    "Prediabetes": 0.14,
+    "Obesity": 0.35,
+    "Metabolic_Syndrome": 0.16,
+    "NAFLD": 0.3
+  },
+  "G": {
+    "Type2_Diabetes": 0.23,
+    "Prediabetes": 0.21,
+    "Obesity": 0.19,
+    "Metabolic_Syndrome": 0.2,
+    "NAFLD": 0.19
+  },
+  "C+W": {
+    "Type2_Diabetes": 0.1,
+    "Prediabetes": 0.1,
+    "Obesity": 0.1,
+    "Metabolic_Syndrome": 0.1,
+    "NAFLD": 0.19
+  },
+  "C+G": {
+    "Type2_Diabetes": 0.1,
+    "Prediabetes": 0.1,
+    "Obesity": 0.1,
+    "Metabolic_Syndrome": 0.1,
+    "NAFLD": 0.16
+  },
+  "W+G": {
+    "Type2_Diabetes": 0.22,
+    "Prediabetes": 0.14,
+    "Obesity": 0.21,
+    "Metabolic_Syndrome": 0.33,
+    "NAFLD": 0.34
+  },
+  "C+W+G": {
+    "Type2_Diabetes": 0.1,
+    "Prediabetes": 0.1,
+    "Obesity": 0.1,
+    "Metabolic_Syndrome": 0.15,
+    "NAFLD": 0.14
+  }
+}

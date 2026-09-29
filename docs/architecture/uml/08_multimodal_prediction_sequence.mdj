@@ -1,0 +1,234 @@
+{
+  "_type": "Project",
+  "_id": "AAAA76DBBA6661B74B61AFC5",
+  "name": "TeleMed AI Platform \u2014 Multimodal Prediction & Modality Execution Sequence",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAA1E76148EDC4E4B0BAD88",
+      "_parent": {
+        "$ref": "AAAA76DBBA6661B74B61AFC5"
+      },
+      "name": "Multimodal Prediction & Modality Execution Sequence Model",
+      "ownedElements": [
+        {
+          "_type": "UMLSequenceDiagram",
+          "_id": "AAAA0ECC38D5F62F42F0BC0F",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "Multimodal Prediction & Modality Execution Sequence",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAB827E500A63A42DF91D5",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAA460294FF9EAE4BE8B4FA"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA859BAD3B9EA447B7A2F7",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAAB661049CEAA64DA2ABB1"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA19FA8EB580FE4D88A6A2",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAA38B96AE83D634A4D9A86"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA3EC4BC9788F6463FB341",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAA8381C705D6414EFF9FE5"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA4ED2AA45D0C64A7E8D72",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAAD64378CCAE3B4D448E71"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA96EE3FE582D24F04A8C9",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAAFD0A9B468F4E4028ADAF"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAACC96E5CC2F5F42EA9750",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAAE72D745A27E442C79A6A"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA5B8855269A6747A48212",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAAB828CD21CD5B4D58A583"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAA3FD8A2F78ED941B1B42A",
+              "_parent": {
+                "$ref": "AAAA0ECC38D5F62F42F0BC0F"
+              },
+              "model": {
+                "$ref": "AAAA9F28C0BC495F461B88C9"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA460294FF9EAE4BE8B4FA",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "Client Request (POST /api/v3/predict)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAB661049CEAA64DA2ABB1",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "Predict Router (predict_routes.py)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA38B96AE83D634A4D9A86",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "Modality Detector Engine"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA8381C705D6414EFF9FE5",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "Clinical Expert (C - 18 features)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAD64378CCAE3B4D448E71",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "Wearable Expert (W - 15 features)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAFD0A9B468F4E4028ADAF",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "Gut Expert (G - 49 features)"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAE72D745A27E442C79A6A",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "Stacking Fusion Meta-Model"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAB828CD21CD5B4D58A583",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "5 Disease Risk Output Generator"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAA9F28C0BC495F461B88C9",
+          "_parent": {
+            "$ref": "AAAA1E76148EDC4E4B0BAD88"
+          },
+          "name": "PostgreSQL Record Snapshot Inserter"
+        }
+      ]
+    }
+  ]
+}

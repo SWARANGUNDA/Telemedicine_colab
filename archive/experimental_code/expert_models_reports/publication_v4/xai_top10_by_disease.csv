@@ -1,0 +1,151 @@
+modality,disease,feature,feature_rank,mean_abs_shap,median_abs_shap,pct_contribution,directional_association
+Clinical,High_Adiposity_Risk,Waist_Circumference,1,0.309089,0.310063,12.62,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,ALT,2,0.072606,0.072563,2.96,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,BMI,3,1.220588,1.224106,49.83,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Diastolic_BP,4,0.001849,0.002045,0.08,Higher value associated with higher model-predicted risk
+Clinical,High_Adiposity_Risk,Age,5,0.08057,0.080691,3.29,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Gender,6,0.004829,0.00521,0.2,Higher value associated with higher model-predicted risk
+Clinical,High_Adiposity_Risk,Triglycerides,7,0.023143,0.023627,0.94,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,Family_History_Hypertension,8,0.005069,0.003463,0.21,Higher value associated with lower model-predicted risk
+Clinical,High_Adiposity_Risk,AST,9,0.070955,0.073486,2.9,Non-linear / context-dependent model risk association
+Clinical,High_Adiposity_Risk,HbA1c,10,0.068323,0.067823,2.79,Non-linear / context-dependent model risk association
+Clinical,Metabolic_Syndrome,HbA1c,1,0.110503,0.098115,6.7,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,ALT,2,0.052897,0.044243,3.21,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,LDL,3,0.087131,0.076662,5.28,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Height,4,0.029211,0.028116,1.77,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Fasting_Blood_Glucose,5,0.016666,0.014336,1.01,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Age,6,0.056673,0.057826,3.44,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Waist_Circumference,7,0.301655,0.287433,18.29,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Weight,8,0.163568,0.154714,9.92,Higher value associated with lower model-predicted risk
+Clinical,Metabolic_Syndrome,AST,9,0.051689,0.045604,3.13,Higher value associated with higher model-predicted risk
+Clinical,Metabolic_Syndrome,Systolic_BP,10,0.133825,0.120262,8.11,Higher value associated with higher model-predicted risk
+Clinical,NAFLD,LDL,1,0.068139,0.066562,2.5,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Family_History_CVD,2,0.003352,0.002792,0.12,Higher value associated with lower model-predicted risk
+Clinical,NAFLD,HbA1c,3,0.062996,0.061032,2.31,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Fasting_Blood_Glucose,4,0.010628,0.010586,0.39,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Waist_Circumference,5,0.439113,0.438983,16.13,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Height,6,0.019892,0.019854,0.73,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Triglycerides,7,0.413125,0.40955,15.18,Non-linear / context-dependent model risk association
+Clinical,NAFLD,ALT,8,0.671986,0.672712,24.69,Non-linear / context-dependent model risk association
+Clinical,NAFLD,HDL,9,0.260599,0.260497,9.57,Non-linear / context-dependent model risk association
+Clinical,NAFLD,Diastolic_BP,10,0.005208,0.004918,0.19,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Systolic_BP,1,0.011847,0.010646,0.85,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,LDL,2,0.033229,0.029236,2.37,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Triglycerides,3,0.007298,0.006664,0.52,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Family_History_Hypertension,4,0.013104,0.009779,0.93,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,AST,5,0.063204,0.055764,4.51,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,Gender,6,0.013053,0.012847,0.93,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,ALT,7,0.066349,0.055494,4.73,Higher value associated with higher model-predicted risk
+Clinical,Prediabetes,Diastolic_BP,8,0.044599,0.040593,3.18,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Height,9,0.021835,0.021016,1.56,Higher value associated with lower model-predicted risk
+Clinical,Prediabetes,Age,10,0.058089,0.059271,4.14,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Waist_Circumference,1,0.32512,0.309791,19.56,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,AST,2,0.016518,0.014574,0.99,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,Fasting_Blood_Glucose,3,0.129215,0.111147,7.77,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,HDL,4,0.138467,0.122675,8.33,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,LDL,5,0.048693,0.042842,2.93,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,Gender,6,0.00836,0.008228,0.5,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,HbA1c,7,0.566173,0.502701,34.06,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Triglycerides,8,0.004415,0.004031,0.27,Higher value associated with lower model-predicted risk
+Clinical,Type2_Diabetes,BMI,9,0.020325,0.020376,1.22,Higher value associated with higher model-predicted risk
+Clinical,Type2_Diabetes,Age,10,0.066241,0.067589,3.99,Higher value associated with higher model-predicted risk
+Gut,High_Adiposity_Risk,Phascolarctobacterium_faecium,1,0.003276,0.002686,0.34,Higher value associated with higher model-predicted risk
+Gut,High_Adiposity_Risk,Faecalibacterium_prausnitzii,2,0.067761,0.05874,7.02,Higher value associated with higher model-predicted risk
+Gut,High_Adiposity_Risk,Prevotella_copri,3,0.034718,0.027558,3.6,Higher value associated with lower model-predicted risk
+Gut,High_Adiposity_Risk,Eubacterium_hallii,4,0.006994,0.005925,0.72,Higher value associated with higher model-predicted risk
+Gut,High_Adiposity_Risk,Shannon_Diversity,5,0.040618,0.032006,4.21,Higher value associated with higher model-predicted risk
+Gut,High_Adiposity_Risk,Ruminococcus_bromii,6,0.023208,0.01887,2.4,Higher value associated with higher model-predicted risk
+Gut,High_Adiposity_Risk,Klebsiella_pneumoniae,7,0.018878,0.015158,1.95,Higher value associated with higher model-predicted risk
+Gut,High_Adiposity_Risk,Alistipes_finegoldii,8,0.003672,0.003101,0.38,Higher value associated with lower model-predicted risk
+Gut,High_Adiposity_Risk,Coprococcus_eutactus,9,0.011123,0.00942,1.15,Higher value associated with higher model-predicted risk
+Gut,High_Adiposity_Risk,Bacteroides_fragilis,10,0.019702,0.016691,2.04,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,Fusobacterium_nucleatum,1,0.01903,0.016009,2.52,Higher value associated with higher model-predicted risk
+Gut,Metabolic_Syndrome,Veillonella_parvula,2,0.024813,0.020027,3.28,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,Anaerostipes_caccae,3,0.002171,0.001691,0.29,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,Streptococcus_thermophilus,4,0.010334,0.008462,1.37,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,Phascolarctobacterium_faecium,5,0.00078,0.00064,0.1,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,Alistipes_finegoldii,6,0.009003,0.007604,1.19,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,SCFA_Producer_Index,7,0.011515,0.010462,1.52,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,Alistipes_putredinis,8,0.009888,0.00796,1.31,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,Holdemanella_biformis,9,0.013087,0.010739,1.73,Higher value associated with lower model-predicted risk
+Gut,Metabolic_Syndrome,Dialister_invisus,10,0.008762,0.007022,1.16,Higher value associated with lower model-predicted risk
+Gut,NAFLD,Escherichia_coli,1,0.019253,0.019458,6.53,Higher value associated with higher model-predicted risk
+Gut,NAFLD,Blautia_wexlerae,2,0.003941,0.004038,1.34,Higher value associated with lower model-predicted risk
+Gut,NAFLD,Eubacterium_hallii,3,0.001162,0.001165,0.39,Higher value associated with lower model-predicted risk
+Gut,NAFLD,Coprococcus_eutactus,4,0.002205,0.002281,0.75,Higher value associated with lower model-predicted risk
+Gut,NAFLD,Barnesiella_intestinihominis,5,0.00027,0.000192,0.09,Non-linear / context-dependent model risk association
+Gut,NAFLD,Parabacteroides_distasonis,6,0.00049,0.000435,0.17,Higher value associated with lower model-predicted risk
+Gut,NAFLD,Anaerostipes_caccae,7,0.001045,0.001103,0.35,Higher value associated with lower model-predicted risk
+Gut,NAFLD,Veillonella_parvula,8,0.000511,0.000493,0.17,Non-linear / context-dependent model risk association
+Gut,NAFLD,Alistipes_finegoldii,9,0.000517,0.000406,0.18,Higher value associated with lower model-predicted risk
+Gut,NAFLD,Lactobacillus_rhamnosus,10,0.001337,0.001438,0.45,Higher value associated with lower model-predicted risk
+Gut,Prediabetes,Lactobacillus_rhamnosus,1,0.001839,0.001523,0.13,Higher value associated with lower model-predicted risk
+Gut,Prediabetes,Ruminococcus_bromii,2,0.024014,0.019525,1.67,Higher value associated with higher model-predicted risk
+Gut,Prediabetes,Eubacterium_hallii,3,0.015217,0.01289,1.06,Higher value associated with higher model-predicted risk
+Gut,Prediabetes,SCFA_Producer_Index,4,0.038344,0.034837,2.67,Higher value associated with lower model-predicted risk
+Gut,Prediabetes,Bilophila_wadsworthia,5,0.011081,0.009062,0.77,Higher value associated with higher model-predicted risk
+Gut,Prediabetes,Bifidobacterium_adolescentis,6,0.010143,0.008043,0.71,Higher value associated with lower model-predicted risk
+Gut,Prediabetes,Faecalibacterium_prausnitzii,7,0.045734,0.039645,3.18,Higher value associated with higher model-predicted risk
+Gut,Prediabetes,Bacteroides_uniformis,8,0.033599,0.027443,2.34,Higher value associated with lower model-predicted risk
+Gut,Prediabetes,Escherichia_coli,9,0.049043,0.044629,3.41,Higher value associated with higher model-predicted risk
+Gut,Prediabetes,Bacteroides_vulgatus,10,0.076835,0.063913,5.34,Higher value associated with lower model-predicted risk
+Gut,Type2_Diabetes,Ruminococcus_bromii,1,0.001364,0.001086,0.69,Higher value associated with lower model-predicted risk
+Gut,Type2_Diabetes,Klebsiella_pneumoniae,2,0.009882,0.009998,5.02,Higher value associated with higher model-predicted risk
+Gut,Type2_Diabetes,Pielou_Evenness,3,0.002095,0.001934,1.07,Higher value associated with higher model-predicted risk
+Gut,Type2_Diabetes,Methanobrevibacter_smithii,4,0.001207,0.000927,0.61,Higher value associated with lower model-predicted risk
+Gut,Type2_Diabetes,Parabacteroides_distasonis,5,0.004371,0.004432,2.22,Higher value associated with lower model-predicted risk
+Gut,Type2_Diabetes,Enterococcus_faecalis,6,0.005351,0.004896,2.72,Non-linear / context-dependent model risk association
+Gut,Type2_Diabetes,Alistipes_finegoldii,7,0.001822,0.001551,0.93,Higher value associated with higher model-predicted risk
+Gut,Type2_Diabetes,Bacteroides_uniformis,8,0.001416,0.001097,0.72,Higher value associated with lower model-predicted risk
+Gut,Type2_Diabetes,Shannon_Diversity,9,0.006837,0.007082,3.48,Higher value associated with lower model-predicted risk
+Gut,Type2_Diabetes,Bifidobacterium_adolescentis,10,0.003,0.003134,1.53,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Activity_Energy_Expenditure,1,0.109806,0.092546,11.56,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Autonomic_Stress_Score,2,0.111718,0.101661,11.77,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Average_Daily_Steps,3,0.034689,0.030786,3.65,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Resting_Heart_Rate,4,0.102283,0.095778,10.77,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,Sleep_Duration_Hours,5,0.094911,0.074843,10.0,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Heart_Rate_Variability_RMSSD,6,0.07597,0.062914,8.0,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Exercise_Frequency_Days,7,0.009753,0.009367,1.03,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Active_Minutes,8,0.037729,0.031941,3.97,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,Sedentary_Time_Minutes,9,0.27775,0.225579,29.25,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,CGM_Average_Glucose,10,0.004961,0.001118,0.52,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,CGM_Glucose_CV,1,0.131683,0.027078,19.28,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Activity_Energy_Expenditure,2,0.000306,0.000258,0.04,Higher value associated with lower model-predicted risk
+Wearable,Metabolic_Syndrome,Average_Daily_Steps,3,0.009413,0.008354,1.38,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Autonomic_Stress_Score,4,0.035586,0.032382,5.21,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Sedentary_Time_Minutes,5,0.166946,0.135588,24.44,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Resting_Heart_Rate,6,0.023741,0.022231,3.48,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Exercise_Frequency_Days,7,0.007649,0.007347,1.12,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Sleep_Duration_Hours,8,0.08473,0.066815,12.41,Higher value associated with lower model-predicted risk
+Wearable,Metabolic_Syndrome,CGM_Time_Below_Range,9,0.002264,0.000604,0.33,Higher value associated with lower model-predicted risk
+Wearable,Metabolic_Syndrome,CGM_Time_In_Range,10,0.033158,0.008089,4.85,Higher value associated with higher model-predicted risk
+Wearable,NAFLD,CGM_Average_Glucose,1,0.14515,0.145994,9.89,Higher value associated with lower model-predicted risk
+Wearable,NAFLD,CGM_Time_Above_Range,2,0.118723,0.119054,8.09,Higher value associated with lower model-predicted risk
+Wearable,NAFLD,Sleep_Efficiency_Score,3,0.181271,0.182456,12.36,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Exercise_Frequency_Days,4,0.014089,0.013895,0.96,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Active_Minutes,5,0.003396,0.002848,0.23,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Heart_Rate_Variability_RMSSD,6,0.196644,0.197299,13.4,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Sedentary_Time_Minutes,7,0.114691,0.115282,7.82,Non-linear / context-dependent model risk association
+Wearable,NAFLD,CGM_Time_Below_Range,8,0.014107,0.013233,0.96,Higher value associated with higher model-predicted risk
+Wearable,NAFLD,Autonomic_Stress_Score,9,0.002112,0.00173,0.14,Non-linear / context-dependent model risk association
+Wearable,NAFLD,CGM_Time_In_Range,10,0.082667,0.082415,5.63,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,CGM_Time_In_Range,1,0.091244,0.090396,4.14,Higher value associated with higher model-predicted risk
+Wearable,Prediabetes,Exercise_Frequency_Days,2,0.004979,0.005169,0.23,Higher value associated with lower model-predicted risk
+Wearable,Prediabetes,Sleep_Efficiency_Score,3,0.03379,0.034195,1.53,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Heart_Rate_Variability_RMSSD,4,0.237817,0.238981,10.78,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Resting_Heart_Rate,5,0.215771,0.216385,9.78,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,CGM_Average_Glucose,6,0.282545,0.283265,12.81,Higher value associated with lower model-predicted risk
+Wearable,Prediabetes,CGM_Glucose_CV,7,0.49458,0.493551,22.42,Higher value associated with higher model-predicted risk
+Wearable,Prediabetes,Sleep_Duration_Hours,8,0.043577,0.043989,1.98,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Active_Minutes,9,0.073675,0.073897,3.34,Higher value associated with higher model-predicted risk
+Wearable,Prediabetes,CGM_Time_Below_Range,10,0.006352,0.006627,0.29,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,CGM_Time_Below_Range,1,0.006775,0.001809,0.58,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Activity_Energy_Expenditure,2,0.156315,0.131744,13.43,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,Sleep_Duration_Hours,3,0.06447,0.050839,5.54,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,Sedentary_Time_Minutes,4,0.066492,0.054002,5.71,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Active_Minutes,5,0.038627,0.032701,3.32,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Sleep_Efficiency_Score,6,0.034019,0.028675,2.92,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,Exercise_Frequency_Days,7,0.010004,0.009608,0.86,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Average_Daily_Steps,8,0.005154,0.004574,0.44,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Resting_Heart_Rate,9,0.162521,0.152185,13.96,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,CGM_Glucose_CV,10,0.114341,0.023512,9.82,Higher value associated with higher model-predicted risk

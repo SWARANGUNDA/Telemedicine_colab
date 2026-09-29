@@ -1,0 +1,346 @@
+{
+  "architecture_comparison": {
+    "XGBoost": {
+      "Type2_Diabetes": {
+        "val_f1": 0.9568,
+        "val_roc": 0.9951,
+        "val_pr": 0.9915,
+        "val_brier": 0.0212
+      },
+      "Prediabetes": {
+        "val_f1": 0.9362,
+        "val_roc": 0.993,
+        "val_pr": 0.9738,
+        "val_brier": 0.0247
+      },
+      "Obesity": {
+        "val_f1": 0.9517,
+        "val_roc": 0.9968,
+        "val_pr": 0.9921,
+        "val_brier": 0.0197
+      },
+      "Metabolic_Syndrome": {
+        "val_f1": 0.8355,
+        "val_roc": 0.975,
+        "val_pr": 0.9208,
+        "val_brier": 0.0499
+      },
+      "NAFLD": {
+        "val_f1": 0.7009,
+        "val_roc": 0.7229,
+        "val_pr": 0.7186,
+        "val_brier": 0.2123
+      },
+      "macro_f1": 0.8762
+    },
+    "LightGBM": {
+      "Type2_Diabetes": {
+        "val_f1": 0.9584,
+        "val_roc": 0.9952,
+        "val_pr": 0.9916,
+        "val_brier": 0.0211
+      },
+      "Prediabetes": {
+        "val_f1": 0.9356,
+        "val_roc": 0.9928,
+        "val_pr": 0.9732,
+        "val_brier": 0.0249
+      },
+      "Obesity": {
+        "val_f1": 0.9523,
+        "val_roc": 0.997,
+        "val_pr": 0.9924,
+        "val_brier": 0.0195
+      },
+      "Metabolic_Syndrome": {
+        "val_f1": 0.8298,
+        "val_roc": 0.9752,
+        "val_pr": 0.9208,
+        "val_brier": 0.0498
+      },
+      "NAFLD": {
+        "val_f1": 0.6935,
+        "val_roc": 0.7221,
+        "val_pr": 0.7201,
+        "val_brier": 0.2125
+      },
+      "macro_f1": 0.8739
+    },
+    "CatBoost": {
+      "Type2_Diabetes": {
+        "val_f1": 0.957,
+        "val_roc": 0.9952,
+        "val_pr": 0.9917,
+        "val_brier": 0.0207
+      },
+      "Prediabetes": {
+        "val_f1": 0.9365,
+        "val_roc": 0.9933,
+        "val_pr": 0.9743,
+        "val_brier": 0.0238
+      },
+      "Obesity": {
+        "val_f1": 0.9505,
+        "val_roc": 0.997,
+        "val_pr": 0.9925,
+        "val_brier": 0.0196
+      },
+      "Metabolic_Syndrome": {
+        "val_f1": 0.8315,
+        "val_roc": 0.9745,
+        "val_pr": 0.9215,
+        "val_brier": 0.0499
+      },
+      "NAFLD": {
+        "val_f1": 0.6975,
+        "val_roc": 0.7226,
+        "val_pr": 0.7167,
+        "val_brier": 0.2123
+      },
+      "macro_f1": 0.8746
+    }
+  },
+  "selected_architecture": "XGBoost",
+  "tuned_thresholds": {
+    "Type2_Diabetes": 0.37,
+    "Prediabetes": 0.41,
+    "Obesity": 0.43,
+    "Metabolic_Syndrome": 0.39,
+    "NAFLD": 0.34
+  },
+  "test_metrics": {
+    "overall": {
+      "macro_f1": 0.8747,
+      "micro_f1": 0.8464,
+      "hamming_loss": 0.1063,
+      "mean_brier": 0.0676
+    },
+    "per_disease": {
+      "Type2_Diabetes": {
+        "f1": 0.9513,
+        "precision": 0.97,
+        "recall": 0.9333,
+        "roc_auc": 0.9943,
+        "pr_auc": 0.9904,
+        "brier_score": 0.0247,
+        "confusion_matrix": {
+          "TN": 1966,
+          "FP": 29,
+          "FN": 67,
+          "TP": 938
+        }
+      },
+      "Prediabetes": {
+        "f1": 0.9243,
+        "precision": 0.8861,
+        "recall": 0.9659,
+        "roc_auc": 0.9863,
+        "pr_auc": 0.967,
+        "brier_score": 0.03,
+        "confusion_matrix": {
+          "TN": 2176,
+          "FP": 91,
+          "FN": 25,
+          "TP": 708
+        }
+      },
+      "Obesity": {
+        "f1": 0.9513,
+        "precision": 0.9458,
+        "recall": 0.9568,
+        "roc_auc": 0.9962,
+        "pr_auc": 0.9928,
+        "brier_score": 0.0191,
+        "confusion_matrix": {
+          "TN": 2096,
+          "FP": 47,
+          "FN": 37,
+          "TP": 820
+        }
+      },
+      "Metabolic_Syndrome": {
+        "f1": 0.8237,
+        "precision": 0.8438,
+        "recall": 0.8045,
+        "roc_auc": 0.9723,
+        "pr_auc": 0.9183,
+        "brier_score": 0.0543,
+        "confusion_matrix": {
+          "TN": 2236,
+          "FP": 99,
+          "FN": 130,
+          "TP": 535
+        }
+      },
+      "NAFLD": {
+        "f1": 0.7228,
+        "precision": 0.6178,
+        "recall": 0.8708,
+        "roc_auc": 0.7295,
+        "pr_auc": 0.7276,
+        "brier_score": 0.2098,
+        "confusion_matrix": {
+          "TN": 535,
+          "FP": 863,
+          "FN": 207,
+          "TP": 1395
+        }
+      }
+    },
+    "bootstrap_macro_f1_95ci": [
+      0.8666,
+      0.882
+    ]
+  },
+  "ablation_results": {
+    "Glycemic": {
+      "Full": 0.9378,
+      "No_FPG": 0.905,
+      "No_HbA1c": 0.8287,
+      "No_FPG_No_HbA1c": 0.4822
+    },
+    "Obesity": {
+      "Full": 0.9513,
+      "No_BMI": 0.9507,
+      "No_BMI_No_Weight_No_Height": 0.6134,
+      "No_BMI_No_Weight_No_Height_No_Waist": 0.5803
+    },
+    "Metabolic_Syndrome": {
+      "Full": 0.8237,
+      "No_ATP_III_Criteria": 0.6188
+    },
+    "NAFLD": {
+      "Full": 0.7228,
+      "No_ALT_AST": 0.7176,
+      "No_ALT_AST_TG_BMI": 0.7186
+    }
+  },
+  "subgroup_results": {
+    "Prediabetes": {
+      "concordant_recall": 1.0,
+      "fpg_discordant_recall": 0.9815,
+      "hba1c_discordant_recall": 0.9701,
+      "outside_range_recall": 0.68,
+      "counts": {
+        "concordant": 507,
+        "fpg_discordant": 54,
+        "hba1c_discordant": 67,
+        "outside_range": 25
+      }
+    },
+    "Type2_Diabetes": {
+      "overt_recall": 1.0,
+      "fpg_controlled_recall": 0.9745,
+      "hba1c_controlled_recall": 0.8472,
+      "fully_controlled_recall": 0.1333,
+      "counts": {
+        "overt": 716,
+        "fpg_controlled": 157,
+        "hba1c_controlled": 72,
+        "fully_controlled": 60
+      }
+    }
+  },
+  "shap_results": {
+    "Type2_Diabetes": {
+      "HbA1c": 3.4466,
+      "Fasting_Blood_Glucose": 2.1964,
+      "Age": 0.4058,
+      "BMI": 0.153,
+      "ALT": 0.0508,
+      "Systolic_BP": 0.0373,
+      "Weight": 0.0353,
+      "HDL": 0.0352,
+      "Triglycerides": 0.0309,
+      "Waist_Circumference": 0.0308,
+      "Diastolic_BP": 0.0291,
+      "AST": 0.0288,
+      "Height": 0.0267,
+      "LDL": 0.0188,
+      "Family_History_Diabetes": 0.0104,
+      "Family_History_CVD": 0.0065,
+      "Family_History_Hypertension": 0.004,
+      "Gender": 0.0
+    },
+    "Prediabetes": {
+      "HbA1c": 3.5914,
+      "Fasting_Blood_Glucose": 1.5727,
+      "Age": 0.3002,
+      "BMI": 0.1003,
+      "Weight": 0.0356,
+      "HDL": 0.0337,
+      "AST": 0.0316,
+      "ALT": 0.0314,
+      "Waist_Circumference": 0.0269,
+      "Diastolic_BP": 0.0253,
+      "Systolic_BP": 0.022,
+      "LDL": 0.0125,
+      "Height": 0.0091,
+      "Triglycerides": 0.0042,
+      "Family_History_Diabetes": 0.0027,
+      "Family_History_CVD": 0.0021,
+      "Gender": 0.0,
+      "Family_History_Hypertension": 0.0
+    },
+    "Obesity": {
+      "BMI": 6.3368,
+      "Fasting_Blood_Glucose": 0.068,
+      "HDL": 0.0559,
+      "Weight": 0.0441,
+      "Diastolic_BP": 0.0347,
+      "HbA1c": 0.0305,
+      "LDL": 0.027,
+      "Systolic_BP": 0.0268,
+      "Waist_Circumference": 0.0234,
+      "Age": 0.0231,
+      "Height": 0.0199,
+      "AST": 0.0178,
+      "Triglycerides": 0.0148,
+      "ALT": 0.0119,
+      "Family_History_Hypertension": 0.0117,
+      "Family_History_CVD": 0.0036,
+      "Family_History_Diabetes": 0.0008,
+      "Gender": 0.0
+    },
+    "Metabolic_Syndrome": {
+      "Triglycerides": 1.631,
+      "Gender": 0.7066,
+      "HDL": 0.7026,
+      "Waist_Circumference": 0.6075,
+      "HbA1c": 0.589,
+      "Systolic_BP": 0.5037,
+      "Fasting_Blood_Glucose": 0.4977,
+      "Diastolic_BP": 0.3623,
+      "Age": 0.2211,
+      "ALT": 0.1367,
+      "LDL": 0.0816,
+      "BMI": 0.0457,
+      "AST": 0.0452,
+      "Height": 0.0414,
+      "Weight": 0.0042,
+      "Family_History_Hypertension": 0.0034,
+      "Family_History_Diabetes": 0.0,
+      "Family_History_CVD": 0.0
+    },
+    "NAFLD": {
+      "ALT": 0.3231,
+      "AST": 0.2817,
+      "Waist_Circumference": 0.2512,
+      "Triglycerides": 0.1247,
+      "BMI": 0.0869,
+      "HDL": 0.0537,
+      "Systolic_BP": 0.0502,
+      "Gender": 0.0495,
+      "LDL": 0.049,
+      "Age": 0.0435,
+      "HbA1c": 0.0434,
+      "Height": 0.0334,
+      "Fasting_Blood_Glucose": 0.0323,
+      "Weight": 0.0263,
+      "Diastolic_BP": 0.0262,
+      "Family_History_CVD": 0.011,
+      "Family_History_Diabetes": 0.0013,
+      "Family_History_Hypertension": 0.0007
+    }
+  }
+}

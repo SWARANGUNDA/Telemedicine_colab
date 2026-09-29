@@ -1,0 +1,50 @@
+{
+  "v4_feature_counts": {
+    "clinical": 18,
+    "wearable": 15,
+    "gut_taxa": 40,
+    "gut_indices": 9,
+    "gut_total_features": 49
+  },
+  "patient_id_anti_leakage": "VERIFIED_ISOLATED",
+  "7_pathways_audit": {
+    "C": {
+      "effective_pathway": "C",
+      "t2d_probability": 0.5247,
+      "saved_record_id": "rec_e11fd62cea11"
+    },
+    "W": {
+      "effective_pathway": "W",
+      "t2d_probability": 0.4713,
+      "saved_record_id": "rec_2900de4a3a70"
+    },
+    "G": {
+      "effective_pathway": "G",
+      "t2d_probability": 0.45,
+      "saved_record_id": "rec_87f7e0240228"
+    },
+    "C+W": {
+      "effective_pathway": "C+W",
+      "t2d_probability": 0.6642,
+      "saved_record_id": "rec_1ca69b8cb13f"
+    },
+    "C+G": {
+      "effective_pathway": "C+G",
+      "t2d_probability": 0.6658,
+      "saved_record_id": "rec_6ac06cfcf46b"
+    },
+    "W+G": {
+      "effective_pathway": "W+G",
+      "t2d_probability": 0.6586,
+      "saved_record_id": "rec_e4b009b98565"
+    },
+    "C+W+G": {
+      "effective_pathway": "C+W+G",
+      "t2d_probability": 0.6642,
+      "saved_record_id": "rec_49990bb6fbb0"
+    }
+  },
+  "single_source_of_truth": "EXACT_PROBABILITY_IDENTITY_VERIFIED",
+  "xai_verification": "VERIFIED_V4_MATCH",
+  "v4_sample_files": "VERIFIED_100_PERCENT"
+}

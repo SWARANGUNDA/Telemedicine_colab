@@ -1,0 +1,76 @@
+modality,disease,feature,feature_rank,mean_abs_shap,median_abs_shap,pct_contribution,directional_association
+Wearable,High_Adiposity_Risk,Activity_Energy_Expenditure,1,0.109806,0.092546,11.56,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Autonomic_Stress_Score,2,0.111718,0.101661,11.77,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Average_Daily_Steps,3,0.034689,0.030786,3.65,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Resting_Heart_Rate,4,0.102283,0.095778,10.77,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,Sleep_Duration_Hours,5,0.094911,0.074843,10.0,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Heart_Rate_Variability_RMSSD,6,0.07597,0.062914,8.0,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Exercise_Frequency_Days,7,0.009753,0.009367,1.03,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,Active_Minutes,8,0.037729,0.031941,3.97,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,Sedentary_Time_Minutes,9,0.27775,0.225579,29.25,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,CGM_Average_Glucose,10,0.004961,0.001118,0.52,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,CGM_Glucose_CV,11,0.058039,0.011935,6.11,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,Sleep_Efficiency_Score,12,0.023443,0.01976,2.47,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,CGM_Time_Above_Range,13,0.004459,0.00111,0.47,Higher value associated with lower model-predicted risk
+Wearable,High_Adiposity_Risk,CGM_Time_In_Range,14,0.003814,0.00093,0.4,Higher value associated with higher model-predicted risk
+Wearable,High_Adiposity_Risk,CGM_Time_Below_Range,15,0.000183,4.9e-05,0.02,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,CGM_Glucose_CV,1,0.131683,0.027078,19.28,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Activity_Energy_Expenditure,2,0.000306,0.000258,0.04,Higher value associated with lower model-predicted risk
+Wearable,Metabolic_Syndrome,Average_Daily_Steps,3,0.009413,0.008354,1.38,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Autonomic_Stress_Score,4,0.035586,0.032382,5.21,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Sedentary_Time_Minutes,5,0.166946,0.135588,24.44,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Resting_Heart_Rate,6,0.023741,0.022231,3.48,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Exercise_Frequency_Days,7,0.007649,0.007347,1.12,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Sleep_Duration_Hours,8,0.08473,0.066815,12.41,Higher value associated with lower model-predicted risk
+Wearable,Metabolic_Syndrome,CGM_Time_Below_Range,9,0.002264,0.000604,0.33,Higher value associated with lower model-predicted risk
+Wearable,Metabolic_Syndrome,CGM_Time_In_Range,10,0.033158,0.008089,4.85,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,CGM_Average_Glucose,11,0.01159,0.002612,1.7,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Active_Minutes,12,0.020636,0.01747,3.02,Higher value associated with higher model-predicted risk
+Wearable,Metabolic_Syndrome,Sleep_Efficiency_Score,13,0.015259,0.012862,2.23,Higher value associated with lower model-predicted risk
+Wearable,Metabolic_Syndrome,Heart_Rate_Variability_RMSSD,14,0.099575,0.082462,14.58,Higher value associated with lower model-predicted risk
+Wearable,Metabolic_Syndrome,CGM_Time_Above_Range,15,0.040432,0.010067,5.92,Higher value associated with lower model-predicted risk
+Wearable,NAFLD,CGM_Average_Glucose,1,0.14515,0.145994,9.89,Higher value associated with lower model-predicted risk
+Wearable,NAFLD,CGM_Time_Above_Range,2,0.118723,0.119054,8.09,Higher value associated with lower model-predicted risk
+Wearable,NAFLD,Sleep_Efficiency_Score,3,0.181271,0.182456,12.36,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Exercise_Frequency_Days,4,0.014089,0.013895,0.96,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Active_Minutes,5,0.003396,0.002848,0.23,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Heart_Rate_Variability_RMSSD,6,0.196644,0.197299,13.4,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Sedentary_Time_Minutes,7,0.114691,0.115282,7.82,Non-linear / context-dependent model risk association
+Wearable,NAFLD,CGM_Time_Below_Range,8,0.014107,0.013233,0.96,Higher value associated with higher model-predicted risk
+Wearable,NAFLD,Autonomic_Stress_Score,9,0.002112,0.00173,0.14,Non-linear / context-dependent model risk association
+Wearable,NAFLD,CGM_Time_In_Range,10,0.082667,0.082415,5.63,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Resting_Heart_Rate,11,0.019066,0.018572,1.3,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Average_Daily_Steps,12,0.014159,0.014156,0.97,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Activity_Energy_Expenditure,13,0.091825,0.092355,6.26,Non-linear / context-dependent model risk association
+Wearable,NAFLD,Sleep_Duration_Hours,14,0.137318,0.136349,9.36,Non-linear / context-dependent model risk association
+Wearable,NAFLD,CGM_Glucose_CV,15,0.331904,0.333233,22.62,Higher value associated with lower model-predicted risk
+Wearable,Prediabetes,CGM_Time_In_Range,1,0.091244,0.090396,4.14,Higher value associated with higher model-predicted risk
+Wearable,Prediabetes,Exercise_Frequency_Days,2,0.004979,0.005169,0.23,Higher value associated with lower model-predicted risk
+Wearable,Prediabetes,Sleep_Efficiency_Score,3,0.03379,0.034195,1.53,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Heart_Rate_Variability_RMSSD,4,0.237817,0.238981,10.78,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Resting_Heart_Rate,5,0.215771,0.216385,9.78,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,CGM_Average_Glucose,6,0.282545,0.283265,12.81,Higher value associated with lower model-predicted risk
+Wearable,Prediabetes,CGM_Glucose_CV,7,0.49458,0.493551,22.42,Higher value associated with higher model-predicted risk
+Wearable,Prediabetes,Sleep_Duration_Hours,8,0.043577,0.043989,1.98,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Active_Minutes,9,0.073675,0.073897,3.34,Higher value associated with higher model-predicted risk
+Wearable,Prediabetes,CGM_Time_Below_Range,10,0.006352,0.006627,0.29,Higher value associated with lower model-predicted risk
+Wearable,Prediabetes,Sedentary_Time_Minutes,11,0.11621,0.116233,5.27,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Average_Daily_Steps,12,0.027649,0.027433,1.25,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Activity_Energy_Expenditure,13,0.312558,0.312481,14.17,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,Autonomic_Stress_Score,14,0.166709,0.168716,7.56,Non-linear / context-dependent model risk association
+Wearable,Prediabetes,CGM_Time_Above_Range,15,0.098725,0.099393,4.47,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,CGM_Time_Below_Range,1,0.006775,0.001809,0.58,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Activity_Energy_Expenditure,2,0.156315,0.131744,13.43,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,Sleep_Duration_Hours,3,0.06447,0.050839,5.54,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,Sedentary_Time_Minutes,4,0.066492,0.054002,5.71,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Active_Minutes,5,0.038627,0.032701,3.32,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Sleep_Efficiency_Score,6,0.034019,0.028675,2.92,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,Exercise_Frequency_Days,7,0.010004,0.009608,0.86,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Average_Daily_Steps,8,0.005154,0.004574,0.44,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Resting_Heart_Rate,9,0.162521,0.152185,13.96,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,CGM_Glucose_CV,10,0.114341,0.023512,9.82,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,Autonomic_Stress_Score,11,0.229024,0.208406,19.68,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,Heart_Rate_Variability_RMSSD,12,0.193889,0.160568,16.66,Higher value associated with lower model-predicted risk
+Wearable,Type2_Diabetes,CGM_Average_Glucose,13,0.05643,0.012718,4.85,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,CGM_Time_Above_Range,14,0.005225,0.001301,0.45,Higher value associated with higher model-predicted risk
+Wearable,Type2_Diabetes,CGM_Time_In_Range,15,0.020596,0.005025,1.77,Higher value associated with lower model-predicted risk

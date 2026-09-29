@@ -1,0 +1,14 @@
+{
+  "expert_name": "clinical",
+  "version": "v1",
+  "saved_timestamp": "2026-07-26T15:18:38.853542",
+  "n_predictors": 19,
+  "target_diseases": [
+    "Type2_Diabetes",
+    "Prediabetes",
+    "Obesity",
+    "Metabolic_Syndrome",
+    "NAFLD"
+  ],
+  "status": "FROZEN"
+}

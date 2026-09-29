@@ -1,0 +1,4 @@
+Patient Name: Demo Patient
+Blood Pressure: 120/80
+Glucose: 95 mg/dL
+Cholesterol: 180 mg/dL

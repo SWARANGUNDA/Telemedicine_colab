@@ -1,0 +1,8 @@
+{
+  "disease": "NAFLD",
+  "pathway": "C+G",
+  "tn": 0,
+  "fp": 6030,
+  "fn": 0,
+  "tp": 8970
+}

@@ -1,0 +1,280 @@
+{
+  "_type": "Project",
+  "_id": "AAAADF3496B0714349349DEB",
+  "name": "TeleMed AI Platform \u2014 System Use-Case Diagram (V4 Architecture)",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAADBAB5CD9CE25499E9E77",
+      "_parent": {
+        "$ref": "AAAADF3496B0714349349DEB"
+      },
+      "name": "System Use-Case Diagram (V4 Architecture) Model",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "AAAA3A960C901EEC43C9BCFD",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "System Use-Case Diagram (V4 Architecture)",
+          "ownedViews": [
+            {
+              "_type": "UMLActorView",
+              "_id": "AAAA99DD1E6B2EE5411B98D3",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAA96795858279948D79CAB"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLActorView",
+              "_id": "AAAAF70E65B97BED4EEB93CA",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAA01630ABFDFBD45A180BC"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLActorView",
+              "_id": "AAAA708CE85D345645B1AC5E",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAA78CCEB784CEA4AB79174"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "AAAA9BFE35CDCBB2449DA1AA",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAAA460505925B54DFAAF7A"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 40,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "AAAA97992FDAFFAE4312B48C",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAA5E7FA2279B144CECA565"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "AAAAAF7EF8A6C1124831AFB2",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAA3F86A549F4BC49048794"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "AAAA5BEB5C0DFBE144BEADC5",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAAA5510590894745CF9AFB"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "AAAA2A876EE03D854E56804F",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAA46F81EAF451F4ECAABE7"
+              },
+              "font": "Arial;13;0",
+              "left": 760,
+              "top": 220,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "AAAA44B36FE56B24414B828B",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAA3FED4B9F21B546268E9E"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "AAAA0EC320F532E349BDA41B",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAA3ADAC10360FC49E7A1A3"
+              },
+              "font": "Arial;13;0",
+              "left": 280,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "AAAAC97DA631477A42A8B2FC",
+              "_parent": {
+                "$ref": "AAAA3A960C901EEC43C9BCFD"
+              },
+              "model": {
+                "$ref": "AAAAA0BE84CEA6B34459BC6D"
+              },
+              "font": "Arial;13;0",
+              "left": 520,
+              "top": 400,
+              "width": 220,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "_type": "UMLActor",
+          "_id": "AAAA96795858279948D79CAB",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "Patient"
+        },
+        {
+          "_type": "UMLActor",
+          "_id": "AAAA01630ABFDFBD45A180BC",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "Doctor"
+        },
+        {
+          "_type": "UMLActor",
+          "_id": "AAAA78CCEB784CEA4AB79174",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "Administrator"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAA460505925B54DFAAF7A",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "UC-1.1: Register & Authenticate (JWT)"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAA5E7FA2279B144CECA565",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "UC-2.1: Upload Multimodal Data (CSV/PDF)"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAA3F86A549F4BC49048794",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "UC-2.5: Execute Health Assessment"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAA5510590894745CF9AFB",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "UC-3.1: View 5 Disease Risk Predictions"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAA46F81EAF451F4ECAABE7",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "UC-3.2: View TreeSHAP Feature Attributions"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAA3FED4B9F21B546268E9E",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "UC-4.1: View RAG Report & Download PDF"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAA3ADAC10360FC49E7A1A3",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "UC-5.1: Doctor Workspace & Consultation Notes"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAA0BE84CEA6B34459BC6D",
+          "_parent": {
+            "$ref": "AAAADBAB5CD9CE25499E9E77"
+          },
+          "name": "UC-6.1: Admin Verification & Audit Logging"
+        }
+      ]
+    }
+  ]
+}

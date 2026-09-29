@@ -1,0 +1,41 @@
+{
+  "feature_schema_audit": "PASS",
+  "sample_files_audit": "PASS",
+  "pathways_7_audit": {
+    "C": {
+      "effective_pathway": "C",
+      "t2d_calibrated_probability": 0.5247,
+      "risk_level": "High Risk"
+    },
+    "W": {
+      "effective_pathway": "W",
+      "t2d_calibrated_probability": 0.4713,
+      "risk_level": "High Risk"
+    },
+    "G": {
+      "effective_pathway": "G",
+      "t2d_calibrated_probability": 0.45,
+      "risk_level": "High Risk"
+    },
+    "C+W": {
+      "effective_pathway": "C+W",
+      "t2d_calibrated_probability": 0.6642,
+      "risk_level": "High Risk"
+    },
+    "C+G": {
+      "effective_pathway": "C+G",
+      "t2d_calibrated_probability": 0.6658,
+      "risk_level": "High Risk"
+    },
+    "W+G": {
+      "effective_pathway": "W+G",
+      "t2d_calibrated_probability": 0.6586,
+      "risk_level": "High Risk"
+    },
+    "C+W+G": {
+      "effective_pathway": "C+W+G",
+      "t2d_calibrated_probability": 0.6642,
+      "risk_level": "High Risk"
+    }
+  }
+}

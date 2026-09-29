@@ -1,0 +1,17 @@
+# American Diabetes Association (ADA) Standards of Care in Diabetes — 2024
+Organization: American Diabetes Association (ADA)
+Publication Date: 2024-01-01
+Document Version: 2024.1
+Evidence Type: CLINICAL_GUIDELINE
+
+## Section 1: Glycemic Targets and Diagnostic Criteria
+Fasting plasma glucose (FPG) >= 126 mg/dL or HbA1c >= 6.5% establishes the diagnosis of Type 2 Diabetes. Prediabetes is defined by Fasting Plasma Glucose between 100 and 125 mg/dL or HbA1c between 5.7% and 6.4%. For non-pregnant adults with diabetes, a target HbA1c of < 7.0% is recommended to reduce microvascular complications.
+
+## Section 2: Lifestyle Modifications and Weight Management
+Lifestyle behavior change is essential for diabetes prevention and management. Intensive lifestyle intervention targeting >= 7% weight loss through a low-calorie, low-fat diet and regular physical activity (at least 150 minutes per week of moderate-intensity aerobic exercise) reduces the risk of progressing from prediabetes to Type 2 Diabetes by 58%.
+
+## Section 3: Dietary Fiber and Whole Foods
+Increased intake of dietary fiber (25–35 g/day from whole grains, legumes, vegetables, and fruit) improves glycemic control and insulin sensitivity. Viscous soluble fibers (e.g. beta-glucans, psyllium) delay gastric emptying and attenuate postprandial blood glucose spikes.
+
+## Section 4: Physical Activity Telemetry and CGM Integration
+Continuous Glucose Monitoring (CGM) telemetric metrics such as Time-in-Range (TIR > 70%), Glucose Variability (CV < 36%), and Average Daily Glucose offer actionable clinical insights for daily glycemic regulation. Patients with high glucose variability benefit from structured activity timing post-meals.
